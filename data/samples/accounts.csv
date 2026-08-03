@@ -1,0 +1,251 @@
+account_id,account_name,created_at,country_code,region_id,industry,segment,employee_band,acquisition_channel,sales_motion,partner_id,account_status,legal_currency,tax_id_present
+account_00000001,Belgium Field Services 00001,2024-12-12 11:00:00,BE,benelux,property_services,micro,1-9,referral,self_service,,customer,EUR,True
+account_00000002,Netherlands Field Services 00002,2026-03-10 08:00:00,NL,benelux,equipment_maintenance,micro,1-9,referral,self_service,,customer,EUR,True
+account_00000003,United Kingdom Field Services 00003,2026-03-18 13:00:00,GB,western_europe,property_services,small,10-49,outbound_sales,partner_led,partner_00000009,prospect,GBP,True
+account_00000004,Norway Field Services 00004,2024-03-17 10:00:00,NO,nordics,inspections,small,10-49,referral,sales_assisted,,customer,NOK,True
+account_00000005,Germany Field Services 00005,2024-12-18 17:00:00,DE,dach,facility_management,medium,50-249,outbound_sales,sales_assisted,,prospect,EUR,True
+account_00000006,United Kingdom Field Services 00006,2025-02-02 13:00:00,GB,western_europe,equipment_maintenance,medium,250-999,paid_search,sales_assisted,,prospect,GBP,True
+account_00000007,France Field Services 00007,2024-11-03 11:00:00,FR,western_europe,cleaning_services,micro,1-9,partner,partner_led,partner_00000002,lost,EUR,True
+account_00000008,Ireland Field Services 00008,2025-11-02 09:00:00,IE,western_europe,technical_services,micro,1-9,partner,partner_led,partner_00000008,customer,EUR,True
+account_00000009,Belgium Field Services 00009,2024-12-28 08:00:00,BE,benelux,facility_management,small,50-249,partner,partner_led,partner_00000004,customer,EUR,True
+account_00000010,Germany Field Services 00010,2025-06-05 18:00:00,DE,dach,equipment_maintenance,small,10-49,paid_search,sales_assisted,,lost,EUR,False
+account_00000011,Germany Field Services 00011,2024-01-03 16:00:00,DE,dach,inspections,small,50-249,partner,partner_led,partner_00000005,lost,EUR,True
+account_00000012,Austria Field Services 00012,2024-12-31 12:00:00,AT,dach,inspections,micro,1-9,outbound_sales,sales_assisted,,prospect,EUR,True
+account_00000013,Netherlands Field Services 00013,2024-06-18 12:00:00,NL,benelux,technical_services,medium,50-249,outbound_sales,partner_led,partner_00000012,customer,EUR,True
+account_00000014,Germany Field Services 00014,2024-04-09 12:00:00,DE,dach,technical_services,medium,50-249,paid_search,self_service,,lost,EUR,True
+account_00000015,Ireland Field Services 00015,2025-12-16 12:00:00,IE,western_europe,cleaning_services,small,10-49,organic_search,self_service,,lost,EUR,True
+account_00000016,Germany Field Services 00016,2026-03-14 08:00:00,DE,dach,cleaning_services,micro,10-49,paid_search,self_service,,prospect,EUR,True
+account_00000017,United Kingdom Field Services 00017,2024-12-17 11:00:00,GB,western_europe,inspections,medium,50-249,organic_search,sales_assisted,,prospect,GBP,True
+account_00000018,Belgium Field Services 00018,2025-02-25 11:00:00,BE,benelux,property_services,small,10-49,partner,partner_led,partner_00000001,lost,EUR,True
+account_00000019,Spain Field Services 00019,2026-02-14 16:00:00,ES,southern_europe,cleaning_services,mid_market,250-999,paid_social,sales_assisted,,customer,EUR,True
+account_00000020,Belgium Field Services 00020,2024-09-21 09:00:00,BE,benelux,facility_management,medium,50-249,paid_social,sales_assisted,,prospect,EUR,True
+account_00000021,Germany Field Services 00021,2025-06-19 09:00:00,DE,dach,property_services,medium,50-249,organic_search,partner_led,partner_00000002,prospect,EUR,True
+account_00000022,Sweden Field Services 00022,2024-05-01 08:00:00,SE,nordics,equipment_maintenance,small,10-49,referral,self_service,,customer,SEK,True
+account_00000023,Germany Field Services 00023,2024-06-20 13:00:00,DE,dach,installation,small,10-49,partner,partner_led,partner_00000002,customer,EUR,False
+account_00000024,Czechia Field Services 00024,2025-04-08 18:00:00,CZ,central_europe,installation,medium,50-249,referral,partner_led,partner_00000006,customer,CZK,True
+account_00000025,Denmark Field Services 00025,2024-12-26 08:00:00,DK,nordics,inspections,micro,10-49,events,self_service,,prospect,DKK,True
+account_00000026,United Kingdom Field Services 00026,2024-06-01 18:00:00,GB,western_europe,inspections,micro,10-49,partner,partner_led,partner_00000009,lost,GBP,True
+account_00000027,Italy Field Services 00027,2025-03-16 14:00:00,IT,southern_europe,installation,micro,1-9,organic_search,sales_assisted,,prospect,EUR,True
+account_00000028,Netherlands Field Services 00028,2025-11-12 17:00:00,NL,benelux,technical_services,medium,50-249,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000029,Germany Field Services 00029,2026-03-28 14:00:00,DE,dach,inspections,small,10-49,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000030,Spain Field Services 00030,2025-07-19 09:00:00,ES,southern_europe,installation,small,10-49,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000031,United Kingdom Field Services 00031,2024-07-25 18:00:00,GB,western_europe,facility_management,mid_market,1000+,organic_search,sales_assisted,,prospect,GBP,True
+account_00000032,Italy Field Services 00032,2026-05-17 14:00:00,IT,southern_europe,inspections,micro,10-49,events,self_service,,prospect,EUR,True
+account_00000033,Spain Field Services 00033,2025-12-18 15:00:00,ES,southern_europe,cleaning_services,micro,10-49,partner,partner_led,partner_00000002,prospect,EUR,True
+account_00000034,Italy Field Services 00034,2026-05-08 10:00:00,IT,southern_europe,technical_services,small,50-249,paid_search,self_service,,lost,EUR,True
+account_00000035,Switzerland Field Services 00035,2024-11-26 17:00:00,CH,dach,technical_services,small,10-49,organic_search,self_service,,customer,CHF,True
+account_00000036,Czechia Field Services 00036,2024-05-27 10:00:00,CZ,central_europe,property_services,micro,1-9,paid_social,self_service,,lost,CZK,True
+account_00000037,Ireland Field Services 00037,2024-12-01 15:00:00,IE,western_europe,facility_management,small,10-49,partner,partner_led,partner_00000008,lost,EUR,True
+account_00000038,Denmark Field Services 00038,2025-06-18 15:00:00,DK,nordics,property_services,small,10-49,outbound_sales,sales_assisted,,lost,DKK,True
+account_00000039,Germany Field Services 00039,2026-04-25 09:00:00,DE,dach,facility_management,mid_market,250-999,paid_social,sales_assisted,,customer,EUR,True
+account_00000040,France Field Services 00040,2025-09-06 13:00:00,FR,western_europe,equipment_maintenance,micro,1-9,partner,partner_led,partner_00000005,customer,EUR,True
+account_00000041,Switzerland Field Services 00041,2026-02-01 13:00:00,CH,dach,facility_management,micro,10-49,paid_search,self_service,,lost,CHF,True
+account_00000042,United Kingdom Field Services 00042,2024-07-06 14:00:00,GB,western_europe,technical_services,small,10-49,organic_search,sales_assisted,,lost,GBP,True
+account_00000043,Austria Field Services 00043,2025-11-12 14:00:00,AT,dach,property_services,small,10-49,partner,partner_led,partner_00000007,customer,EUR,True
+account_00000044,Netherlands Field Services 00044,2024-02-05 10:00:00,NL,benelux,technical_services,small,10-49,paid_search,sales_assisted,,customer,EUR,True
+account_00000045,United Kingdom Field Services 00045,2025-01-04 14:00:00,GB,western_europe,cleaning_services,micro,1-9,paid_search,self_service,,lost,GBP,True
+account_00000046,Austria Field Services 00046,2026-04-16 10:00:00,AT,dach,cleaning_services,small,10-49,paid_search,partner_led,partner_00000007,prospect,EUR,True
+account_00000047,France Field Services 00047,2025-04-19 14:00:00,FR,western_europe,facility_management,small,10-49,referral,sales_assisted,,customer,EUR,True
+account_00000048,Sweden Field Services 00048,2025-12-12 12:00:00,SE,nordics,cleaning_services,micro,1-9,organic_search,self_service,,prospect,SEK,True
+account_00000049,Germany Field Services 00049,2026-01-28 17:00:00,DE,dach,technical_services,small,10-49,partner,partner_led,partner_00000002,lost,EUR,True
+account_00000050,Germany Field Services 00050,2024-08-28 14:00:00,DE,dach,equipment_maintenance,small,50-249,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000051,Austria Field Services 00051,2025-04-27 13:00:00,AT,dach,inspections,micro,1-9,paid_search,self_service,,customer,EUR,True
+account_00000052,Ireland Field Services 00052,2026-04-20 14:00:00,IE,western_europe,installation,micro,1-9,paid_search,self_service,,lost,EUR,True
+account_00000053,Norway Field Services 00053,2025-10-08 17:00:00,NO,nordics,facility_management,micro,10-49,direct,self_service,,lost,NOK,True
+account_00000054,Germany Field Services 00054,2025-04-25 13:00:00,DE,dach,technical_services,small,10-49,organic_search,self_service,,lost,EUR,True
+account_00000055,Ireland Field Services 00055,2026-05-20 13:00:00,IE,western_europe,installation,small,10-49,paid_social,self_service,,lost,EUR,True
+account_00000056,Germany Field Services 00056,2025-01-24 12:00:00,DE,dach,equipment_maintenance,medium,50-249,outbound_sales,sales_assisted,,customer,EUR,True
+account_00000057,France Field Services 00057,2024-09-08 08:00:00,FR,western_europe,inspections,micro,10-49,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000058,Austria Field Services 00058,2025-01-23 10:00:00,AT,dach,technical_services,medium,50-249,paid_social,sales_assisted,,lost,EUR,True
+account_00000059,Netherlands Field Services 00059,2024-02-19 10:00:00,NL,benelux,facility_management,small,10-49,partner,partner_led,partner_00000012,prospect,EUR,True
+account_00000060,Germany Field Services 00060,2024-12-04 09:00:00,DE,dach,facility_management,micro,1-9,referral,self_service,,prospect,EUR,True
+account_00000061,Netherlands Field Services 00061,2026-04-01 12:00:00,NL,benelux,technical_services,micro,10-49,events,sales_assisted,,prospect,EUR,True
+account_00000062,Sweden Field Services 00062,2025-03-24 12:00:00,SE,nordics,equipment_maintenance,medium,50-249,organic_search,partner_led,partner_00000005,lost,SEK,True
+account_00000063,Germany Field Services 00063,2025-04-25 10:00:00,DE,dach,installation,micro,1-9,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000064,Switzerland Field Services 00064,2026-03-25 08:00:00,CH,dach,inspections,small,10-49,outbound_sales,sales_assisted,,prospect,CHF,True
+account_00000065,Spain Field Services 00065,2025-05-12 14:00:00,ES,southern_europe,equipment_maintenance,medium,10-49,direct,sales_assisted,,lost,EUR,True
+account_00000066,Germany Field Services 00066,2025-03-15 08:00:00,DE,dach,equipment_maintenance,medium,50-249,organic_search,sales_assisted,,lost,EUR,True
+account_00000067,Spain Field Services 00067,2025-02-17 08:00:00,ES,southern_europe,facility_management,small,50-249,paid_search,sales_assisted,,lost,EUR,True
+account_00000068,Italy Field Services 00068,2024-10-19 18:00:00,IT,southern_europe,cleaning_services,mid_market,1000+,organic_search,sales_assisted,,lost,EUR,False
+account_00000069,Austria Field Services 00069,2024-04-04 18:00:00,AT,dach,property_services,medium,50-249,referral,self_service,,customer,EUR,True
+account_00000070,Germany Field Services 00070,2025-08-24 15:00:00,DE,dach,cleaning_services,small,10-49,organic_search,self_service,,lost,EUR,True
+account_00000071,Netherlands Field Services 00071,2024-08-25 08:00:00,NL,benelux,inspections,small,10-49,organic_search,self_service,,prospect,EUR,True
+account_00000072,Italy Field Services 00072,2025-11-26 16:00:00,IT,southern_europe,installation,medium,50-249,organic_search,sales_assisted,,lost,EUR,True
+account_00000073,Germany Field Services 00073,2026-02-11 18:00:00,DE,dach,technical_services,micro,10-49,paid_search,self_service,,lost,EUR,True
+account_00000074,Germany Field Services 00074,2024-03-13 16:00:00,DE,dach,technical_services,micro,1-9,events,self_service,,lost,EUR,True
+account_00000075,Germany Field Services 00075,2024-01-08 13:00:00,DE,dach,inspections,mid_market,250-999,organic_search,sales_assisted,,lost,EUR,True
+account_00000076,France Field Services 00076,2024-12-21 08:00:00,FR,western_europe,facility_management,micro,1-9,outbound_sales,partner_led,partner_00000006,prospect,EUR,True
+account_00000077,United Kingdom Field Services 00077,2024-05-25 17:00:00,GB,western_europe,facility_management,small,10-49,partner,partner_led,partner_00000009,prospect,GBP,True
+account_00000078,Spain Field Services 00078,2025-10-03 11:00:00,ES,southern_europe,facility_management,medium,250-999,outbound_sales,sales_assisted,,prospect,EUR,True
+account_00000079,Sweden Field Services 00079,2025-09-25 09:00:00,SE,nordics,property_services,medium,50-249,outbound_sales,partner_led,partner_00000008,customer,SEK,True
+account_00000080,France Field Services 00080,2025-08-21 15:00:00,FR,western_europe,installation,enterprise,1000+,outbound_sales,sales_assisted,,customer,EUR,True
+account_00000081,Germany Field Services 00081,2025-10-12 10:00:00,DE,dach,installation,micro,1-9,paid_search,self_service,,lost,EUR,True
+account_00000082,Germany Field Services 00082,2024-11-17 12:00:00,DE,dach,equipment_maintenance,small,10-49,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000083,United Kingdom Field Services 00083,2024-08-21 14:00:00,GB,western_europe,inspections,small,10-49,paid_social,self_service,,customer,GBP,True
+account_00000084,Italy Field Services 00084,2025-09-11 17:00:00,IT,southern_europe,property_services,micro,1-9,referral,self_service,,prospect,EUR,True
+account_00000085,Germany Field Services 00085,2024-02-10 11:00:00,DE,dach,equipment_maintenance,micro,1-9,organic_search,self_service,,customer,EUR,True
+account_00000086,Italy Field Services 00086,2025-11-29 08:00:00,IT,southern_europe,installation,micro,1-9,referral,self_service,,customer,EUR,True
+account_00000087,Spain Field Services 00087,2025-01-09 11:00:00,ES,southern_europe,inspections,small,50-249,outbound_sales,sales_assisted,,customer,EUR,True
+account_00000088,Germany Field Services 00088,2025-01-01 12:00:00,DE,dach,cleaning_services,micro,1-9,paid_search,self_service,,lost,EUR,True
+account_00000089,Sweden Field Services 00089,2024-11-29 15:00:00,SE,nordics,inspections,small,10-49,organic_search,self_service,,customer,SEK,True
+account_00000090,Germany Field Services 00090,2025-01-02 09:00:00,DE,dach,property_services,micro,1-9,partner,partner_led,partner_00000002,lost,EUR,True
+account_00000091,Norway Field Services 00091,2025-07-05 16:00:00,NO,nordics,cleaning_services,medium,50-249,organic_search,sales_assisted,,lost,NOK,True
+account_00000092,Austria Field Services 00092,2025-12-15 08:00:00,AT,dach,technical_services,micro,1-9,outbound_sales,sales_assisted,,customer,EUR,True
+account_00000093,Spain Field Services 00093,2024-09-22 16:00:00,ES,southern_europe,installation,micro,1-9,outbound_sales,sales_assisted,,customer,EUR,True
+account_00000094,Belgium Field Services 00094,2026-01-15 09:00:00,BE,benelux,technical_services,small,10-49,organic_search,self_service,,customer,EUR,True
+account_00000095,Sweden Field Services 00095,2025-03-01 13:00:00,SE,nordics,inspections,mid_market,250-999,direct,sales_assisted,,customer,SEK,True
+account_00000096,Austria Field Services 00096,2025-01-15 18:00:00,AT,dach,property_services,medium,50-249,organic_search,sales_assisted,,lost,EUR,True
+account_00000097,Norway Field Services 00097,2024-04-12 18:00:00,NO,nordics,cleaning_services,micro,10-49,referral,sales_assisted,,prospect,NOK,True
+account_00000098,Germany Field Services 00098,2025-12-01 16:00:00,DE,dach,cleaning_services,small,10-49,referral,self_service,,prospect,EUR,True
+account_00000099,Switzerland Field Services 00099,2025-06-25 17:00:00,CH,dach,installation,enterprise,1000+,outbound_sales,sales_assisted,,lost,CHF,True
+account_00000100,United Kingdom Field Services 00100,2026-05-06 16:00:00,GB,western_europe,property_services,micro,1-9,paid_search,self_service,,customer,GBP,True
+account_00000101,Norway Field Services 00101,2026-04-27 11:00:00,NO,nordics,inspections,micro,10-49,paid_search,self_service,,customer,NOK,True
+account_00000102,Netherlands Field Services 00102,2025-09-05 14:00:00,NL,benelux,equipment_maintenance,micro,10-49,paid_social,self_service,,lost,EUR,True
+account_00000103,Italy Field Services 00103,2024-01-13 18:00:00,IT,southern_europe,installation,micro,1-9,organic_search,self_service,,lost,EUR,True
+account_00000104,Norway Field Services 00104,2024-07-09 14:00:00,NO,nordics,facility_management,micro,10-49,direct,sales_assisted,,customer,NOK,True
+account_00000105,Austria Field Services 00105,2026-05-03 12:00:00,AT,dach,installation,small,10-49,paid_search,self_service,,customer,EUR,True
+account_00000106,Norway Field Services 00106,2024-01-01 08:00:00,NO,nordics,property_services,small,10-49,organic_search,partner_led,partner_00000006,customer,NOK,True
+account_00000107,Czechia Field Services 00107,2024-09-13 15:00:00,CZ,central_europe,inspections,medium,250-999,partner,partner_led,partner_00000008,lost,CZK,True
+account_00000108,United Kingdom Field Services 00108,2025-03-11 16:00:00,GB,western_europe,facility_management,enterprise,1000+,partner,partner_led,partner_00000009,customer,GBP,True
+account_00000109,Germany Field Services 00109,2024-04-26 16:00:00,DE,dach,facility_management,small,50-249,paid_search,self_service,,lost,EUR,True
+account_00000110,Poland Field Services 00110,2024-06-22 16:00:00,PL,central_europe,facility_management,medium,50-249,organic_search,partner_led,partner_00000003,customer,PLN,True
+account_00000111,Germany Field Services 00111,2024-11-15 16:00:00,DE,dach,facility_management,small,10-49,outbound_sales,sales_assisted,,customer,EUR,True
+account_00000112,Switzerland Field Services 00112,2025-07-11 18:00:00,CH,dach,facility_management,small,50-249,partner,partner_led,partner_00000009,lost,CHF,True
+account_00000113,Belgium Field Services 00113,2024-07-25 08:00:00,BE,benelux,property_services,medium,50-249,organic_search,self_service,,customer,EUR,True
+account_00000114,United Kingdom Field Services 00114,2024-11-30 08:00:00,GB,western_europe,installation,micro,1-9,outbound_sales,sales_assisted,,lost,GBP,True
+account_00000115,France Field Services 00115,2025-04-14 08:00:00,FR,western_europe,property_services,micro,10-49,partner,partner_led,partner_00000011,prospect,EUR,True
+account_00000116,United Kingdom Field Services 00116,2025-07-03 09:00:00,GB,western_europe,technical_services,small,1-9,outbound_sales,sales_assisted,,customer,GBP,True
+account_00000117,United Kingdom Field Services 00117,2024-01-16 12:00:00,GB,western_europe,inspections,small,10-49,events,partner_led,partner_00000009,lost,GBP,True
+account_00000118,Germany Field Services 00118,2025-08-19 13:00:00,DE,dach,facility_management,medium,250-999,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000119,Germany Field Services 00119,2026-05-22 18:00:00,DE,dach,property_services,micro,1-9,partner,partner_led,partner_00000002,lost,EUR,True
+account_00000120,Italy Field Services 00120,2025-03-05 10:00:00,IT,southern_europe,facility_management,small,10-49,events,sales_assisted,,lost,EUR,True
+account_00000121,France Field Services 00121,2026-03-04 15:00:00,FR,western_europe,installation,mid_market,250-999,outbound_sales,partner_led,partner_00000002,lost,EUR,True
+account_00000122,Netherlands Field Services 00122,2025-07-31 14:00:00,NL,benelux,cleaning_services,micro,1-9,referral,sales_assisted,,customer,EUR,True
+account_00000123,France Field Services 00123,2024-09-21 11:00:00,FR,western_europe,inspections,micro,10-49,partner,partner_led,partner_00000003,customer,EUR,True
+account_00000124,Germany Field Services 00124,2024-07-18 17:00:00,DE,dach,installation,micro,1-9,paid_search,self_service,,customer,EUR,True
+account_00000125,Germany Field Services 00125,2025-03-07 13:00:00,DE,dach,technical_services,micro,1-9,organic_search,self_service,,lost,EUR,True
+account_00000126,Sweden Field Services 00126,2026-02-16 12:00:00,SE,nordics,property_services,micro,1-9,paid_search,self_service,,customer,SEK,True
+account_00000127,Austria Field Services 00127,2025-01-28 15:00:00,AT,dach,property_services,small,10-49,organic_search,self_service,,customer,EUR,True
+account_00000128,Austria Field Services 00128,2024-05-27 10:00:00,AT,dach,equipment_maintenance,medium,50-249,outbound_sales,sales_assisted,,customer,EUR,True
+account_00000129,Sweden Field Services 00129,2025-05-20 08:00:00,SE,nordics,cleaning_services,micro,1-9,organic_search,sales_assisted,,customer,SEK,True
+account_00000130,Spain Field Services 00130,2025-09-28 15:00:00,ES,southern_europe,installation,micro,1-9,paid_search,self_service,,customer,EUR,True
+account_00000131,United Kingdom Field Services 00131,2025-04-17 13:00:00,GB,western_europe,inspections,enterprise,1000+,partner,partner_led,partner_00000009,customer,GBP,True
+account_00000132,Norway Field Services 00132,2024-03-11 17:00:00,NO,nordics,inspections,micro,1-9,paid_search,partner_led,partner_00000006,prospect,NOK,True
+account_00000133,Poland Field Services 00133,2025-08-13 17:00:00,PL,central_europe,technical_services,medium,50-249,paid_search,sales_assisted,,lost,PLN,True
+account_00000134,Belgium Field Services 00134,2024-03-29 12:00:00,BE,benelux,equipment_maintenance,mid_market,250-999,outbound_sales,partner_led,partner_00000004,customer,EUR,True
+account_00000135,Netherlands Field Services 00135,2025-06-06 18:00:00,NL,benelux,facility_management,micro,1-9,partner,partner_led,partner_00000010,customer,EUR,True
+account_00000136,Austria Field Services 00136,2024-07-27 11:00:00,AT,dach,cleaning_services,medium,50-249,organic_search,sales_assisted,,customer,EUR,True
+account_00000137,France Field Services 00137,2025-10-30 13:00:00,FR,western_europe,inspections,small,10-49,referral,self_service,,customer,EUR,True
+account_00000138,Germany Field Services 00138,2024-11-01 15:00:00,DE,dach,installation,small,10-49,referral,self_service,,customer,EUR,True
+account_00000139,Netherlands Field Services 00139,2025-04-17 12:00:00,NL,benelux,facility_management,micro,10-49,paid_search,self_service,,prospect,EUR,True
+account_00000140,Spain Field Services 00140,2025-04-28 14:00:00,ES,southern_europe,installation,micro,10-49,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000141,Germany Field Services 00141,2025-01-22 08:00:00,DE,dach,property_services,small,10-49,partner,partner_led,partner_00000002,customer,EUR,True
+account_00000142,Germany Field Services 00142,2024-06-07 18:00:00,DE,dach,technical_services,mid_market,250-999,paid_search,sales_assisted,,lost,EUR,True
+account_00000143,United Kingdom Field Services 00143,2025-03-20 09:00:00,GB,western_europe,property_services,medium,50-249,organic_search,sales_assisted,,lost,GBP,True
+account_00000144,Sweden Field Services 00144,2025-04-26 13:00:00,SE,nordics,technical_services,mid_market,250-999,paid_social,sales_assisted,,prospect,SEK,True
+account_00000145,Belgium Field Services 00145,2024-08-29 18:00:00,BE,benelux,technical_services,medium,50-249,organic_search,self_service,,lost,EUR,True
+account_00000146,Germany Field Services 00146,2025-04-20 08:00:00,DE,dach,facility_management,medium,50-249,paid_search,sales_assisted,,prospect,EUR,True
+account_00000147,United Kingdom Field Services 00147,2026-05-15 14:00:00,GB,western_europe,technical_services,small,10-49,events,sales_assisted,,prospect,GBP,False
+account_00000148,Denmark Field Services 00148,2024-12-20 13:00:00,DK,nordics,cleaning_services,medium,50-249,partner,partner_led,partner_00000008,prospect,DKK,True
+account_00000149,Belgium Field Services 00149,2024-04-11 12:00:00,BE,benelux,installation,micro,1-9,paid_search,self_service,,lost,EUR,True
+account_00000150,Netherlands Field Services 00150,2026-01-24 16:00:00,NL,benelux,inspections,small,10-49,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000151,Netherlands Field Services 00151,2026-03-07 17:00:00,NL,benelux,inspections,small,10-49,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000152,Ireland Field Services 00152,2024-05-31 12:00:00,IE,western_europe,property_services,mid_market,250-999,paid_search,partner_led,partner_00000008,customer,EUR,True
+account_00000153,Czechia Field Services 00153,2026-01-16 16:00:00,CZ,central_europe,property_services,small,10-49,referral,sales_assisted,,lost,CZK,True
+account_00000154,Netherlands Field Services 00154,2025-12-21 16:00:00,NL,benelux,equipment_maintenance,micro,1-9,referral,self_service,,lost,EUR,True
+account_00000155,Germany Field Services 00155,2024-12-20 14:00:00,DE,dach,technical_services,micro,10-49,paid_search,self_service,,customer,EUR,True
+account_00000156,Germany Field Services 00156,2025-01-17 17:00:00,DE,dach,installation,micro,1-9,referral,self_service,,prospect,EUR,True
+account_00000157,Netherlands Field Services 00157,2024-04-05 11:00:00,NL,benelux,inspections,micro,1-9,organic_search,partner_led,partner_00000012,customer,EUR,True
+account_00000158,Belgium Field Services 00158,2026-04-26 12:00:00,BE,benelux,facility_management,mid_market,250-999,organic_search,sales_assisted,,prospect,EUR,True
+account_00000159,United Kingdom Field Services 00159,2026-04-02 15:00:00,GB,western_europe,equipment_maintenance,small,10-49,outbound_sales,sales_assisted,,customer,GBP,True
+account_00000160,Germany Field Services 00160,2026-03-04 09:00:00,DE,dach,equipment_maintenance,micro,1-9,organic_search,self_service,,prospect,EUR,True
+account_00000161,Switzerland Field Services 00161,2025-01-31 12:00:00,CH,dach,cleaning_services,medium,50-249,paid_search,sales_assisted,,customer,CHF,True
+account_00000162,Italy Field Services 00162,2024-12-22 13:00:00,IT,southern_europe,cleaning_services,micro,10-49,organic_search,self_service,,prospect,EUR,True
+account_00000163,France Field Services 00163,2025-11-05 17:00:00,FR,western_europe,installation,medium,50-249,partner,partner_led,partner_00000007,lost,EUR,True
+account_00000164,Germany Field Services 00164,2026-04-07 10:00:00,DE,dach,technical_services,micro,1-9,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000165,Germany Field Services 00165,2024-02-18 17:00:00,DE,dach,facility_management,micro,10-49,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000166,France Field Services 00166,2025-01-05 13:00:00,FR,western_europe,technical_services,micro,1-9,referral,self_service,,customer,EUR,True
+account_00000167,Ireland Field Services 00167,2025-10-11 17:00:00,IE,western_europe,technical_services,micro,1-9,paid_search,self_service,,lost,EUR,True
+account_00000168,Germany Field Services 00168,2025-04-30 08:00:00,DE,dach,facility_management,mid_market,250-999,outbound_sales,partner_led,partner_00000002,lost,EUR,False
+account_00000169,United Kingdom Field Services 00169,2026-05-26 08:00:00,GB,western_europe,property_services,small,10-49,organic_search,self_service,,customer,GBP,True
+account_00000170,United Kingdom Field Services 00170,2024-03-14 16:00:00,GB,western_europe,equipment_maintenance,small,10-49,outbound_sales,sales_assisted,,prospect,GBP,True
+account_00000171,Sweden Field Services 00171,2025-12-12 12:00:00,SE,nordics,facility_management,small,10-49,partner,partner_led,partner_00000004,lost,SEK,True
+account_00000172,United Kingdom Field Services 00172,2025-03-23 08:00:00,GB,western_europe,property_services,small,10-49,partner,partner_led,partner_00000009,lost,GBP,True
+account_00000173,Sweden Field Services 00173,2024-04-01 16:00:00,SE,nordics,cleaning_services,small,10-49,referral,self_service,,customer,SEK,True
+account_00000174,Belgium Field Services 00174,2024-06-14 13:00:00,BE,benelux,facility_management,small,10-49,paid_search,self_service,,lost,EUR,True
+account_00000175,Czechia Field Services 00175,2024-07-21 12:00:00,CZ,central_europe,equipment_maintenance,small,10-49,organic_search,self_service,,prospect,CZK,True
+account_00000176,France Field Services 00176,2025-10-19 16:00:00,FR,western_europe,technical_services,medium,50-249,partner,partner_led,partner_00000012,prospect,EUR,True
+account_00000177,Italy Field Services 00177,2025-07-29 08:00:00,IT,southern_europe,equipment_maintenance,medium,250-999,referral,self_service,,customer,EUR,True
+account_00000178,Switzerland Field Services 00178,2024-12-15 09:00:00,CH,dach,installation,mid_market,250-999,outbound_sales,sales_assisted,,lost,CHF,False
+account_00000179,Germany Field Services 00179,2024-12-24 14:00:00,DE,dach,property_services,micro,1-9,organic_search,self_service,,lost,EUR,True
+account_00000180,Germany Field Services 00180,2025-12-02 10:00:00,DE,dach,installation,micro,10-49,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000181,Germany Field Services 00181,2025-09-16 15:00:00,DE,dach,technical_services,enterprise,1000+,partner,partner_led,partner_00000002,lost,EUR,True
+account_00000182,Switzerland Field Services 00182,2025-10-30 12:00:00,CH,dach,facility_management,small,10-49,paid_search,self_service,,prospect,CHF,True
+account_00000183,Ireland Field Services 00183,2024-02-12 15:00:00,IE,western_europe,property_services,micro,1-9,events,self_service,,customer,EUR,True
+account_00000184,Norway Field Services 00184,2025-02-09 18:00:00,NO,nordics,property_services,medium,50-249,outbound_sales,partner_led,partner_00000006,customer,NOK,True
+account_00000185,Netherlands Field Services 00185,2026-03-01 14:00:00,NL,benelux,equipment_maintenance,mid_market,1000+,events,sales_assisted,,lost,EUR,True
+account_00000186,Denmark Field Services 00186,2026-03-29 12:00:00,DK,nordics,property_services,micro,1-9,outbound_sales,sales_assisted,,lost,DKK,True
+account_00000187,France Field Services 00187,2025-02-10 15:00:00,FR,western_europe,technical_services,medium,50-249,partner,partner_led,partner_00000002,lost,EUR,True
+account_00000188,Denmark Field Services 00188,2024-05-19 16:00:00,DK,nordics,cleaning_services,medium,50-249,organic_search,sales_assisted,,lost,DKK,True
+account_00000189,Germany Field Services 00189,2024-10-26 16:00:00,DE,dach,cleaning_services,medium,10-49,paid_search,partner_led,partner_00000005,prospect,EUR,True
+account_00000190,Poland Field Services 00190,2025-09-26 08:00:00,PL,central_europe,installation,medium,50-249,paid_search,sales_assisted,,lost,PLN,True
+account_00000191,Austria Field Services 00191,2025-12-02 18:00:00,AT,dach,technical_services,medium,50-249,paid_search,self_service,,lost,EUR,True
+account_00000192,Germany Field Services 00192,2025-01-01 08:00:00,DE,dach,technical_services,small,10-49,events,self_service,,customer,EUR,True
+account_00000193,France Field Services 00193,2026-05-16 17:00:00,FR,western_europe,technical_services,enterprise,1000+,paid_search,sales_assisted,,lost,EUR,True
+account_00000194,Austria Field Services 00194,2024-01-19 12:00:00,AT,dach,cleaning_services,micro,1-9,paid_search,self_service,,prospect,EUR,True
+account_00000195,Italy Field Services 00195,2025-08-13 09:00:00,IT,southern_europe,facility_management,medium,250-999,partner,partner_led,partner_00000004,lost,EUR,True
+account_00000196,United Kingdom Field Services 00196,2026-05-24 14:00:00,GB,western_europe,equipment_maintenance,small,10-49,events,sales_assisted,,lost,GBP,True
+account_00000197,France Field Services 00197,2026-05-31 13:00:00,FR,western_europe,technical_services,micro,1-9,paid_social,self_service,,customer,EUR,False
+account_00000198,Austria Field Services 00198,2025-08-05 15:00:00,AT,dach,inspections,small,10-49,partner,partner_led,partner_00000011,prospect,EUR,True
+account_00000199,Poland Field Services 00199,2024-08-19 12:00:00,PL,central_europe,equipment_maintenance,mid_market,250-999,direct,sales_assisted,,lost,PLN,True
+account_00000200,Belgium Field Services 00200,2025-03-21 18:00:00,BE,benelux,equipment_maintenance,small,50-249,organic_search,self_service,,lost,EUR,True
+account_00000201,Switzerland Field Services 00201,2025-05-17 14:00:00,CH,dach,property_services,small,50-249,organic_search,self_service,,lost,CHF,True
+account_00000202,Germany Field Services 00202,2025-01-30 09:00:00,DE,dach,installation,small,10-49,organic_search,self_service,,prospect,EUR,True
+account_00000203,Germany Field Services 00203,2024-09-11 17:00:00,DE,dach,technical_services,small,10-49,referral,self_service,,lost,EUR,False
+account_00000204,Italy Field Services 00204,2025-08-16 18:00:00,IT,southern_europe,technical_services,enterprise,1000+,outbound_sales,sales_assisted,,customer,EUR,True
+account_00000205,Germany Field Services 00205,2026-01-16 08:00:00,DE,dach,equipment_maintenance,micro,1-9,partner,partner_led,partner_00000002,customer,EUR,True
+account_00000206,Germany Field Services 00206,2026-01-26 11:00:00,DE,dach,cleaning_services,medium,10-49,organic_search,self_service,,customer,EUR,True
+account_00000207,Germany Field Services 00207,2025-03-22 17:00:00,DE,dach,property_services,medium,250-999,paid_search,partner_led,partner_00000002,customer,EUR,True
+account_00000208,Denmark Field Services 00208,2025-02-06 13:00:00,DK,nordics,technical_services,small,10-49,paid_search,partner_led,partner_00000002,customer,DKK,True
+account_00000209,Germany Field Services 00209,2024-05-25 13:00:00,DE,dach,installation,small,10-49,referral,self_service,,lost,EUR,True
+account_00000210,Ireland Field Services 00210,2025-04-27 18:00:00,IE,western_europe,property_services,small,10-49,organic_search,sales_assisted,,lost,EUR,True
+account_00000211,Netherlands Field Services 00211,2025-10-17 08:00:00,NL,benelux,facility_management,micro,1-9,paid_search,self_service,,lost,EUR,True
+account_00000212,Netherlands Field Services 00212,2026-01-10 13:00:00,NL,benelux,technical_services,small,10-49,partner,partner_led,partner_00000010,prospect,EUR,True
+account_00000213,Italy Field Services 00213,2026-04-24 15:00:00,IT,southern_europe,facility_management,medium,250-999,partner,partner_led,partner_00000001,customer,EUR,True
+account_00000214,Germany Field Services 00214,2024-04-29 09:00:00,DE,dach,property_services,micro,10-49,partner,partner_led,partner_00000002,prospect,EUR,True
+account_00000215,Ireland Field Services 00215,2024-05-01 14:00:00,IE,western_europe,property_services,micro,1-9,organic_search,self_service,,prospect,EUR,True
+account_00000216,Germany Field Services 00216,2024-10-11 10:00:00,DE,dach,property_services,medium,250-999,organic_search,sales_assisted,,lost,EUR,True
+account_00000217,Germany Field Services 00217,2025-03-12 16:00:00,DE,dach,installation,small,50-249,organic_search,self_service,,prospect,EUR,True
+account_00000218,Germany Field Services 00218,2024-06-21 15:00:00,DE,dach,equipment_maintenance,micro,1-9,paid_social,self_service,,lost,EUR,True
+account_00000219,United Kingdom Field Services 00219,2024-06-12 18:00:00,GB,western_europe,equipment_maintenance,small,10-49,organic_search,partner_led,partner_00000009,lost,GBP,True
+account_00000220,Belgium Field Services 00220,2025-08-10 14:00:00,BE,benelux,inspections,medium,50-249,organic_search,sales_assisted,,prospect,EUR,True
+account_00000221,Netherlands Field Services 00221,2025-10-09 16:00:00,NL,benelux,equipment_maintenance,small,10-49,paid_search,self_service,,customer,EUR,True
+account_00000222,Germany Field Services 00222,2025-01-13 16:00:00,DE,dach,inspections,medium,50-249,paid_search,sales_assisted,,customer,EUR,True
+account_00000223,Italy Field Services 00223,2024-02-25 18:00:00,IT,southern_europe,inspections,medium,50-249,partner,partner_led,partner_00000012,lost,EUR,True
+account_00000224,Switzerland Field Services 00224,2025-08-14 15:00:00,CH,dach,property_services,small,50-249,referral,partner_led,partner_00000010,lost,CHF,True
+account_00000225,Germany Field Services 00225,2026-02-21 11:00:00,DE,dach,technical_services,mid_market,1000+,direct,sales_assisted,,prospect,EUR,True
+account_00000226,France Field Services 00226,2025-01-30 18:00:00,FR,western_europe,property_services,mid_market,250-999,organic_search,sales_assisted,,prospect,EUR,True
+account_00000227,Norway Field Services 00227,2024-09-14 16:00:00,NO,nordics,equipment_maintenance,micro,10-49,outbound_sales,sales_assisted,,prospect,NOK,True
+account_00000228,Germany Field Services 00228,2025-04-27 12:00:00,DE,dach,installation,micro,1-9,paid_social,self_service,,customer,EUR,True
+account_00000229,United Kingdom Field Services 00229,2024-03-16 11:00:00,GB,western_europe,equipment_maintenance,micro,1-9,outbound_sales,sales_assisted,,customer,GBP,True
+account_00000230,Poland Field Services 00230,2026-02-15 13:00:00,PL,central_europe,technical_services,micro,1-9,organic_search,sales_assisted,,customer,PLN,True
+account_00000231,Netherlands Field Services 00231,2024-06-02 13:00:00,NL,benelux,equipment_maintenance,small,10-49,organic_search,self_service,,lost,EUR,True
+account_00000232,Belgium Field Services 00232,2024-10-07 08:00:00,BE,benelux,equipment_maintenance,medium,250-999,referral,self_service,,lost,EUR,True
+account_00000233,France Field Services 00233,2024-02-07 12:00:00,FR,western_europe,inspections,medium,50-249,outbound_sales,sales_assisted,,prospect,EUR,True
+account_00000234,Italy Field Services 00234,2024-08-12 08:00:00,IT,southern_europe,technical_services,medium,50-249,organic_search,sales_assisted,,customer,EUR,True
+account_00000235,Germany Field Services 00235,2024-06-26 16:00:00,DE,dach,technical_services,mid_market,250-999,paid_search,sales_assisted,,lost,EUR,True
+account_00000236,France Field Services 00236,2025-07-06 18:00:00,FR,western_europe,technical_services,medium,50-249,outbound_sales,partner_led,partner_00000012,lost,EUR,True
+account_00000237,Spain Field Services 00237,2024-10-10 12:00:00,ES,southern_europe,property_services,medium,50-249,organic_search,sales_assisted,,prospect,EUR,True
+account_00000238,Belgium Field Services 00238,2025-03-15 10:00:00,BE,benelux,equipment_maintenance,small,10-49,organic_search,self_service,,lost,EUR,True
+account_00000239,Italy Field Services 00239,2024-09-24 08:00:00,IT,southern_europe,technical_services,small,50-249,partner,partner_led,partner_00000006,lost,EUR,True
+account_00000240,Germany Field Services 00240,2025-03-03 13:00:00,DE,dach,installation,small,10-49,organic_search,partner_led,partner_00000005,prospect,EUR,False
+account_00000241,Netherlands Field Services 00241,2025-03-07 14:00:00,NL,benelux,installation,micro,1-9,partner,partner_led,partner_00000012,lost,EUR,True
+account_00000242,France Field Services 00242,2026-04-29 08:00:00,FR,western_europe,facility_management,mid_market,250-999,organic_search,partner_led,partner_00000011,prospect,EUR,True
+account_00000243,Italy Field Services 00243,2024-04-21 15:00:00,IT,southern_europe,inspections,micro,1-9,outbound_sales,sales_assisted,,lost,EUR,True
+account_00000244,Spain Field Services 00244,2024-07-11 10:00:00,ES,southern_europe,equipment_maintenance,small,10-49,outbound_sales,sales_assisted,,customer,EUR,True
+account_00000245,Netherlands Field Services 00245,2026-04-26 10:00:00,NL,benelux,equipment_maintenance,small,10-49,outbound_sales,sales_assisted,,customer,EUR,True
+account_00000246,Norway Field Services 00246,2026-03-28 14:00:00,NO,nordics,inspections,micro,10-49,referral,self_service,,lost,NOK,True
+account_00000247,France Field Services 00247,2026-04-05 17:00:00,FR,western_europe,property_services,small,10-49,paid_search,self_service,,customer,EUR,True
+account_00000248,Switzerland Field Services 00248,2024-10-15 08:00:00,CH,dach,equipment_maintenance,micro,1-9,paid_social,self_service,,lost,CHF,True
+account_00000249,Netherlands Field Services 00249,2025-09-26 09:00:00,NL,benelux,equipment_maintenance,mid_market,250-999,organic_search,partner_led,partner_00000012,lost,EUR,True
+account_00000250,Germany Field Services 00250,2025-02-25 09:00:00,DE,dach,cleaning_services,medium,50-249,organic_search,sales_assisted,,prospect,EUR,True

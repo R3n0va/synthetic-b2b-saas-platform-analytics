@@ -1,0 +1,4 @@
+scenario:
+  name: baseline
+  description: Baseline European B2B SaaS operating model.
+  adjustments: {}

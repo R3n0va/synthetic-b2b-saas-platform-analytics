@@ -1,0 +1,27 @@
+table: countries
+grain: One row per country_code
+primary_key:
+- country_code
+foreign_keys:
+- columns:
+  - region_id
+  references: regions(region_id)
+columns:
+- name: country_code
+  type: string
+  nullable: false
+- name: country_name
+  type: string
+  nullable: true
+- name: region_id
+  type: string
+  nullable: true
+- name: currency_code
+  type: string
+  nullable: true
+- name: vat_rate
+  type: decimal
+  nullable: true
+- name: language_code
+  type: string
+  nullable: true

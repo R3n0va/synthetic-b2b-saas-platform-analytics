@@ -1,0 +1,15 @@
+table: currencies
+grain: One row per currency_code
+primary_key:
+- currency_code
+foreign_keys: []
+columns:
+- name: currency_code
+  type: string
+  nullable: false
+- name: currency_name
+  type: string
+  nullable: true
+- name: minor_units
+  type: integer
+  nullable: true

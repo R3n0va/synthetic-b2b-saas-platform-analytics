@@ -1,0 +1,45 @@
+table: work_orders
+grain: One row per work_order_id
+primary_key:
+- work_order_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: work_order_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: workspace_id
+  type: string
+  nullable: true
+- name: created_at
+  type: timestamp
+  nullable: true
+- name: scheduled_at
+  type: timestamp
+  nullable: true
+- name: completed_at
+  type: timestamp
+  nullable: true
+- name: status
+  type: string
+  nullable: true
+- name: priority
+  type: string
+  nullable: true
+- name: service_category
+  type: string
+  nullable: true
+- name: assigned_users
+  type: integer
+  nullable: true
+- name: customer_signature_flag
+  type: boolean
+  nullable: true
+- name: completion_minutes
+  type: integer
+  nullable: true

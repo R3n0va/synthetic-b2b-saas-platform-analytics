@@ -1,0 +1,84 @@
+version: 1
+tables:
+  regions:
+    contract: regions.yaml
+  countries:
+    contract: countries.yaml
+  currencies:
+    contract: currencies.yaml
+  fx_rates:
+    contract: fx_rates.yaml
+  plans:
+    contract: plans.yaml
+  plan_prices:
+    contract: plan_prices.yaml
+  add_ons:
+    contract: add_ons.yaml
+  accounts:
+    contract: accounts.yaml
+  partners:
+    contract: partners.yaml
+  leads:
+    contract: leads.yaml
+  marketing_campaigns:
+    contract: marketing_campaigns.yaml
+  opportunities:
+    contract: opportunities.yaml
+  opportunity_stage_history:
+    contract: opportunity_stage_history.yaml
+  workspaces:
+    contract: workspaces.yaml
+  users:
+    contract: users.yaml
+  contracts:
+    contract: contracts.yaml
+  subscriptions:
+    contract: subscriptions.yaml
+  subscription_items:
+    contract: subscription_items.yaml
+  subscription_events:
+    contract: subscription_events.yaml
+  renewals:
+    contract: renewals.yaml
+  invoices:
+    contract: invoices.yaml
+  invoice_lines:
+    contract: invoice_lines.yaml
+  payment_methods:
+    contract: payment_methods.yaml
+  payment_attempts:
+    contract: payment_attempts.yaml
+  payments:
+    contract: payments.yaml
+  credit_notes:
+    contract: credit_notes.yaml
+  refunds:
+    contract: refunds.yaml
+  dunning_events:
+    contract: dunning_events.yaml
+  product_events:
+    contract: product_events.yaml
+  account_usage_daily:
+    contract: account_usage_daily.yaml
+  integrations:
+    contract: integrations.yaml
+  work_orders:
+    contract: work_orders.yaml
+  onboarding_tasks:
+    contract: onboarding_tasks.yaml
+  customer_success_interactions:
+    contract: customer_success_interactions.yaml
+  support_tickets:
+    contract: support_tickets.yaml
+  nps_responses:
+    contract: nps_responses.yaml
+  account_health_history:
+    contract: account_health_history.yaml
+  experiments:
+    contract: experiments.yaml
+  experiment_assignments:
+    contract: experiment_assignments.yaml
+  experiment_exposures:
+    contract: experiment_exposures.yaml
+  experiment_outcomes:
+    contract: experiment_outcomes.yaml

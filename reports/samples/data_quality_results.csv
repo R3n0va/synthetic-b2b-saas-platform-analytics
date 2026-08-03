@@ -1,0 +1,532 @@
+check_id,table_name,check_type,severity,passed,failure_count,details
+regions.columns,regions,schema,error,True,0,Missing columns: []; unexpected columns: []
+regions.region_id.type,regions,type,error,True,0,Column region_id conforms to logical type string.
+regions.region_name.type,regions,type,error,True,0,Column region_name conforms to logical type string.
+regions.commercial_owner.type,regions,type,error,True,0,Column commercial_owner conforms to logical type string.
+regions.pk_not_null,regions,primary_key,error,True,0,Primary key ['region_id'] is not null.
+regions.pk_unique,regions,primary_key,error,True,0,Primary key ['region_id'] is unique.
+countries.columns,countries,schema,error,True,0,Missing columns: []; unexpected columns: []
+countries.country_code.type,countries,type,error,True,0,Column country_code conforms to logical type string.
+countries.country_name.type,countries,type,error,True,0,Column country_name conforms to logical type string.
+countries.region_id.type,countries,type,error,True,0,Column region_id conforms to logical type string.
+countries.currency_code.type,countries,type,error,True,0,Column currency_code conforms to logical type string.
+countries.vat_rate.type,countries,type,error,True,0,Column vat_rate conforms to logical type decimal.
+countries.language_code.type,countries,type,error,True,0,Column language_code conforms to logical type string.
+countries.pk_not_null,countries,primary_key,error,True,0,Primary key ['country_code'] is not null.
+countries.pk_unique,countries,primary_key,error,True,0,Primary key ['country_code'] is unique.
+currencies.columns,currencies,schema,error,True,0,Missing columns: []; unexpected columns: []
+currencies.currency_code.type,currencies,type,error,True,0,Column currency_code conforms to logical type string.
+currencies.currency_name.type,currencies,type,error,True,0,Column currency_name conforms to logical type string.
+currencies.minor_units.type,currencies,type,error,True,0,Column minor_units conforms to logical type integer.
+currencies.pk_not_null,currencies,primary_key,error,True,0,Primary key ['currency_code'] is not null.
+currencies.pk_unique,currencies,primary_key,error,True,0,Primary key ['currency_code'] is unique.
+fx_rates.columns,fx_rates,schema,error,True,0,Missing columns: []; unexpected columns: []
+fx_rates.rate_date.type,fx_rates,type,error,True,0,Column rate_date conforms to logical type date.
+fx_rates.currency_code.type,fx_rates,type,error,True,0,Column currency_code conforms to logical type string.
+fx_rates.eur_rate.type,fx_rates,type,error,True,0,Column eur_rate conforms to logical type decimal.
+fx_rates.pk_not_null,fx_rates,primary_key,error,True,0,"Primary key ['rate_date', 'currency_code'] is not null."
+fx_rates.pk_unique,fx_rates,primary_key,error,True,0,"Primary key ['rate_date', 'currency_code'] is unique."
+plans.columns,plans,schema,error,True,0,Missing columns: []; unexpected columns: []
+plans.plan_id.type,plans,type,error,True,0,Column plan_id conforms to logical type string.
+plans.plan_name.type,plans,type,error,True,0,Column plan_name conforms to logical type string.
+plans.plan_rank.type,plans,type,error,True,0,Column plan_rank conforms to logical type integer.
+plans.included_seats.type,plans,type,error,True,0,Column included_seats conforms to logical type integer.
+plans.active_flag.type,plans,type,error,True,0,Column active_flag conforms to logical type boolean.
+plans.pk_not_null,plans,primary_key,error,True,0,Primary key ['plan_id'] is not null.
+plans.pk_unique,plans,primary_key,error,True,0,Primary key ['plan_id'] is unique.
+plan_prices.columns,plan_prices,schema,error,True,0,Missing columns: []; unexpected columns: []
+plan_prices.plan_price_id.type,plan_prices,type,error,True,0,Column plan_price_id conforms to logical type string.
+plan_prices.plan_id.type,plan_prices,type,error,True,0,Column plan_id conforms to logical type string.
+plan_prices.country_code.type,plan_prices,type,error,True,0,Column country_code conforms to logical type string.
+plan_prices.currency_code.type,plan_prices,type,error,True,0,Column currency_code conforms to logical type string.
+plan_prices.billing_frequency.type,plan_prices,type,error,True,0,Column billing_frequency conforms to logical type string.
+plan_prices.effective_start.type,plan_prices,type,error,True,0,Column effective_start conforms to logical type date.
+plan_prices.effective_end.type,plan_prices,type,error,True,0,Column effective_end conforms to logical type date.
+plan_prices.base_price.type,plan_prices,type,error,True,0,Column base_price conforms to logical type decimal.
+plan_prices.seat_price.type,plan_prices,type,error,True,0,Column seat_price conforms to logical type decimal.
+plan_prices.annual_discount_pct.type,plan_prices,type,error,True,0,Column annual_discount_pct conforms to logical type decimal.
+plan_prices.pk_not_null,plan_prices,primary_key,error,True,0,Primary key ['plan_price_id'] is not null.
+plan_prices.pk_unique,plan_prices,primary_key,error,True,0,Primary key ['plan_price_id'] is unique.
+add_ons.columns,add_ons,schema,error,True,0,Missing columns: []; unexpected columns: []
+add_ons.add_on_id.type,add_ons,type,error,True,0,Column add_on_id conforms to logical type string.
+add_ons.add_on_name.type,add_ons,type,error,True,0,Column add_on_name conforms to logical type string.
+add_ons.monthly_price_eur.type,add_ons,type,error,True,0,Column monthly_price_eur conforms to logical type decimal.
+add_ons.category.type,add_ons,type,error,True,0,Column category conforms to logical type string.
+add_ons.active_flag.type,add_ons,type,error,True,0,Column active_flag conforms to logical type boolean.
+add_ons.pk_not_null,add_ons,primary_key,error,True,0,Primary key ['add_on_id'] is not null.
+add_ons.pk_unique,add_ons,primary_key,error,True,0,Primary key ['add_on_id'] is unique.
+accounts.columns,accounts,schema,error,True,0,Missing columns: []; unexpected columns: []
+accounts.account_id.type,accounts,type,error,True,0,Column account_id conforms to logical type string.
+accounts.account_name.type,accounts,type,error,True,0,Column account_name conforms to logical type string.
+accounts.created_at.type,accounts,type,error,True,0,Column created_at conforms to logical type timestamp.
+accounts.country_code.type,accounts,type,error,True,0,Column country_code conforms to logical type string.
+accounts.region_id.type,accounts,type,error,True,0,Column region_id conforms to logical type string.
+accounts.industry.type,accounts,type,error,True,0,Column industry conforms to logical type string.
+accounts.segment.type,accounts,type,error,True,0,Column segment conforms to logical type string.
+accounts.employee_band.type,accounts,type,error,True,0,Column employee_band conforms to logical type string.
+accounts.acquisition_channel.type,accounts,type,error,True,0,Column acquisition_channel conforms to logical type string.
+accounts.sales_motion.type,accounts,type,error,True,0,Column sales_motion conforms to logical type string.
+accounts.partner_id.type,accounts,type,error,True,0,Column partner_id conforms to logical type string.
+accounts.account_status.type,accounts,type,error,True,0,Column account_status conforms to logical type string.
+accounts.legal_currency.type,accounts,type,error,True,0,Column legal_currency conforms to logical type string.
+accounts.tax_id_present.type,accounts,type,error,True,0,Column tax_id_present conforms to logical type boolean.
+accounts.pk_not_null,accounts,primary_key,error,True,0,Primary key ['account_id'] is not null.
+accounts.pk_unique,accounts,primary_key,error,True,0,Primary key ['account_id'] is unique.
+partners.columns,partners,schema,error,True,0,Missing columns: []; unexpected columns: []
+partners.partner_id.type,partners,type,error,True,0,Column partner_id conforms to logical type string.
+partners.partner_name.type,partners,type,error,True,0,Column partner_name conforms to logical type string.
+partners.partner_type.type,partners,type,error,True,0,Column partner_type conforms to logical type string.
+partners.country_code.type,partners,type,error,True,0,Column country_code conforms to logical type string.
+partners.active_from.type,partners,type,error,True,0,Column active_from conforms to logical type date.
+partners.active_flag.type,partners,type,error,True,0,Column active_flag conforms to logical type boolean.
+partners.pk_not_null,partners,primary_key,error,True,0,Primary key ['partner_id'] is not null.
+partners.pk_unique,partners,primary_key,error,True,0,Primary key ['partner_id'] is unique.
+leads.columns,leads,schema,error,True,0,Missing columns: []; unexpected columns: []
+leads.lead_id.type,leads,type,error,True,0,Column lead_id conforms to logical type string.
+leads.account_id.type,leads,type,error,True,0,Column account_id conforms to logical type string.
+leads.created_at.type,leads,type,error,True,0,Column created_at conforms to logical type timestamp.
+leads.source_channel.type,leads,type,error,True,0,Column source_channel conforms to logical type string.
+leads.lead_status.type,leads,type,error,True,0,Column lead_status conforms to logical type string.
+leads.mql_at.type,leads,type,error,True,0,Column mql_at conforms to logical type timestamp.
+leads.sql_at.type,leads,type,error,True,0,Column sql_at conforms to logical type timestamp.
+leads.lead_score.type,leads,type,error,True,0,Column lead_score conforms to logical type integer.
+leads.campaign_id.type,leads,type,error,True,0,Column campaign_id conforms to logical type string.
+leads.pk_not_null,leads,primary_key,error,True,0,Primary key ['lead_id'] is not null.
+leads.pk_unique,leads,primary_key,error,True,0,Primary key ['lead_id'] is unique.
+marketing_campaigns.columns,marketing_campaigns,schema,error,True,0,Missing columns: []; unexpected columns: []
+marketing_campaigns.campaign_id.type,marketing_campaigns,type,error,True,0,Column campaign_id conforms to logical type string.
+marketing_campaigns.campaign_name.type,marketing_campaigns,type,error,True,0,Column campaign_name conforms to logical type string.
+marketing_campaigns.channel.type,marketing_campaigns,type,error,True,0,Column channel conforms to logical type string.
+marketing_campaigns.country_code.type,marketing_campaigns,type,error,True,0,Column country_code conforms to logical type string.
+marketing_campaigns.start_date.type,marketing_campaigns,type,error,True,0,Column start_date conforms to logical type date.
+marketing_campaigns.end_date.type,marketing_campaigns,type,error,True,0,Column end_date conforms to logical type date.
+marketing_campaigns.spend_local.type,marketing_campaigns,type,error,True,0,Column spend_local conforms to logical type decimal.
+marketing_campaigns.currency_code.type,marketing_campaigns,type,error,True,0,Column currency_code conforms to logical type string.
+marketing_campaigns.spend_eur.type,marketing_campaigns,type,error,True,0,Column spend_eur conforms to logical type decimal.
+marketing_campaigns.pk_not_null,marketing_campaigns,primary_key,error,True,0,Primary key ['campaign_id'] is not null.
+marketing_campaigns.pk_unique,marketing_campaigns,primary_key,error,True,0,Primary key ['campaign_id'] is unique.
+opportunities.columns,opportunities,schema,error,True,0,Missing columns: []; unexpected columns: []
+opportunities.opportunity_id.type,opportunities,type,error,True,0,Column opportunity_id conforms to logical type string.
+opportunities.account_id.type,opportunities,type,error,True,0,Column account_id conforms to logical type string.
+opportunities.created_at.type,opportunities,type,error,True,0,Column created_at conforms to logical type timestamp.
+opportunities.close_date.type,opportunities,type,error,True,0,Column close_date conforms to logical type date.
+opportunities.stage.type,opportunities,type,error,True,0,Column stage conforms to logical type string.
+opportunities.status.type,opportunities,type,error,True,0,Column status conforms to logical type string.
+opportunities.owner_team.type,opportunities,type,error,True,0,Column owner_team conforms to logical type string.
+opportunities.expected_arr_eur.type,opportunities,type,error,True,0,Column expected_arr_eur conforms to logical type decimal.
+opportunities.probability.type,opportunities,type,error,True,0,Column probability conforms to logical type decimal.
+opportunities.loss_reason.type,opportunities,type,error,True,0,Column loss_reason conforms to logical type string.
+opportunities.pk_not_null,opportunities,primary_key,error,True,0,Primary key ['opportunity_id'] is not null.
+opportunities.pk_unique,opportunities,primary_key,error,True,0,Primary key ['opportunity_id'] is unique.
+opportunity_stage_history.columns,opportunity_stage_history,schema,error,True,0,Missing columns: []; unexpected columns: []
+opportunity_stage_history.stage_event_id.type,opportunity_stage_history,type,error,True,0,Column stage_event_id conforms to logical type string.
+opportunity_stage_history.opportunity_id.type,opportunity_stage_history,type,error,True,0,Column opportunity_id conforms to logical type string.
+opportunity_stage_history.stage_name.type,opportunity_stage_history,type,error,True,0,Column stage_name conforms to logical type string.
+opportunity_stage_history.entered_at.type,opportunity_stage_history,type,error,True,0,Column entered_at conforms to logical type timestamp.
+opportunity_stage_history.exited_at.type,opportunity_stage_history,type,error,True,0,Column exited_at conforms to logical type timestamp.
+opportunity_stage_history.stage_sequence.type,opportunity_stage_history,type,error,True,0,Column stage_sequence conforms to logical type integer.
+opportunity_stage_history.pk_not_null,opportunity_stage_history,primary_key,error,True,0,Primary key ['stage_event_id'] is not null.
+opportunity_stage_history.pk_unique,opportunity_stage_history,primary_key,error,True,0,Primary key ['stage_event_id'] is unique.
+workspaces.columns,workspaces,schema,error,True,0,Missing columns: []; unexpected columns: []
+workspaces.workspace_id.type,workspaces,type,error,True,0,Column workspace_id conforms to logical type string.
+workspaces.account_id.type,workspaces,type,error,True,0,Column account_id conforms to logical type string.
+workspaces.workspace_name.type,workspaces,type,error,True,0,Column workspace_name conforms to logical type string.
+workspaces.created_at.type,workspaces,type,error,True,0,Column created_at conforms to logical type timestamp.
+workspaces.country_code.type,workspaces,type,error,True,0,Column country_code conforms to logical type string.
+workspaces.active_flag.type,workspaces,type,error,True,0,Column active_flag conforms to logical type boolean.
+workspaces.pk_not_null,workspaces,primary_key,error,True,0,Primary key ['workspace_id'] is not null.
+workspaces.pk_unique,workspaces,primary_key,error,True,0,Primary key ['workspace_id'] is unique.
+users.columns,users,schema,error,True,0,Missing columns: []; unexpected columns: []
+users.user_id.type,users,type,error,True,0,Column user_id conforms to logical type string.
+users.account_id.type,users,type,error,True,0,Column account_id conforms to logical type string.
+users.workspace_id.type,users,type,error,True,0,Column workspace_id conforms to logical type string.
+users.created_at.type,users,type,error,True,0,Column created_at conforms to logical type timestamp.
+users.role_name.type,users,type,error,True,0,Column role_name conforms to logical type string.
+users.user_status.type,users,type,error,True,0,Column user_status conforms to logical type string.
+users.invited_at.type,users,type,error,True,0,Column invited_at conforms to logical type timestamp.
+users.activated_at.type,users,type,error,True,0,Column activated_at conforms to logical type timestamp.
+users.deactivated_at.type,users,type,error,True,0,Column deactivated_at conforms to logical type timestamp.
+users.mobile_user_flag.type,users,type,error,True,0,Column mobile_user_flag conforms to logical type boolean.
+users.pk_not_null,users,primary_key,error,True,0,Primary key ['user_id'] is not null.
+users.pk_unique,users,primary_key,error,True,0,Primary key ['user_id'] is unique.
+contracts.columns,contracts,schema,error,True,0,Missing columns: []; unexpected columns: []
+contracts.contract_id.type,contracts,type,error,True,0,Column contract_id conforms to logical type string.
+contracts.account_id.type,contracts,type,error,True,0,Column account_id conforms to logical type string.
+contracts.contract_number.type,contracts,type,error,True,0,Column contract_number conforms to logical type string.
+contracts.signed_date.type,contracts,type,error,True,0,Column signed_date conforms to logical type date.
+contracts.start_date.type,contracts,type,error,True,0,Column start_date conforms to logical type date.
+contracts.end_date.type,contracts,type,error,True,0,Column end_date conforms to logical type date.
+contracts.auto_renew_flag.type,contracts,type,error,True,0,Column auto_renew_flag conforms to logical type boolean.
+contracts.contract_term_months.type,contracts,type,error,True,0,Column contract_term_months conforms to logical type integer.
+contracts.billing_frequency.type,contracts,type,error,True,0,Column billing_frequency conforms to logical type string.
+contracts.currency_code.type,contracts,type,error,True,0,Column currency_code conforms to logical type string.
+contracts.discount_pct.type,contracts,type,error,True,0,Column discount_pct conforms to logical type decimal.
+contracts.contract_status.type,contracts,type,error,True,0,Column contract_status conforms to logical type string.
+contracts.sales_motion.type,contracts,type,error,True,0,Column sales_motion conforms to logical type string.
+contracts.pk_not_null,contracts,primary_key,error,True,0,Primary key ['contract_id'] is not null.
+contracts.pk_unique,contracts,primary_key,error,True,0,Primary key ['contract_id'] is unique.
+subscriptions.columns,subscriptions,schema,error,True,0,Missing columns: []; unexpected columns: []
+subscriptions.subscription_id.type,subscriptions,type,error,True,0,Column subscription_id conforms to logical type string.
+subscriptions.account_id.type,subscriptions,type,error,True,0,Column account_id conforms to logical type string.
+subscriptions.contract_id.type,subscriptions,type,error,True,0,Column contract_id conforms to logical type string.
+subscriptions.plan_id.type,subscriptions,type,error,True,0,Column plan_id conforms to logical type string.
+subscriptions.trial_start_date.type,subscriptions,type,error,True,0,Column trial_start_date conforms to logical type date.
+subscriptions.trial_end_date.type,subscriptions,type,error,True,0,Column trial_end_date conforms to logical type date.
+subscriptions.subscription_start_date.type,subscriptions,type,error,True,0,Column subscription_start_date conforms to logical type date.
+subscriptions.current_status.type,subscriptions,type,error,True,0,Column current_status conforms to logical type string.
+subscriptions.cancel_requested_date.type,subscriptions,type,error,True,0,Column cancel_requested_date conforms to logical type date.
+subscriptions.ended_date.type,subscriptions,type,error,True,0,Column ended_date conforms to logical type date.
+subscriptions.churn_type.type,subscriptions,type,error,True,0,Column churn_type conforms to logical type string.
+subscriptions.billing_frequency.type,subscriptions,type,error,True,0,Column billing_frequency conforms to logical type string.
+subscriptions.currency_code.type,subscriptions,type,error,True,0,Column currency_code conforms to logical type string.
+subscriptions.pk_not_null,subscriptions,primary_key,error,True,0,Primary key ['subscription_id'] is not null.
+subscriptions.pk_unique,subscriptions,primary_key,error,True,0,Primary key ['subscription_id'] is unique.
+subscription_items.columns,subscription_items,schema,error,True,0,Missing columns: []; unexpected columns: []
+subscription_items.subscription_item_id.type,subscription_items,type,error,True,0,Column subscription_item_id conforms to logical type string.
+subscription_items.subscription_id.type,subscription_items,type,error,True,0,Column subscription_id conforms to logical type string.
+subscription_items.item_type.type,subscription_items,type,error,True,0,Column item_type conforms to logical type string.
+subscription_items.plan_id.type,subscription_items,type,error,True,0,Column plan_id conforms to logical type string.
+subscription_items.add_on_id.type,subscription_items,type,error,True,0,Column add_on_id conforms to logical type string.
+subscription_items.quantity.type,subscription_items,type,error,True,0,Column quantity conforms to logical type integer.
+subscription_items.unit_price_local.type,subscription_items,type,error,True,0,Column unit_price_local conforms to logical type decimal.
+subscription_items.discount_pct.type,subscription_items,type,error,True,0,Column discount_pct conforms to logical type decimal.
+subscription_items.effective_start.type,subscription_items,type,error,True,0,Column effective_start conforms to logical type date.
+subscription_items.effective_end.type,subscription_items,type,error,True,0,Column effective_end conforms to logical type date.
+subscription_items.mrr_local.type,subscription_items,type,error,True,0,Column mrr_local conforms to logical type decimal.
+subscription_items.mrr_eur.type,subscription_items,type,error,True,0,Column mrr_eur conforms to logical type decimal.
+subscription_items.pk_not_null,subscription_items,primary_key,error,True,0,Primary key ['subscription_item_id'] is not null.
+subscription_items.pk_unique,subscription_items,primary_key,error,True,0,Primary key ['subscription_item_id'] is unique.
+subscription_events.columns,subscription_events,schema,error,True,0,Missing columns: []; unexpected columns: []
+subscription_events.subscription_event_id.type,subscription_events,type,error,True,0,Column subscription_event_id conforms to logical type string.
+subscription_events.subscription_id.type,subscription_events,type,error,True,0,Column subscription_id conforms to logical type string.
+subscription_events.event_at.type,subscription_events,type,error,True,0,Column event_at conforms to logical type timestamp.
+subscription_events.event_type.type,subscription_events,type,error,True,0,Column event_type conforms to logical type string.
+subscription_events.previous_plan_id.type,subscription_events,type,error,True,0,Column previous_plan_id conforms to logical type string.
+subscription_events.new_plan_id.type,subscription_events,type,error,True,0,Column new_plan_id conforms to logical type string.
+subscription_events.previous_quantity.type,subscription_events,type,error,True,0,Column previous_quantity conforms to logical type integer.
+subscription_events.new_quantity.type,subscription_events,type,error,True,0,Column new_quantity conforms to logical type integer.
+subscription_events.mrr_change_eur.type,subscription_events,type,error,True,0,Column mrr_change_eur conforms to logical type decimal.
+subscription_events.event_reason.type,subscription_events,type,error,True,0,Column event_reason conforms to logical type string.
+subscription_events.initiated_by.type,subscription_events,type,error,True,0,Column initiated_by conforms to logical type string.
+subscription_events.pk_not_null,subscription_events,primary_key,error,True,0,Primary key ['subscription_event_id'] is not null.
+subscription_events.pk_unique,subscription_events,primary_key,error,True,0,Primary key ['subscription_event_id'] is unique.
+renewals.columns,renewals,schema,error,True,0,Missing columns: []; unexpected columns: []
+renewals.renewal_id.type,renewals,type,error,True,0,Column renewal_id conforms to logical type string.
+renewals.subscription_id.type,renewals,type,error,True,0,Column subscription_id conforms to logical type string.
+renewals.renewal_due_date.type,renewals,type,error,True,0,Column renewal_due_date conforms to logical type date.
+renewals.decision_date.type,renewals,type,error,True,0,Column decision_date conforms to logical type date.
+renewals.renewal_status.type,renewals,type,error,True,0,Column renewal_status conforms to logical type string.
+renewals.renewal_arr_eur.type,renewals,type,error,True,0,Column renewal_arr_eur conforms to logical type decimal.
+renewals.renewal_probability.type,renewals,type,error,True,0,Column renewal_probability conforms to logical type decimal.
+renewals.risk_reason.type,renewals,type,error,True,0,Column risk_reason conforms to logical type string.
+renewals.pk_not_null,renewals,primary_key,error,True,0,Primary key ['renewal_id'] is not null.
+renewals.pk_unique,renewals,primary_key,error,True,0,Primary key ['renewal_id'] is unique.
+invoices.columns,invoices,schema,error,True,0,Missing columns: []; unexpected columns: []
+invoices.invoice_id.type,invoices,type,error,True,0,Column invoice_id conforms to logical type string.
+invoices.account_id.type,invoices,type,error,True,0,Column account_id conforms to logical type string.
+invoices.subscription_id.type,invoices,type,error,True,0,Column subscription_id conforms to logical type string.
+invoices.invoice_number.type,invoices,type,error,True,0,Column invoice_number conforms to logical type string.
+invoices.invoice_date.type,invoices,type,error,True,0,Column invoice_date conforms to logical type date.
+invoices.due_date.type,invoices,type,error,True,0,Column due_date conforms to logical type date.
+invoices.service_period_start.type,invoices,type,error,True,0,Column service_period_start conforms to logical type date.
+invoices.service_period_end.type,invoices,type,error,True,0,Column service_period_end conforms to logical type date.
+invoices.currency_code.type,invoices,type,error,True,0,Column currency_code conforms to logical type string.
+invoices.subtotal_local.type,invoices,type,error,True,0,Column subtotal_local conforms to logical type decimal.
+invoices.tax_local.type,invoices,type,error,True,0,Column tax_local conforms to logical type decimal.
+invoices.total_local.type,invoices,type,error,True,0,Column total_local conforms to logical type decimal.
+invoices.total_eur.type,invoices,type,error,True,0,Column total_eur conforms to logical type decimal.
+invoices.invoice_status.type,invoices,type,error,True,0,Column invoice_status conforms to logical type string.
+invoices.paid_date.type,invoices,type,error,True,0,Column paid_date conforms to logical type date.
+invoices.pk_not_null,invoices,primary_key,error,True,0,Primary key ['invoice_id'] is not null.
+invoices.pk_unique,invoices,primary_key,error,True,0,Primary key ['invoice_id'] is unique.
+invoice_lines.columns,invoice_lines,schema,error,True,0,Missing columns: []; unexpected columns: []
+invoice_lines.invoice_line_id.type,invoice_lines,type,error,True,0,Column invoice_line_id conforms to logical type string.
+invoice_lines.invoice_id.type,invoice_lines,type,error,True,0,Column invoice_id conforms to logical type string.
+invoice_lines.line_type.type,invoice_lines,type,error,True,0,Column line_type conforms to logical type string.
+invoice_lines.description.type,invoice_lines,type,error,True,0,Column description conforms to logical type string.
+invoice_lines.quantity.type,invoice_lines,type,error,True,0,Column quantity conforms to logical type decimal.
+invoice_lines.unit_price_local.type,invoice_lines,type,error,True,0,Column unit_price_local conforms to logical type decimal.
+invoice_lines.discount_local.type,invoice_lines,type,error,True,0,Column discount_local conforms to logical type decimal.
+invoice_lines.line_total_local.type,invoice_lines,type,error,True,0,Column line_total_local conforms to logical type decimal.
+invoice_lines.service_period_start.type,invoice_lines,type,error,True,0,Column service_period_start conforms to logical type date.
+invoice_lines.service_period_end.type,invoice_lines,type,error,True,0,Column service_period_end conforms to logical type date.
+invoice_lines.subscription_item_id.type,invoice_lines,type,error,True,0,Column subscription_item_id conforms to logical type string.
+invoice_lines.pk_not_null,invoice_lines,primary_key,error,True,0,Primary key ['invoice_line_id'] is not null.
+invoice_lines.pk_unique,invoice_lines,primary_key,error,True,0,Primary key ['invoice_line_id'] is unique.
+payment_methods.columns,payment_methods,schema,error,True,0,Missing columns: []; unexpected columns: []
+payment_methods.payment_method_id.type,payment_methods,type,error,True,0,Column payment_method_id conforms to logical type string.
+payment_methods.account_id.type,payment_methods,type,error,True,0,Column account_id conforms to logical type string.
+payment_methods.method_type.type,payment_methods,type,error,True,0,Column method_type conforms to logical type string.
+payment_methods.provider.type,payment_methods,type,error,True,0,Column provider conforms to logical type string.
+payment_methods.created_at.type,payment_methods,type,error,True,0,Column created_at conforms to logical type timestamp.
+payment_methods.expiry_month.type,payment_methods,type,error,True,0,Column expiry_month conforms to logical type integer.
+payment_methods.expiry_year.type,payment_methods,type,error,True,0,Column expiry_year conforms to logical type integer.
+payment_methods.active_flag.type,payment_methods,type,error,True,0,Column active_flag conforms to logical type boolean.
+payment_methods.pk_not_null,payment_methods,primary_key,error,True,0,Primary key ['payment_method_id'] is not null.
+payment_methods.pk_unique,payment_methods,primary_key,error,True,0,Primary key ['payment_method_id'] is unique.
+payment_attempts.columns,payment_attempts,schema,error,True,0,Missing columns: []; unexpected columns: []
+payment_attempts.payment_attempt_id.type,payment_attempts,type,error,True,0,Column payment_attempt_id conforms to logical type string.
+payment_attempts.invoice_id.type,payment_attempts,type,error,True,0,Column invoice_id conforms to logical type string.
+payment_attempts.payment_method_id.type,payment_attempts,type,error,True,0,Column payment_method_id conforms to logical type string.
+payment_attempts.attempt_at.type,payment_attempts,type,error,True,0,Column attempt_at conforms to logical type timestamp.
+payment_attempts.attempt_number.type,payment_attempts,type,error,True,0,Column attempt_number conforms to logical type integer.
+payment_attempts.amount_local.type,payment_attempts,type,error,True,0,Column amount_local conforms to logical type decimal.
+payment_attempts.currency_code.type,payment_attempts,type,error,True,0,Column currency_code conforms to logical type string.
+payment_attempts.attempt_status.type,payment_attempts,type,error,True,0,Column attempt_status conforms to logical type string.
+payment_attempts.failure_reason.type,payment_attempts,type,error,True,0,Column failure_reason conforms to logical type string.
+payment_attempts.provider_response_code.type,payment_attempts,type,error,True,0,Column provider_response_code conforms to logical type string.
+payment_attempts.pk_not_null,payment_attempts,primary_key,error,True,0,Primary key ['payment_attempt_id'] is not null.
+payment_attempts.pk_unique,payment_attempts,primary_key,error,True,0,Primary key ['payment_attempt_id'] is unique.
+payments.columns,payments,schema,error,True,0,Missing columns: []; unexpected columns: []
+payments.payment_id.type,payments,type,error,True,0,Column payment_id conforms to logical type string.
+payments.invoice_id.type,payments,type,error,True,0,Column invoice_id conforms to logical type string.
+payments.payment_attempt_id.type,payments,type,error,True,0,Column payment_attempt_id conforms to logical type string.
+payments.captured_at.type,payments,type,error,True,0,Column captured_at conforms to logical type timestamp.
+payments.amount_local.type,payments,type,error,True,0,Column amount_local conforms to logical type decimal.
+payments.currency_code.type,payments,type,error,True,0,Column currency_code conforms to logical type string.
+payments.amount_eur.type,payments,type,error,True,0,Column amount_eur conforms to logical type decimal.
+payments.payment_status.type,payments,type,error,True,0,Column payment_status conforms to logical type string.
+payments.settlement_date.type,payments,type,error,True,0,Column settlement_date conforms to logical type date.
+payments.pk_not_null,payments,primary_key,error,True,0,Primary key ['payment_id'] is not null.
+payments.pk_unique,payments,primary_key,error,True,0,Primary key ['payment_id'] is unique.
+credit_notes.columns,credit_notes,schema,error,True,0,Missing columns: []; unexpected columns: []
+credit_notes.credit_note_id.type,credit_notes,type,error,True,0,Column credit_note_id conforms to logical type string.
+credit_notes.invoice_id.type,credit_notes,type,error,True,0,Column invoice_id conforms to logical type string.
+credit_notes.issued_date.type,credit_notes,type,error,True,0,Column issued_date conforms to logical type date.
+credit_notes.reason.type,credit_notes,type,error,True,0,Column reason conforms to logical type string.
+credit_notes.amount_local.type,credit_notes,type,error,True,0,Column amount_local conforms to logical type decimal.
+credit_notes.amount_eur.type,credit_notes,type,error,True,0,Column amount_eur conforms to logical type decimal.
+credit_notes.credit_note_status.type,credit_notes,type,error,True,0,Column credit_note_status conforms to logical type string.
+credit_notes.pk_not_null,credit_notes,primary_key,error,True,0,Primary key ['credit_note_id'] is not null.
+credit_notes.pk_unique,credit_notes,primary_key,error,True,0,Primary key ['credit_note_id'] is unique.
+refunds.columns,refunds,schema,error,True,0,Missing columns: []; unexpected columns: []
+refunds.refund_id.type,refunds,type,error,True,0,Column refund_id conforms to logical type string.
+refunds.payment_id.type,refunds,type,error,True,0,Column payment_id conforms to logical type string.
+refunds.requested_at.type,refunds,type,error,True,0,Column requested_at conforms to logical type timestamp.
+refunds.processed_at.type,refunds,type,error,True,0,Column processed_at conforms to logical type timestamp.
+refunds.amount_local.type,refunds,type,error,True,0,Column amount_local conforms to logical type decimal.
+refunds.amount_eur.type,refunds,type,error,True,0,Column amount_eur conforms to logical type decimal.
+refunds.reason.type,refunds,type,error,True,0,Column reason conforms to logical type string.
+refunds.refund_status.type,refunds,type,error,True,0,Column refund_status conforms to logical type string.
+refunds.pk_not_null,refunds,primary_key,error,True,0,Primary key ['refund_id'] is not null.
+refunds.pk_unique,refunds,primary_key,error,True,0,Primary key ['refund_id'] is unique.
+dunning_events.columns,dunning_events,schema,error,True,0,Missing columns: []; unexpected columns: []
+dunning_events.dunning_event_id.type,dunning_events,type,error,True,0,Column dunning_event_id conforms to logical type string.
+dunning_events.invoice_id.type,dunning_events,type,error,True,0,Column invoice_id conforms to logical type string.
+dunning_events.event_at.type,dunning_events,type,error,True,0,Column event_at conforms to logical type timestamp.
+dunning_events.dunning_step.type,dunning_events,type,error,True,0,Column dunning_step conforms to logical type integer.
+dunning_events.channel.type,dunning_events,type,error,True,0,Column channel conforms to logical type string.
+dunning_events.event_status.type,dunning_events,type,error,True,0,Column event_status conforms to logical type string.
+dunning_events.recovered_after_event_flag.type,dunning_events,type,error,True,0,Column recovered_after_event_flag conforms to logical type boolean.
+dunning_events.pk_not_null,dunning_events,primary_key,error,True,0,Primary key ['dunning_event_id'] is not null.
+dunning_events.pk_unique,dunning_events,primary_key,error,True,0,Primary key ['dunning_event_id'] is unique.
+product_events.columns,product_events,schema,error,True,0,Missing columns: []; unexpected columns: []
+product_events.product_event_id.type,product_events,type,error,True,0,Column product_event_id conforms to logical type string.
+product_events.account_id.type,product_events,type,error,True,0,Column account_id conforms to logical type string.
+product_events.user_id.type,product_events,type,error,True,0,Column user_id conforms to logical type string.
+product_events.event_at.type,product_events,type,error,True,0,Column event_at conforms to logical type timestamp.
+product_events.event_name.type,product_events,type,error,True,0,Column event_name conforms to logical type string.
+product_events.feature_area.type,product_events,type,error,True,0,Column feature_area conforms to logical type string.
+product_events.platform.type,product_events,type,error,True,0,Column platform conforms to logical type string.
+product_events.session_id.type,product_events,type,error,True,0,Column session_id conforms to logical type string.
+product_events.workspace_id.type,product_events,type,error,True,0,Column workspace_id conforms to logical type string.
+product_events.numeric_value.type,product_events,type,error,True,0,Column numeric_value conforms to logical type decimal.
+product_events.pk_not_null,product_events,primary_key,error,True,0,Primary key ['product_event_id'] is not null.
+product_events.pk_unique,product_events,primary_key,error,True,0,Primary key ['product_event_id'] is unique.
+account_usage_daily.columns,account_usage_daily,schema,error,True,0,Missing columns: []; unexpected columns: []
+account_usage_daily.account_id.type,account_usage_daily,type,error,True,0,Column account_id conforms to logical type string.
+account_usage_daily.activity_date.type,account_usage_daily,type,error,True,0,Column activity_date conforms to logical type date.
+account_usage_daily.active_users.type,account_usage_daily,type,error,True,0,Column active_users conforms to logical type integer.
+account_usage_daily.active_mobile_users.type,account_usage_daily,type,error,True,0,Column active_mobile_users conforms to logical type integer.
+account_usage_daily.sessions.type,account_usage_daily,type,error,True,0,Column sessions conforms to logical type integer.
+account_usage_daily.work_orders_created.type,account_usage_daily,type,error,True,0,Column work_orders_created conforms to logical type integer.
+account_usage_daily.work_orders_completed.type,account_usage_daily,type,error,True,0,Column work_orders_completed conforms to logical type integer.
+account_usage_daily.automation_runs.type,account_usage_daily,type,error,True,0,Column automation_runs conforms to logical type integer.
+account_usage_daily.api_calls.type,account_usage_daily,type,error,True,0,Column api_calls conforms to logical type integer.
+account_usage_daily.documents_uploaded.type,account_usage_daily,type,error,True,0,Column documents_uploaded conforms to logical type integer.
+account_usage_daily.feature_breadth.type,account_usage_daily,type,error,True,0,Column feature_breadth conforms to logical type integer.
+account_usage_daily.pk_not_null,account_usage_daily,primary_key,error,True,0,"Primary key ['account_id', 'activity_date'] is not null."
+account_usage_daily.pk_unique,account_usage_daily,primary_key,error,True,0,"Primary key ['account_id', 'activity_date'] is unique."
+integrations.columns,integrations,schema,error,True,0,Missing columns: []; unexpected columns: []
+integrations.integration_id.type,integrations,type,error,True,0,Column integration_id conforms to logical type string.
+integrations.account_id.type,integrations,type,error,True,0,Column account_id conforms to logical type string.
+integrations.integration_type.type,integrations,type,error,True,0,Column integration_type conforms to logical type string.
+integrations.connected_at.type,integrations,type,error,True,0,Column connected_at conforms to logical type timestamp.
+integrations.disconnected_at.type,integrations,type,error,True,0,Column disconnected_at conforms to logical type timestamp.
+integrations.integration_status.type,integrations,type,error,True,0,Column integration_status conforms to logical type string.
+integrations.monthly_sync_volume.type,integrations,type,error,True,0,Column monthly_sync_volume conforms to logical type integer.
+integrations.pk_not_null,integrations,primary_key,error,True,0,Primary key ['integration_id'] is not null.
+integrations.pk_unique,integrations,primary_key,error,True,0,Primary key ['integration_id'] is unique.
+work_orders.columns,work_orders,schema,error,True,0,Missing columns: []; unexpected columns: []
+work_orders.work_order_id.type,work_orders,type,error,True,0,Column work_order_id conforms to logical type string.
+work_orders.account_id.type,work_orders,type,error,True,0,Column account_id conforms to logical type string.
+work_orders.workspace_id.type,work_orders,type,error,True,0,Column workspace_id conforms to logical type string.
+work_orders.created_at.type,work_orders,type,error,True,0,Column created_at conforms to logical type timestamp.
+work_orders.scheduled_at.type,work_orders,type,error,True,0,Column scheduled_at conforms to logical type timestamp.
+work_orders.completed_at.type,work_orders,type,error,True,0,Column completed_at conforms to logical type timestamp.
+work_orders.status.type,work_orders,type,error,True,0,Column status conforms to logical type string.
+work_orders.priority.type,work_orders,type,error,True,0,Column priority conforms to logical type string.
+work_orders.service_category.type,work_orders,type,error,True,0,Column service_category conforms to logical type string.
+work_orders.assigned_users.type,work_orders,type,error,True,0,Column assigned_users conforms to logical type integer.
+work_orders.customer_signature_flag.type,work_orders,type,error,True,0,Column customer_signature_flag conforms to logical type boolean.
+work_orders.completion_minutes.type,work_orders,type,error,True,0,Column completion_minutes conforms to logical type integer.
+work_orders.pk_not_null,work_orders,primary_key,error,True,0,Primary key ['work_order_id'] is not null.
+work_orders.pk_unique,work_orders,primary_key,error,True,0,Primary key ['work_order_id'] is unique.
+onboarding_tasks.columns,onboarding_tasks,schema,error,True,0,Missing columns: []; unexpected columns: []
+onboarding_tasks.onboarding_task_id.type,onboarding_tasks,type,error,True,0,Column onboarding_task_id conforms to logical type string.
+onboarding_tasks.account_id.type,onboarding_tasks,type,error,True,0,Column account_id conforms to logical type string.
+onboarding_tasks.task_name.type,onboarding_tasks,type,error,True,0,Column task_name conforms to logical type string.
+onboarding_tasks.task_sequence.type,onboarding_tasks,type,error,True,0,Column task_sequence conforms to logical type integer.
+onboarding_tasks.due_date.type,onboarding_tasks,type,error,True,0,Column due_date conforms to logical type date.
+onboarding_tasks.completed_at.type,onboarding_tasks,type,error,True,0,Column completed_at conforms to logical type timestamp.
+onboarding_tasks.task_status.type,onboarding_tasks,type,error,True,0,Column task_status conforms to logical type string.
+onboarding_tasks.owner_type.type,onboarding_tasks,type,error,True,0,Column owner_type conforms to logical type string.
+onboarding_tasks.pk_not_null,onboarding_tasks,primary_key,error,True,0,Primary key ['onboarding_task_id'] is not null.
+onboarding_tasks.pk_unique,onboarding_tasks,primary_key,error,True,0,Primary key ['onboarding_task_id'] is unique.
+customer_success_interactions.columns,customer_success_interactions,schema,error,True,0,Missing columns: []; unexpected columns: []
+customer_success_interactions.cs_interaction_id.type,customer_success_interactions,type,error,True,0,Column cs_interaction_id conforms to logical type string.
+customer_success_interactions.account_id.type,customer_success_interactions,type,error,True,0,Column account_id conforms to logical type string.
+customer_success_interactions.interaction_at.type,customer_success_interactions,type,error,True,0,Column interaction_at conforms to logical type timestamp.
+customer_success_interactions.interaction_type.type,customer_success_interactions,type,error,True,0,Column interaction_type conforms to logical type string.
+customer_success_interactions.reason.type,customer_success_interactions,type,error,True,0,Column reason conforms to logical type string.
+customer_success_interactions.outcome.type,customer_success_interactions,type,error,True,0,Column outcome conforms to logical type string.
+customer_success_interactions.health_score_before.type,customer_success_interactions,type,error,True,0,Column health_score_before conforms to logical type decimal.
+customer_success_interactions.health_score_after.type,customer_success_interactions,type,error,True,0,Column health_score_after conforms to logical type decimal.
+customer_success_interactions.owner_team.type,customer_success_interactions,type,error,True,0,Column owner_team conforms to logical type string.
+customer_success_interactions.pk_not_null,customer_success_interactions,primary_key,error,True,0,Primary key ['cs_interaction_id'] is not null.
+customer_success_interactions.pk_unique,customer_success_interactions,primary_key,error,True,0,Primary key ['cs_interaction_id'] is unique.
+support_tickets.columns,support_tickets,schema,error,True,0,Missing columns: []; unexpected columns: []
+support_tickets.ticket_id.type,support_tickets,type,error,True,0,Column ticket_id conforms to logical type string.
+support_tickets.account_id.type,support_tickets,type,error,True,0,Column account_id conforms to logical type string.
+support_tickets.created_at.type,support_tickets,type,error,True,0,Column created_at conforms to logical type timestamp.
+support_tickets.first_response_at.type,support_tickets,type,error,True,0,Column first_response_at conforms to logical type timestamp.
+support_tickets.resolved_at.type,support_tickets,type,error,True,0,Column resolved_at conforms to logical type timestamp.
+support_tickets.closed_at.type,support_tickets,type,error,True,0,Column closed_at conforms to logical type timestamp.
+support_tickets.priority.type,support_tickets,type,error,True,0,Column priority conforms to logical type string.
+support_tickets.category.type,support_tickets,type,error,True,0,Column category conforms to logical type string.
+support_tickets.ticket_status.type,support_tickets,type,error,True,0,Column ticket_status conforms to logical type string.
+support_tickets.channel.type,support_tickets,type,error,True,0,Column channel conforms to logical type string.
+support_tickets.escalated_flag.type,support_tickets,type,error,True,0,Column escalated_flag conforms to logical type boolean.
+support_tickets.reopened_count.type,support_tickets,type,error,True,0,Column reopened_count conforms to logical type integer.
+support_tickets.csat_score.type,support_tickets,type,error,True,0,Column csat_score conforms to logical type integer.
+support_tickets.pk_not_null,support_tickets,primary_key,error,True,0,Primary key ['ticket_id'] is not null.
+support_tickets.pk_unique,support_tickets,primary_key,error,True,0,Primary key ['ticket_id'] is unique.
+nps_responses.columns,nps_responses,schema,error,True,0,Missing columns: []; unexpected columns: []
+nps_responses.nps_response_id.type,nps_responses,type,error,True,0,Column nps_response_id conforms to logical type string.
+nps_responses.account_id.type,nps_responses,type,error,True,0,Column account_id conforms to logical type string.
+nps_responses.response_date.type,nps_responses,type,error,True,0,Column response_date conforms to logical type date.
+nps_responses.nps_score.type,nps_responses,type,error,True,0,Column nps_score conforms to logical type integer.
+nps_responses.nps_group.type,nps_responses,type,error,True,0,Column nps_group conforms to logical type string.
+nps_responses.response_channel.type,nps_responses,type,error,True,0,Column response_channel conforms to logical type string.
+nps_responses.comment_theme.type,nps_responses,type,error,True,0,Column comment_theme conforms to logical type string.
+nps_responses.pk_not_null,nps_responses,primary_key,error,True,0,Primary key ['nps_response_id'] is not null.
+nps_responses.pk_unique,nps_responses,primary_key,error,True,0,Primary key ['nps_response_id'] is unique.
+account_health_history.columns,account_health_history,schema,error,True,0,Missing columns: []; unexpected columns: []
+account_health_history.account_id.type,account_health_history,type,error,True,0,Column account_id conforms to logical type string.
+account_health_history.health_month.type,account_health_history,type,error,True,0,Column health_month conforms to logical type date.
+account_health_history.health_score.type,account_health_history,type,error,True,0,Column health_score conforms to logical type decimal.
+account_health_history.health_segment.type,account_health_history,type,error,True,0,Column health_segment conforms to logical type string.
+account_health_history.usage_score.type,account_health_history,type,error,True,0,Column usage_score conforms to logical type decimal.
+account_health_history.support_score.type,account_health_history,type,error,True,0,Column support_score conforms to logical type decimal.
+account_health_history.payment_score.type,account_health_history,type,error,True,0,Column payment_score conforms to logical type decimal.
+account_health_history.relationship_score.type,account_health_history,type,error,True,0,Column relationship_score conforms to logical type decimal.
+account_health_history.renewal_risk_flag.type,account_health_history,type,error,True,0,Column renewal_risk_flag conforms to logical type boolean.
+account_health_history.pk_not_null,account_health_history,primary_key,error,True,0,"Primary key ['account_id', 'health_month'] is not null."
+account_health_history.pk_unique,account_health_history,primary_key,error,True,0,"Primary key ['account_id', 'health_month'] is unique."
+experiments.columns,experiments,schema,error,True,0,Missing columns: []; unexpected columns: []
+experiments.experiment_id.type,experiments,type,error,True,0,Column experiment_id conforms to logical type string.
+experiments.experiment_name.type,experiments,type,error,True,0,Column experiment_name conforms to logical type string.
+experiments.start_date.type,experiments,type,error,True,0,Column start_date conforms to logical type date.
+experiments.end_date.type,experiments,type,error,True,0,Column end_date conforms to logical type date.
+experiments.unit_of_randomisation.type,experiments,type,error,True,0,Column unit_of_randomisation conforms to logical type string.
+experiments.primary_metric.type,experiments,type,error,True,0,Column primary_metric conforms to logical type string.
+experiments.guardrail_metric.type,experiments,type,error,True,0,Column guardrail_metric conforms to logical type string.
+experiments.minimum_detectable_effect.type,experiments,type,error,True,0,Column minimum_detectable_effect conforms to logical type decimal.
+experiments.status.type,experiments,type,error,True,0,Column status conforms to logical type string.
+experiments.pk_not_null,experiments,primary_key,error,True,0,Primary key ['experiment_id'] is not null.
+experiments.pk_unique,experiments,primary_key,error,True,0,Primary key ['experiment_id'] is unique.
+experiment_assignments.columns,experiment_assignments,schema,error,True,0,Missing columns: []; unexpected columns: []
+experiment_assignments.assignment_id.type,experiment_assignments,type,error,True,0,Column assignment_id conforms to logical type string.
+experiment_assignments.experiment_id.type,experiment_assignments,type,error,True,0,Column experiment_id conforms to logical type string.
+experiment_assignments.account_id.type,experiment_assignments,type,error,True,0,Column account_id conforms to logical type string.
+experiment_assignments.variant.type,experiment_assignments,type,error,True,0,Column variant conforms to logical type string.
+experiment_assignments.assigned_at.type,experiment_assignments,type,error,True,0,Column assigned_at conforms to logical type timestamp.
+experiment_assignments.eligible_flag.type,experiment_assignments,type,error,True,0,Column eligible_flag conforms to logical type boolean.
+experiment_assignments.stratum.type,experiment_assignments,type,error,True,0,Column stratum conforms to logical type string.
+experiment_assignments.pk_not_null,experiment_assignments,primary_key,error,True,0,Primary key ['assignment_id'] is not null.
+experiment_assignments.pk_unique,experiment_assignments,primary_key,error,True,0,Primary key ['assignment_id'] is unique.
+experiment_exposures.columns,experiment_exposures,schema,error,True,0,Missing columns: []; unexpected columns: []
+experiment_exposures.exposure_id.type,experiment_exposures,type,error,True,0,Column exposure_id conforms to logical type string.
+experiment_exposures.assignment_id.type,experiment_exposures,type,error,True,0,Column assignment_id conforms to logical type string.
+experiment_exposures.exposed_at.type,experiment_exposures,type,error,True,0,Column exposed_at conforms to logical type timestamp.
+experiment_exposures.exposure_surface.type,experiment_exposures,type,error,True,0,Column exposure_surface conforms to logical type string.
+experiment_exposures.exposure_count.type,experiment_exposures,type,error,True,0,Column exposure_count conforms to logical type integer.
+experiment_exposures.pk_not_null,experiment_exposures,primary_key,error,True,0,Primary key ['exposure_id'] is not null.
+experiment_exposures.pk_unique,experiment_exposures,primary_key,error,True,0,Primary key ['exposure_id'] is unique.
+experiment_outcomes.columns,experiment_outcomes,schema,error,True,0,Missing columns: []; unexpected columns: []
+experiment_outcomes.outcome_id.type,experiment_outcomes,type,error,True,0,Column outcome_id conforms to logical type string.
+experiment_outcomes.assignment_id.type,experiment_outcomes,type,error,True,0,Column assignment_id conforms to logical type string.
+experiment_outcomes.observation_end.type,experiment_outcomes,type,error,True,0,Column observation_end conforms to logical type date.
+experiment_outcomes.primary_outcome.type,experiment_outcomes,type,error,True,0,Column primary_outcome conforms to logical type decimal.
+experiment_outcomes.guardrail_outcome.type,experiment_outcomes,type,error,True,0,Column guardrail_outcome conforms to logical type decimal.
+experiment_outcomes.revenue_outcome_eur.type,experiment_outcomes,type,error,True,0,Column revenue_outcome_eur conforms to logical type decimal.
+experiment_outcomes.pk_not_null,experiment_outcomes,primary_key,error,True,0,Primary key ['outcome_id'] is not null.
+experiment_outcomes.pk_unique,experiment_outcomes,primary_key,error,True,0,Primary key ['outcome_id'] is unique.
+countries.fk_1,countries,foreign_key,error,True,0,Foreign key ['region_id'] references regions(['region_id']).
+fx_rates.fk_1,fx_rates,foreign_key,error,True,0,Foreign key ['currency_code'] references currencies(['currency_code']).
+plan_prices.fk_1,plan_prices,foreign_key,error,True,0,Foreign key ['plan_id'] references plans(['plan_id']).
+plan_prices.fk_2,plan_prices,foreign_key,error,True,0,Foreign key ['currency_code'] references currencies(['currency_code']).
+accounts.fk_1,accounts,foreign_key,error,True,0,Foreign key ['country_code'] references countries(['country_code']).
+leads.fk_1,leads,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+opportunities.fk_1,opportunities,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+opportunity_stage_history.fk_1,opportunity_stage_history,foreign_key,error,True,0,Foreign key ['opportunity_id'] references opportunities(['opportunity_id']).
+workspaces.fk_1,workspaces,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+users.fk_1,users,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+users.fk_2,users,foreign_key,error,True,0,Foreign key ['workspace_id'] references workspaces(['workspace_id']).
+contracts.fk_1,contracts,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+subscriptions.fk_1,subscriptions,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+subscriptions.fk_2,subscriptions,foreign_key,error,True,0,Foreign key ['contract_id'] references contracts(['contract_id']).
+subscriptions.fk_3,subscriptions,foreign_key,error,True,0,Foreign key ['plan_id'] references plans(['plan_id']).
+subscription_items.fk_1,subscription_items,foreign_key,error,True,0,Foreign key ['subscription_id'] references subscriptions(['subscription_id']).
+subscription_events.fk_1,subscription_events,foreign_key,error,True,0,Foreign key ['subscription_id'] references subscriptions(['subscription_id']).
+renewals.fk_1,renewals,foreign_key,error,True,0,Foreign key ['subscription_id'] references subscriptions(['subscription_id']).
+invoices.fk_1,invoices,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+invoices.fk_2,invoices,foreign_key,error,True,0,Foreign key ['subscription_id'] references subscriptions(['subscription_id']).
+invoice_lines.fk_1,invoice_lines,foreign_key,error,True,0,Foreign key ['invoice_id'] references invoices(['invoice_id']).
+payment_methods.fk_1,payment_methods,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+payment_attempts.fk_1,payment_attempts,foreign_key,error,True,0,Foreign key ['invoice_id'] references invoices(['invoice_id']).
+payment_attempts.fk_2,payment_attempts,foreign_key,error,True,0,Foreign key ['payment_method_id'] references payment_methods(['payment_method_id']).
+payments.fk_1,payments,foreign_key,error,True,0,Foreign key ['invoice_id'] references invoices(['invoice_id']).
+payments.fk_2,payments,foreign_key,error,True,0,Foreign key ['payment_attempt_id'] references payment_attempts(['payment_attempt_id']).
+credit_notes.fk_1,credit_notes,foreign_key,error,True,0,Foreign key ['invoice_id'] references invoices(['invoice_id']).
+refunds.fk_1,refunds,foreign_key,error,True,0,Foreign key ['payment_id'] references payments(['payment_id']).
+dunning_events.fk_1,dunning_events,foreign_key,error,True,0,Foreign key ['invoice_id'] references invoices(['invoice_id']).
+product_events.fk_1,product_events,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+product_events.fk_2,product_events,foreign_key,error,True,0,Foreign key ['user_id'] references users(['user_id']).
+account_usage_daily.fk_1,account_usage_daily,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+integrations.fk_1,integrations,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+work_orders.fk_1,work_orders,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+onboarding_tasks.fk_1,onboarding_tasks,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+customer_success_interactions.fk_1,customer_success_interactions,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+support_tickets.fk_1,support_tickets,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+nps_responses.fk_1,nps_responses,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+account_health_history.fk_1,account_health_history,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+experiment_assignments.fk_1,experiment_assignments,foreign_key,error,True,0,Foreign key ['experiment_id'] references experiments(['experiment_id']).
+experiment_assignments.fk_2,experiment_assignments,foreign_key,error,True,0,Foreign key ['account_id'] references accounts(['account_id']).
+experiment_exposures.fk_1,experiment_exposures,foreign_key,error,True,0,Foreign key ['assignment_id'] references experiment_assignments(['assignment_id']).
+experiment_outcomes.fk_1,experiment_outcomes,foreign_key,error,True,0,Foreign key ['assignment_id'] references experiment_assignments(['assignment_id']).
+subscriptions.date_order,subscriptions,business_rule,error,True,0,Trial start cannot be after paid subscription start.
+subscriptions.end_after_start,subscriptions,business_rule,error,True,0,Subscription end cannot precede subscription start.
+subscription_items.valid_interval,subscription_items,business_rule,error,True,0,Subscription item effective end must not precede effective start.
+subscription_items.non_negative_mrr,subscription_items,business_rule,error,True,0,Recurring item MRR cannot be negative.
+invoices.arithmetic,invoices,business_rule,error,True,0,Invoice subtotal plus tax must reconcile to total.
+invoice_lines.non_negative,invoice_lines,business_rule,error,True,0,Invoice line totals cannot be negative.
+payment_attempts.positive_amount,payment_attempts,business_rule,error,True,0,Payment attempt amount must be positive.
+payments.positive_amount,payments,business_rule,error,True,0,Captured payment amount must be positive.
+usage.non_negative,account_usage_daily,business_rule,error,True,0,Usage counts cannot be negative.
+work_orders.completed_chronology,work_orders,business_rule,error,True,0,Completed work orders cannot complete before creation.
+support.resolution_chronology,support_tickets,business_rule,error,True,0,Support tickets cannot resolve before creation.
+health.score_range,account_health_history,business_rule,error,True,0,Account health score must be between 0 and 100.
+nps.score_range,nps_responses,business_rule,error,True,0,NPS score must be between 0 and 10.
+invoices.lines_reconcile,invoices,reconciliation,error,True,0,Invoice subtotal reconciles to invoice lines.
+payments.successful_attempt,payments,reconciliation,error,True,0,Every captured payment references a successful payment attempt.

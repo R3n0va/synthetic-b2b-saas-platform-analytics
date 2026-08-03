@@ -1,0 +1,289 @@
+version: 1
+governance:
+  reporting_currency: EUR
+  month_definition: calendar month
+  revenue_scope: recurring subscription items only unless otherwise stated
+metrics:
+- metric_id: M001
+  name: MRR
+  definition: Sum of active recurring subscription-item MRR in EUR at month grain.
+  grain: month, account
+  source: mart.account_mrr_monthly
+  owner: Finance Analytics
+  status: governed
+- metric_id: M002
+  name: ARR
+  definition: MRR multiplied by 12; excludes tax, credits, refunds and one-off fees.
+  grain: month, account
+  source: mart.account_mrr_monthly
+  owner: Finance Analytics
+  status: governed
+- metric_id: M003
+  name: New MRR
+  definition: Recurring revenue from accounts with no prior active MRR.
+  grain: month
+  source: mart.mrr_movements
+  owner: Commercial Analytics
+  status: governed
+- metric_id: M004
+  name: Expansion MRR
+  definition: Positive MRR change for an already active account.
+  grain: month
+  source: mart.mrr_movements
+  owner: Commercial Analytics
+  status: governed
+- metric_id: M005
+  name: Contraction MRR
+  definition: Negative MRR change where the account remains active.
+  grain: month
+  source: mart.mrr_movements
+  owner: Commercial Analytics
+  status: governed
+- metric_id: M006
+  name: Churned MRR
+  definition: MRR removed when an account moves from positive MRR to zero.
+  grain: month
+  source: mart.mrr_movements
+  owner: Customer Analytics
+  status: governed
+- metric_id: M007
+  name: Reactivation MRR
+  definition: MRR restored after a previously active account returns.
+  grain: month
+  source: mart.mrr_movements
+  owner: Customer Analytics
+  status: governed
+- metric_id: M008
+  name: GRR
+  definition: Opening MRR less churn and contraction divided by opening MRR.
+  grain: month
+  source: analytics.revenue_retention
+  owner: Finance Analytics
+  status: governed
+- metric_id: M009
+  name: NRR
+  definition: Opening MRR less churn and contraction plus expansion divided by opening
+    MRR.
+  grain: month
+  source: analytics.revenue_retention
+  owner: Finance Analytics
+  status: governed
+- metric_id: M010
+  name: Logo Churn Rate
+  definition: Churned accounts divided by opening active accounts.
+  grain: month
+  source: analytics.logo_churn
+  owner: Customer Analytics
+  status: governed
+- metric_id: M011
+  name: ARPA
+  definition: Closing MRR divided by active paid accounts.
+  grain: month, segment
+  source: analytics.mrr_by_geography
+  owner: Finance Analytics
+  status: governed
+- metric_id: M012
+  name: MRR per Paid Seat
+  definition: MRR divided by paid seats.
+  grain: month, plan
+  source: analytics.mrr_by_segment
+  owner: Pricing Analytics
+  status: governed
+- metric_id: M013
+  name: Add-on Attachment Rate
+  definition: Active paid accounts with at least one add-on divided by active paid
+    accounts.
+  grain: month, plan
+  source: analytics.add_on_attachment
+  owner: Product Analytics
+  status: governed
+- metric_id: M014
+  name: Trial-to-Paid Conversion
+  definition: Paid accounts with a recorded trial divided by eligible trial accounts.
+  grain: cohort
+  source: analytics.trial_conversion
+  owner: Growth Analytics
+  status: governed
+- metric_id: M015
+  name: Opportunity Win Rate
+  definition: Won opportunities divided by closed opportunities.
+  grain: month, segment, region
+  source: analytics.opportunity_win_rate
+  owner: Sales Analytics
+  status: governed
+- metric_id: M016
+  name: Sales Cycle
+  definition: Days from opportunity creation to close.
+  grain: opportunity
+  source: analytics.sales_cycle
+  owner: Sales Analytics
+  status: governed
+- metric_id: M017
+  name: CAC
+  definition: Campaign spend divided by newly acquired customers for the same market
+    and channel.
+  grain: month, country, channel
+  source: analytics.marketing_efficiency
+  owner: Growth Analytics
+  status: governed
+- metric_id: M018
+  name: Seat Utilisation
+  definition: Active users divided by paid seats.
+  grain: month, account
+  source: analytics.seat_utilisation
+  owner: Product Analytics
+  status: governed
+- metric_id: M019
+  name: Active Account
+  definition: Paid account with at least one active user during the period.
+  grain: month, account
+  source: mart.account_month
+  owner: Product Analytics
+  status: governed
+- metric_id: M020
+  name: Feature Breadth
+  definition: Number of distinct feature areas used during the sampled period.
+  grain: month, account
+  source: mart.account_usage_monthly
+  owner: Product Analytics
+  status: governed
+- metric_id: M021
+  name: Automation Adoption
+  definition: Paid accounts with automation runs divided by paid accounts.
+  grain: month, segment
+  source: analytics.product_adoption
+  owner: Product Analytics
+  status: governed
+- metric_id: M022
+  name: API Adoption
+  definition: Paid accounts with API calls divided by paid accounts.
+  grain: month, segment
+  source: analytics.product_adoption
+  owner: Product Analytics
+  status: governed
+- metric_id: M023
+  name: Work-order Completion Rate
+  definition: Completed work orders divided by created work orders.
+  grain: month, account
+  source: analytics.workflow_completion
+  owner: Operations Analytics
+  status: governed
+- metric_id: M024
+  name: Time to First Value
+  definition: Days from subscription start to first completed work order.
+  grain: account
+  source: analytics.time_to_first_value
+  owner: Product Analytics
+  status: governed
+- metric_id: M025
+  name: Onboarding Completion
+  definition: Completed onboarding tasks divided by assigned onboarding tasks.
+  grain: account
+  source: analytics.onboarding_completion
+  owner: Customer Success Analytics
+  status: governed
+- metric_id: M026
+  name: Health Score
+  definition: Weighted usage, support, payment and relationship score from 0 to 100.
+  grain: month, account
+  source: core.account_health_history
+  owner: Customer Success Analytics
+  status: governed
+- metric_id: M027
+  name: Renewal Risk MRR
+  definition: MRR belonging to accounts flagged as renewal risk.
+  grain: month, region
+  source: analytics.renewal_risk
+  owner: Customer Success Analytics
+  status: governed
+- metric_id: M028
+  name: Renewal Rate
+  definition: Renewed annual contracts divided by decided renewals.
+  grain: renewal cohort
+  source: analytics.renewal_pipeline
+  owner: Customer Success Analytics
+  status: governed
+- metric_id: M029
+  name: First Response Time
+  definition: Hours from support-ticket creation to first response.
+  grain: ticket
+  source: analytics.support_service_levels
+  owner: Support Analytics
+  status: governed
+- metric_id: M030
+  name: Resolution Time
+  definition: Hours from ticket creation to resolution.
+  grain: ticket
+  source: analytics.support_service_levels
+  owner: Support Analytics
+  status: governed
+- metric_id: M031
+  name: Escalation Rate
+  definition: Escalated tickets divided by total tickets.
+  grain: month, category
+  source: analytics.support_service_levels
+  owner: Support Analytics
+  status: governed
+- metric_id: M032
+  name: CSAT
+  definition: Average ticket satisfaction score from 1 to 5.
+  grain: month, segment
+  source: analytics.support_service_levels
+  owner: Support Analytics
+  status: governed
+- metric_id: M033
+  name: NPS
+  definition: Promoter share less detractor share multiplied by 100.
+  grain: month, market
+  source: analytics.nps
+  owner: Customer Analytics
+  status: governed
+- metric_id: M034
+  name: First-attempt Success Rate
+  definition: Invoices paid on the first payment attempt divided by invoiced payments.
+  grain: month, method
+  source: analytics.payment_success
+  owner: Payments Analytics
+  status: governed
+- metric_id: M035
+  name: Payment Recovery Rate
+  definition: Failed invoices eventually recovered divided by failed invoices.
+  grain: month, country
+  source: analytics.payment_recovery
+  owner: Payments Analytics
+  status: governed
+- metric_id: M036
+  name: Recovered Revenue
+  definition: Invoice value recovered after an initial failed attempt.
+  grain: month, country
+  source: analytics.payment_recovery
+  owner: Payments Analytics
+  status: governed
+- metric_id: M037
+  name: Overdue Receivables
+  definition: Open or overdue invoice value after due date.
+  grain: month, country
+  source: analytics.overdue_receivables
+  owner: Finance Operations
+  status: governed
+- metric_id: M038
+  name: Refund and Credit Rate
+  definition: Refunds plus credit notes divided by invoiced revenue.
+  grain: month, segment
+  source: analytics.refunds_and_credits
+  owner: Finance Operations
+  status: governed
+- metric_id: M039
+  name: Experiment Primary Effect
+  definition: Treatment primary mean less control primary mean.
+  grain: experiment
+  source: reports/experiment_decisions.csv
+  owner: Experimentation
+  status: governed
+- metric_id: M040
+  name: Constant-currency Revenue
+  definition: Revenue converted with governed monthly FX rates to EUR.
+  grain: month, country
+  source: analytics.mrr_by_geography
+  owner: Finance Analytics
+  status: governed

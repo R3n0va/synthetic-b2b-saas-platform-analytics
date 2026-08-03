@@ -1,0 +1,57 @@
+{
+  "reports": {
+    "mrr_snapshot": {
+      "file": "mrr_snapshot.csv",
+      "rows": 1160
+    },
+    "mrr_bridge": {
+      "file": "mrr_bridge.csv",
+      "rows": 30
+    },
+    "account_mrr_movements": {
+      "file": "account_mrr_movements.csv",
+      "rows": 2490
+    },
+    "cohort_retention": {
+      "file": "cohort_retention.csv",
+      "rows": 388
+    },
+    "revenue_retention": {
+      "file": "revenue_retention.csv",
+      "rows": 28
+    },
+    "sales_funnel": {
+      "file": "sales_funnel.csv",
+      "rows": 123
+    },
+    "payment_recovery": {
+      "file": "payment_recovery.csv",
+      "rows": 30
+    },
+    "product_adoption": {
+      "file": "product_adoption.csv",
+      "rows": 735
+    },
+    "account_health": {
+      "file": "account_health.csv",
+      "rows": 1160
+    },
+    "country_performance": {
+      "file": "country_performance.csv",
+      "rows": 15
+    },
+    "experiment_decisions": {
+      "file": "experiment_decisions.csv",
+      "rows": 4
+    },
+    "unit_economics": {
+      "file": "unit_economics.csv",
+      "rows": 421
+    },
+    "data_quality_results": {
+      "file": "data_quality_results.csv",
+      "rows": 531
+    }
+  },
+  "validation_passed": true
+}

@@ -1,0 +1,42 @@
+table: payment_attempts
+grain: One row per payment_attempt_id
+primary_key:
+- payment_attempt_id
+foreign_keys:
+- columns:
+  - invoice_id
+  references: invoices(invoice_id)
+- columns:
+  - payment_method_id
+  references: payment_methods(payment_method_id)
+columns:
+- name: payment_attempt_id
+  type: string
+  nullable: false
+- name: invoice_id
+  type: string
+  nullable: true
+- name: payment_method_id
+  type: string
+  nullable: true
+- name: attempt_at
+  type: timestamp
+  nullable: true
+- name: attempt_number
+  type: integer
+  nullable: true
+- name: amount_local
+  type: decimal
+  nullable: true
+- name: currency_code
+  type: string
+  nullable: true
+- name: attempt_status
+  type: string
+  nullable: true
+- name: failure_reason
+  type: string
+  nullable: true
+- name: provider_response_code
+  type: string
+  nullable: true

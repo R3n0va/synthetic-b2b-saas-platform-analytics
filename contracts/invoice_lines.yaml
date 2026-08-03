@@ -1,0 +1,42 @@
+table: invoice_lines
+grain: One row per invoice_line_id
+primary_key:
+- invoice_line_id
+foreign_keys:
+- columns:
+  - invoice_id
+  references: invoices(invoice_id)
+columns:
+- name: invoice_line_id
+  type: string
+  nullable: false
+- name: invoice_id
+  type: string
+  nullable: true
+- name: line_type
+  type: string
+  nullable: true
+- name: description
+  type: string
+  nullable: true
+- name: quantity
+  type: decimal
+  nullable: true
+- name: unit_price_local
+  type: decimal
+  nullable: true
+- name: discount_local
+  type: decimal
+  nullable: true
+- name: line_total_local
+  type: decimal
+  nullable: true
+- name: service_period_start
+  type: date
+  nullable: true
+- name: service_period_end
+  type: date
+  nullable: true
+- name: subscription_item_id
+  type: string
+  nullable: true

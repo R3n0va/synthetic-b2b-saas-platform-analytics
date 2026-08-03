@@ -1,0 +1,42 @@
+table: product_events
+grain: One row per product_event_id
+primary_key:
+- product_event_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+- columns:
+  - user_id
+  references: users(user_id)
+columns:
+- name: product_event_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: user_id
+  type: string
+  nullable: true
+- name: event_at
+  type: timestamp
+  nullable: true
+- name: event_name
+  type: string
+  nullable: true
+- name: feature_area
+  type: string
+  nullable: true
+- name: platform
+  type: string
+  nullable: true
+- name: session_id
+  type: string
+  nullable: true
+- name: workspace_id
+  type: string
+  nullable: true
+- name: numeric_value
+  type: decimal
+  nullable: true

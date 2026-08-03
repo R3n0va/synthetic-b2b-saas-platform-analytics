@@ -1,0 +1,13 @@
+project:
+  name: synthetic-b2b-saas-platform-analytics
+  seed: 20260803
+  history_start: 2024-01-01
+  history_end: 2026-06-30
+  reporting_currency: EUR
+
+volumes:
+  accounts: 250
+  max_users_per_account: 35
+  usage_sampling_days_per_month: 4
+
+include: ../config.yaml

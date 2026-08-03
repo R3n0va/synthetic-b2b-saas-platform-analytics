@@ -1,0 +1,15 @@
+table: regions
+grain: One row per region_id
+primary_key:
+- region_id
+foreign_keys: []
+columns:
+- name: region_id
+  type: string
+  nullable: false
+- name: region_name
+  type: string
+  nullable: true
+- name: commercial_owner
+  type: string
+  nullable: true

@@ -1,0 +1,19 @@
+table: fx_rates
+grain: One row per rate_date and currency_code
+primary_key:
+- rate_date
+- currency_code
+foreign_keys:
+- columns:
+  - currency_code
+  references: currencies(currency_code)
+columns:
+- name: rate_date
+  type: date
+  nullable: false
+- name: currency_code
+  type: string
+  nullable: false
+- name: eur_rate
+  type: decimal
+  nullable: true

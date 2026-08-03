@@ -1,0 +1,33 @@
+table: payment_methods
+grain: One row per payment_method_id
+primary_key:
+- payment_method_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: payment_method_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: method_type
+  type: string
+  nullable: true
+- name: provider
+  type: string
+  nullable: true
+- name: created_at
+  type: timestamp
+  nullable: true
+- name: expiry_month
+  type: integer
+  nullable: true
+- name: expiry_year
+  type: integer
+  nullable: true
+- name: active_flag
+  type: boolean
+  nullable: true

@@ -1,0 +1,48 @@
+table: support_tickets
+grain: One row per ticket_id
+primary_key:
+- ticket_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: ticket_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: created_at
+  type: timestamp
+  nullable: true
+- name: first_response_at
+  type: timestamp
+  nullable: true
+- name: resolved_at
+  type: timestamp
+  nullable: true
+- name: closed_at
+  type: timestamp
+  nullable: true
+- name: priority
+  type: string
+  nullable: true
+- name: category
+  type: string
+  nullable: true
+- name: ticket_status
+  type: string
+  nullable: true
+- name: channel
+  type: string
+  nullable: true
+- name: escalated_flag
+  type: boolean
+  nullable: true
+- name: reopened_count
+  type: integer
+  nullable: true
+- name: csat_score
+  type: integer
+  nullable: true

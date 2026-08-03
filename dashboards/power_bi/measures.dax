@@ -1,0 +1,50 @@
+-- Core recurring-revenue measures
+Closing MRR EUR := SUM ( fct_account_mrr_monthly[mrr_eur] )
+ARR EUR := [Closing MRR EUR] * 12
+Opening MRR EUR := SUM ( fct_mrr_bridge[opening_mrr] )
+New MRR EUR := SUM ( fct_mrr_bridge[new_mrr] )
+Expansion MRR EUR := SUM ( fct_mrr_bridge[expansion_mrr] )
+Contraction MRR EUR := SUM ( fct_mrr_bridge[contraction_mrr] )
+Churned MRR EUR := SUM ( fct_mrr_bridge[churned_mrr] )
+Reactivation MRR EUR := SUM ( fct_mrr_bridge[reactivation_mrr] )
+
+NRR % :=
+DIVIDE (
+    [Opening MRR EUR] + [Expansion MRR EUR] + [Contraction MRR EUR] + [Churned MRR EUR],
+    [Opening MRR EUR]
+)
+
+GRR % :=
+DIVIDE (
+    [Opening MRR EUR] + [Contraction MRR EUR] + [Churned MRR EUR],
+    [Opening MRR EUR]
+)
+
+Active Accounts := DISTINCTCOUNT ( fct_account_mrr_monthly[account_id] )
+ARPA EUR := DIVIDE ( [Closing MRR EUR], [Active Accounts] )
+
+-- Billing and collections
+Invoiced Revenue EUR := SUM ( fct_invoice[total_eur] )
+Paid Invoices := CALCULATE ( DISTINCTCOUNT ( fct_invoice[invoice_id] ), fct_invoice[invoice_status] = "paid" )
+Invoices := DISTINCTCOUNT ( fct_invoice[invoice_id] )
+Paid Invoice Rate % := DIVIDE ( [Paid Invoices], [Invoices] )
+Failed Invoices := CALCULATE ( DISTINCTCOUNT ( fct_invoice[invoice_id] ), fct_invoice[first_attempt_failed] = TRUE() )
+Recovered Invoices := CALCULATE ( DISTINCTCOUNT ( fct_invoice[invoice_id] ), fct_invoice[eventually_succeeded] = TRUE() )
+Payment Recovery Rate % := DIVIDE ( [Recovered Invoices], [Failed Invoices] )
+
+-- Product and customer health
+Active Users := SUM ( fct_account_usage_monthly[active_users] )
+Paid Seats := SUM ( fct_account_usage_monthly[paid_seats] )
+Seat Utilisation % := DIVIDE ( [Active Users], [Paid Seats] )
+Automation Adoption % := AVERAGE ( fct_account_usage_monthly[automation_adopted] )
+API Adoption % := AVERAGE ( fct_account_usage_monthly[api_adopted] )
+Average Health Score := AVERAGE ( fct_account_health[health_score] )
+At-Risk MRR EUR := CALCULATE ( [Closing MRR EUR], fct_account_health[health_band] IN { "critical", "at_risk" } )
+
+-- Sales and renewals
+Won Opportunities := CALCULATE ( DISTINCTCOUNT ( fct_sales_funnel[opportunity_id] ), fct_sales_funnel[status] = "won" )
+Qualified Opportunities := DISTINCTCOUNT ( fct_sales_funnel[opportunity_id] )
+Win Rate % := DIVIDE ( [Won Opportunities], [Qualified Opportunities] )
+Renewed Accounts := CALCULATE ( DISTINCTCOUNT ( fct_renewal[account_id] ), fct_renewal[renewal_status] = "renewed" )
+Renewal Accounts := DISTINCTCOUNT ( fct_renewal[account_id] )
+Renewal Rate % := DIVIDE ( [Renewed Accounts], [Renewal Accounts] )

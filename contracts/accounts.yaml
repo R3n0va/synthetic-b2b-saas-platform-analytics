@@ -1,0 +1,51 @@
+table: accounts
+grain: One row per account_id
+primary_key:
+- account_id
+foreign_keys:
+- columns:
+  - country_code
+  references: countries(country_code)
+columns:
+- name: account_id
+  type: string
+  nullable: false
+- name: account_name
+  type: string
+  nullable: true
+- name: created_at
+  type: timestamp
+  nullable: true
+- name: country_code
+  type: string
+  nullable: true
+- name: region_id
+  type: string
+  nullable: true
+- name: industry
+  type: string
+  nullable: true
+- name: segment
+  type: string
+  nullable: true
+- name: employee_band
+  type: string
+  nullable: true
+- name: acquisition_channel
+  type: string
+  nullable: true
+- name: sales_motion
+  type: string
+  nullable: true
+- name: partner_id
+  type: string
+  nullable: true
+- name: account_status
+  type: string
+  nullable: true
+- name: legal_currency
+  type: string
+  nullable: true
+- name: tax_id_present
+  type: boolean
+  nullable: true

@@ -1,0 +1,33 @@
+table: refunds
+grain: One row per refund_id
+primary_key:
+- refund_id
+foreign_keys:
+- columns:
+  - payment_id
+  references: payments(payment_id)
+columns:
+- name: refund_id
+  type: string
+  nullable: false
+- name: payment_id
+  type: string
+  nullable: true
+- name: requested_at
+  type: timestamp
+  nullable: true
+- name: processed_at
+  type: timestamp
+  nullable: true
+- name: amount_local
+  type: decimal
+  nullable: true
+- name: amount_eur
+  type: decimal
+  nullable: true
+- name: reason
+  type: string
+  nullable: true
+- name: refund_status
+  type: string
+  nullable: true

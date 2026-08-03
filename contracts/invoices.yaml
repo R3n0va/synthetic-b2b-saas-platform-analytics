@@ -1,0 +1,57 @@
+table: invoices
+grain: One row per invoice_id
+primary_key:
+- invoice_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+- columns:
+  - subscription_id
+  references: subscriptions(subscription_id)
+columns:
+- name: invoice_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: subscription_id
+  type: string
+  nullable: true
+- name: invoice_number
+  type: string
+  nullable: true
+- name: invoice_date
+  type: date
+  nullable: true
+- name: due_date
+  type: date
+  nullable: true
+- name: service_period_start
+  type: date
+  nullable: true
+- name: service_period_end
+  type: date
+  nullable: true
+- name: currency_code
+  type: string
+  nullable: true
+- name: subtotal_local
+  type: decimal
+  nullable: true
+- name: tax_local
+  type: decimal
+  nullable: true
+- name: total_local
+  type: decimal
+  nullable: true
+- name: total_eur
+  type: decimal
+  nullable: true
+- name: invoice_status
+  type: string
+  nullable: true
+- name: paid_date
+  type: date
+  nullable: true

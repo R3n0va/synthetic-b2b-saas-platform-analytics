@@ -1,0 +1,33 @@
+table: onboarding_tasks
+grain: One row per onboarding_task_id
+primary_key:
+- onboarding_task_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: onboarding_task_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: task_name
+  type: string
+  nullable: true
+- name: task_sequence
+  type: integer
+  nullable: true
+- name: due_date
+  type: date
+  nullable: true
+- name: completed_at
+  type: timestamp
+  nullable: true
+- name: task_status
+  type: string
+  nullable: true
+- name: owner_type
+  type: string
+  nullable: true

@@ -1,0 +1,7 @@
+scenario:
+  name: retention_pressure
+  description: Increased churn after a price change and lower product adoption.
+  adjustments:
+    churn_multiplier: 1.35
+    adoption_multiplier: 0.90
+    contraction_multiplier: 1.20

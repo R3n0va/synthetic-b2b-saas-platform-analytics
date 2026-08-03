@@ -1,0 +1,42 @@
+table: users
+grain: One row per user_id
+primary_key:
+- user_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+- columns:
+  - workspace_id
+  references: workspaces(workspace_id)
+columns:
+- name: user_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: workspace_id
+  type: string
+  nullable: true
+- name: created_at
+  type: timestamp
+  nullable: true
+- name: role_name
+  type: string
+  nullable: true
+- name: user_status
+  type: string
+  nullable: true
+- name: invited_at
+  type: timestamp
+  nullable: true
+- name: activated_at
+  type: timestamp
+  nullable: true
+- name: deactivated_at
+  type: timestamp
+  nullable: true
+- name: mobile_user_flag
+  type: boolean
+  nullable: true

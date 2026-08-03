@@ -1,0 +1,43 @@
+table: account_usage_daily
+grain: One row per account_id and activity_date
+primary_key:
+- account_id
+- activity_date
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: account_id
+  type: string
+  nullable: false
+- name: activity_date
+  type: date
+  nullable: false
+- name: active_users
+  type: integer
+  nullable: true
+- name: active_mobile_users
+  type: integer
+  nullable: true
+- name: sessions
+  type: integer
+  nullable: true
+- name: work_orders_created
+  type: integer
+  nullable: true
+- name: work_orders_completed
+  type: integer
+  nullable: true
+- name: automation_runs
+  type: integer
+  nullable: true
+- name: api_calls
+  type: integer
+  nullable: true
+- name: documents_uploaded
+  type: integer
+  nullable: true
+- name: feature_breadth
+  type: integer
+  nullable: true

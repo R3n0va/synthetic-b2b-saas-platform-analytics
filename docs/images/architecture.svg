@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430">
+  <rect width="1100" height="430" fill="#ffffff"/>
+  <style>.h{font:700 18px Arial;fill:#24292f}.b{fill:#f6f8fa;stroke:#24292f;stroke-width:2}.t{font:600 15px Arial;fill:#24292f}.s{font:13px Arial;fill:#57606a}.a{stroke:#57606a;stroke-width:2;marker-end:url(#m)}</style>
+  <defs><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#57606a"/></marker></defs>
+  <text class="h" x="180" y="35" text-anchor="middle">Governance</text><text class="h" x="550" y="35" text-anchor="middle">Processing</text><text class="h" x="920" y="35" text-anchor="middle">Decision outputs</text>
+  <g transform="translate(40,70)"><rect class="b" width="280" height="80" rx="8"/><text class="t" x="140" y="31" text-anchor="middle">Configuration and scenarios</text><text class="s" x="140" y="55" text-anchor="middle">Markets · Pricing · Behaviour</text></g>
+  <g transform="translate(40,180)"><rect class="b" width="280" height="80" rx="8"/><text class="t" x="140" y="31" text-anchor="middle">Schema registry and contracts</text><text class="s" x="140" y="55" text-anchor="middle">Grain · Keys · Types</text></g>
+  <g transform="translate(40,290)"><rect class="b" width="280" height="80" rx="8"/><text class="t" x="140" y="31" text-anchor="middle">Metric and case catalogs</text><text class="s" x="140" y="55" text-anchor="middle">Definitions · Ownership · Decisions</text></g>
+  <g transform="translate(410,70)"><rect class="b" width="280" height="80" rx="8"/><text class="t" x="140" y="31" text-anchor="middle">Deterministic generation</text><text class="s" x="140" y="55" text-anchor="middle">Correlated account lifecycles</text></g>
+  <g transform="translate(410,180)"><rect class="b" width="280" height="80" rx="8"/><text class="t" x="140" y="31" text-anchor="middle">PostgreSQL model</text><text class="s" x="140" y="55" text-anchor="middle">Landing · Core · Marts · Views</text></g>
+  <g transform="translate(410,290)"><rect class="b" width="280" height="80" rx="8"/><text class="t" x="140" y="31" text-anchor="middle">Validation and reconciliation</text><text class="s" x="140" y="55" text-anchor="middle">Python · SQL · Negative tests</text></g>
+  <g transform="translate(780,70)"><rect class="b" width="280" height="80" rx="8"/><text class="t" x="140" y="31" text-anchor="middle">Commercial analytics</text><text class="s" x="140" y="55" text-anchor="middle">MRR · NRR · Sales · Pricing</text></g>
+  <g transform="translate(780,180)"><rect class="b" width="280" height="80" rx="8"/><text class="t" x="140" y="31" text-anchor="middle">Product and customer analytics</text><text class="s" x="140" y="55" text-anchor="middle">Adoption · Health · Renewals</text></g>
+  <g transform="translate(780,290)"><rect class="b" width="280" height="80" rx="8"/><text class="t" x="140" y="31" text-anchor="middle">Executive reporting</text><text class="s" x="140" y="55" text-anchor="middle">Reports · Experiments · Power BI</text></g>
+  <line class="a" x1="320" y1="110" x2="410" y2="110"/><line class="a" x1="320" y1="220" x2="410" y2="220"/><line class="a" x1="320" y1="330" x2="410" y2="330"/>
+  <line class="a" x1="690" y1="110" x2="780" y2="110"/><line class="a" x1="690" y1="220" x2="780" y2="220"/><line class="a" x1="690" y1="330" x2="780" y2="330"/>
+</svg>

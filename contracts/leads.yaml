@@ -1,0 +1,36 @@
+table: leads
+grain: One row per lead_id
+primary_key:
+- lead_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: lead_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: created_at
+  type: timestamp
+  nullable: true
+- name: source_channel
+  type: string
+  nullable: true
+- name: lead_status
+  type: string
+  nullable: true
+- name: mql_at
+  type: timestamp
+  nullable: true
+- name: sql_at
+  type: timestamp
+  nullable: true
+- name: lead_score
+  type: integer
+  nullable: true
+- name: campaign_id
+  type: string
+  nullable: true

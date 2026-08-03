@@ -1,0 +1,26 @@
+cs_interaction_id,account_id,interaction_at,interaction_type,reason,outcome,health_score_before,health_score_after,owner_team
+cs_00000001,account_00000009,2025-06-20 00:00:00,executive_check_in,at_risk,resolved,61.47,73.43,benelux_customer_success
+cs_00000002,account_00000080,2025-09-13 00:00:00,executive_check_in,at_risk,action_plan,58.76,65.53,western_europe_customer_success
+cs_00000003,account_00000083,2026-06-08 00:00:00,executive_check_in,at_risk,action_plan,56.98,66.29,western_europe_customer_success
+cs_00000004,account_00000095,2025-06-25 00:00:00,risk_review,at_risk,action_plan,61.64,68.31,nordics_customer_success
+cs_00000005,account_00000108,2025-05-14 00:00:00,adoption_workshop,at_risk,resolved,60.77,72.65,western_europe_customer_success
+cs_00000006,account_00000124,2025-10-09 00:00:00,renewal_planning,at_risk,action_plan,61.08,66.74,dach_customer_success
+cs_00000007,account_00000124,2025-11-14 00:00:00,adoption_workshop,at_risk,action_plan,49.36,54.37,dach_customer_success
+cs_00000008,account_00000124,2026-06-18 00:00:00,risk_review,at_risk,action_plan,58.72,67.16,dach_customer_success
+cs_00000009,account_00000131,2025-07-23 00:00:00,adoption_workshop,at_risk,action_plan,60.77,67.14,western_europe_customer_success
+cs_00000010,account_00000131,2025-08-25 00:00:00,renewal_planning,at_risk,follow_up_required,61.6,68.06,western_europe_customer_success
+cs_00000011,account_00000131,2025-09-22 00:00:00,executive_check_in,at_risk,resolved,61.73,72.75,western_europe_customer_success
+cs_00000012,account_00000131,2026-01-14 00:00:00,executive_check_in,at_risk,action_plan,60.37,73.52,western_europe_customer_success
+cs_00000013,account_00000131,2026-05-09 00:00:00,adoption_workshop,at_risk,action_plan,61.29,66.16,western_europe_customer_success
+cs_00000014,account_00000134,2025-06-12 00:00:00,adoption_workshop,at_risk,follow_up_required,60.6,71.04,benelux_customer_success
+cs_00000015,account_00000134,2025-12-13 00:00:00,renewal_planning,at_risk,follow_up_required,61.17,73.49,benelux_customer_success
+cs_00000016,account_00000152,2025-03-16 00:00:00,renewal_planning,at_risk,action_plan,61.54,65.65,western_europe_customer_success
+cs_00000017,account_00000152,2025-07-24 00:00:00,adoption_workshop,at_risk,follow_up_required,60.79,68.09,western_europe_customer_success
+cs_00000018,account_00000152,2025-09-06 00:00:00,adoption_workshop,at_risk,follow_up_required,59.44,65.27,western_europe_customer_success
+cs_00000019,account_00000152,2025-11-22 00:00:00,executive_check_in,at_risk,action_plan,58.77,65.1,western_europe_customer_success
+cs_00000020,account_00000152,2026-01-20 00:00:00,executive_check_in,at_risk,action_plan,61.54,73.67,western_europe_customer_success
+cs_00000021,account_00000152,2026-02-13 00:00:00,risk_review,at_risk,resolved,58.64,69.02,western_europe_customer_success
+cs_00000022,account_00000152,2026-05-12 00:00:00,risk_review,at_risk,action_plan,60.14,72.8,western_europe_customer_success
+cs_00000023,account_00000166,2026-03-15 00:00:00,adoption_workshop,at_risk,resolved,61.49,70.39,western_europe_customer_success
+cs_00000024,account_00000204,2026-01-13 00:00:00,adoption_workshop,at_risk,follow_up_required,61.24,67.33,southern_europe_customer_success
+cs_00000025,account_00000204,2026-02-23 00:00:00,risk_review,at_risk,action_plan,61.86,69.54,southern_europe_customer_success

@@ -1,0 +1,21 @@
+table: add_ons
+grain: One row per add_on_id
+primary_key:
+- add_on_id
+foreign_keys: []
+columns:
+- name: add_on_id
+  type: string
+  nullable: false
+- name: add_on_name
+  type: string
+  nullable: true
+- name: monthly_price_eur
+  type: decimal
+  nullable: true
+- name: category
+  type: string
+  nullable: true
+- name: active_flag
+  type: boolean
+  nullable: true

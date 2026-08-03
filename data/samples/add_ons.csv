@@ -1,0 +1,9 @@
+add_on_id,add_on_name,monthly_price_eur,category,active_flag
+addon_advanced_analytics,Advanced Analytics,129,analytics,True
+addon_route_optimisation,Route Optimisation,179,operations,True
+addon_api_package,API Package,249,platform,True
+addon_erp_integration,ERP Integration,299,integration,True
+addon_customer_portal,Customer Portal,89,customer_experience,True
+addon_document_management,Document Management,69,operations,True
+addon_premium_support,Premium Support,399,service,True
+addon_additional_storage,Additional Storage,49,infrastructure,True

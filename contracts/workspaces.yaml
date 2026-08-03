@@ -1,0 +1,27 @@
+table: workspaces
+grain: One row per workspace_id
+primary_key:
+- workspace_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: workspace_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: workspace_name
+  type: string
+  nullable: true
+- name: created_at
+  type: timestamp
+  nullable: true
+- name: country_code
+  type: string
+  nullable: true
+- name: active_flag
+  type: boolean
+  nullable: true

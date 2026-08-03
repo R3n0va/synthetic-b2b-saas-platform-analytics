@@ -1,0 +1,42 @@
+table: subscription_events
+grain: One row per subscription_event_id
+primary_key:
+- subscription_event_id
+foreign_keys:
+- columns:
+  - subscription_id
+  references: subscriptions(subscription_id)
+columns:
+- name: subscription_event_id
+  type: string
+  nullable: false
+- name: subscription_id
+  type: string
+  nullable: true
+- name: event_at
+  type: timestamp
+  nullable: true
+- name: event_type
+  type: string
+  nullable: true
+- name: previous_plan_id
+  type: string
+  nullable: true
+- name: new_plan_id
+  type: string
+  nullable: true
+- name: previous_quantity
+  type: integer
+  nullable: true
+- name: new_quantity
+  type: integer
+  nullable: true
+- name: mrr_change_eur
+  type: decimal
+  nullable: true
+- name: event_reason
+  type: string
+  nullable: true
+- name: initiated_by
+  type: string
+  nullable: true

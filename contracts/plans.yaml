@@ -1,0 +1,21 @@
+table: plans
+grain: One row per plan_id
+primary_key:
+- plan_id
+foreign_keys: []
+columns:
+- name: plan_id
+  type: string
+  nullable: false
+- name: plan_name
+  type: string
+  nullable: true
+- name: plan_rank
+  type: integer
+  nullable: true
+- name: included_seats
+  type: integer
+  nullable: true
+- name: active_flag
+  type: boolean
+  nullable: true

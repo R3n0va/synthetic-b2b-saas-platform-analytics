@@ -1,0 +1,39 @@
+table: opportunities
+grain: One row per opportunity_id
+primary_key:
+- opportunity_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: opportunity_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: created_at
+  type: timestamp
+  nullable: true
+- name: close_date
+  type: date
+  nullable: true
+- name: stage
+  type: string
+  nullable: true
+- name: status
+  type: string
+  nullable: true
+- name: owner_team
+  type: string
+  nullable: true
+- name: expected_arr_eur
+  type: decimal
+  nullable: true
+- name: probability
+  type: decimal
+  nullable: true
+- name: loss_reason
+  type: string
+  nullable: true

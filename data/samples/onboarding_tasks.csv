@@ -1,0 +1,499 @@
+onboarding_task_id,account_id,task_name,task_sequence,due_date,completed_at,task_status,owner_type
+onboard_00000001,account_00000001,company_profile,1,2025-01-15,2025-01-12 00:00:00,completed,customer
+onboard_00000002,account_00000001,invite_team,2,2025-01-20,2025-01-12 00:00:00,completed,customer
+onboard_00000003,account_00000001,create_workspace,3,2025-01-25,2025-01-27 00:00:00,completed,customer
+onboard_00000004,account_00000001,create_first_work_order,4,2025-01-30,,open,customer
+onboard_00000005,account_00000001,complete_first_work_order,5,2025-02-04,,open,customer
+onboard_00000006,account_00000001,connect_integration,6,2025-02-09,2025-02-07 00:00:00,completed,customer
+onboard_00000007,account_00000002,company_profile,1,2026-04-04,,open,customer
+onboard_00000008,account_00000002,invite_team,2,2026-04-09,2026-04-13 00:00:00,completed,customer
+onboard_00000009,account_00000002,create_workspace,3,2026-04-14,,open,customer
+onboard_00000010,account_00000002,create_first_work_order,4,2026-04-19,,open,customer
+onboard_00000011,account_00000002,complete_first_work_order,5,2026-04-24,,open,customer
+onboard_00000012,account_00000002,connect_integration,6,2026-04-29,2026-04-13 00:00:00,completed,customer
+onboard_00000013,account_00000004,company_profile,1,2024-06-02,2024-06-04 00:00:00,completed,customer_success
+onboard_00000014,account_00000004,invite_team,2,2024-06-07,,open,customer_success
+onboard_00000015,account_00000004,create_workspace,3,2024-06-12,2024-06-11 00:00:00,completed,customer_success
+onboard_00000016,account_00000004,create_first_work_order,4,2024-06-17,,open,customer_success
+onboard_00000017,account_00000004,complete_first_work_order,5,2024-06-22,2024-06-24 00:00:00,completed,customer_success
+onboard_00000018,account_00000004,connect_integration,6,2024-06-27,,open,customer_success
+onboard_00000019,account_00000008,company_profile,1,2025-12-27,,open,customer_success
+onboard_00000020,account_00000008,invite_team,2,2026-01-01,2026-01-03 00:00:00,completed,customer_success
+onboard_00000021,account_00000008,create_workspace,3,2026-01-06,2026-01-02 00:00:00,completed,customer_success
+onboard_00000022,account_00000008,create_first_work_order,4,2026-01-11,,open,customer_success
+onboard_00000023,account_00000008,complete_first_work_order,5,2026-01-16,2026-01-09 00:00:00,completed,customer_success
+onboard_00000024,account_00000008,connect_integration,6,2026-01-21,2026-01-09 00:00:00,completed,customer_success
+onboard_00000025,account_00000009,company_profile,1,2025-03-31,,open,customer_success
+onboard_00000026,account_00000009,invite_team,2,2025-04-05,2025-04-07 00:00:00,completed,customer_success
+onboard_00000027,account_00000009,create_workspace,3,2025-04-10,,open,customer_success
+onboard_00000028,account_00000009,create_first_work_order,4,2025-04-15,,open,customer_success
+onboard_00000029,account_00000009,complete_first_work_order,5,2025-04-20,,open,customer_success
+onboard_00000030,account_00000009,connect_integration,6,2025-04-25,,open,customer_success
+onboard_00000031,account_00000013,company_profile,1,2024-07-28,2024-07-25 00:00:00,completed,customer_success
+onboard_00000032,account_00000013,invite_team,2,2024-08-02,2024-07-30 00:00:00,completed,customer_success
+onboard_00000033,account_00000013,create_workspace,3,2024-08-07,,open,customer_success
+onboard_00000034,account_00000013,create_first_work_order,4,2024-08-12,2024-07-31 00:00:00,completed,customer_success
+onboard_00000035,account_00000013,complete_first_work_order,5,2024-08-17,2024-08-08 00:00:00,completed,customer_success
+onboard_00000036,account_00000013,connect_integration,6,2024-08-22,2024-08-03 00:00:00,completed,customer_success
+onboard_00000037,account_00000019,company_profile,1,2026-04-01,2026-04-02 00:00:00,completed,customer_success
+onboard_00000038,account_00000019,invite_team,2,2026-04-06,2026-04-02 00:00:00,completed,customer_success
+onboard_00000039,account_00000019,create_workspace,3,2026-04-11,,open,customer_success
+onboard_00000040,account_00000019,create_first_work_order,4,2026-04-16,,open,customer_success
+onboard_00000041,account_00000019,complete_first_work_order,5,2026-04-21,,open,customer_success
+onboard_00000042,account_00000019,connect_integration,6,2026-04-26,,open,customer_success
+onboard_00000043,account_00000022,company_profile,1,2024-06-07,2024-06-04 00:00:00,completed,customer
+onboard_00000044,account_00000022,invite_team,2,2024-06-12,,open,customer
+onboard_00000045,account_00000022,create_workspace,3,2024-06-17,2024-06-05 00:00:00,completed,customer
+onboard_00000046,account_00000022,create_first_work_order,4,2024-06-22,2024-06-07 00:00:00,completed,customer
+onboard_00000047,account_00000022,complete_first_work_order,5,2024-06-27,,open,customer
+onboard_00000048,account_00000022,connect_integration,6,2024-07-02,,open,customer
+onboard_00000049,account_00000023,company_profile,1,2024-07-18,,open,customer_success
+onboard_00000050,account_00000023,invite_team,2,2024-07-23,2024-07-23 00:00:00,completed,customer_success
+onboard_00000051,account_00000023,create_workspace,3,2024-07-28,,open,customer_success
+onboard_00000052,account_00000023,create_first_work_order,4,2024-08-02,2024-08-05 00:00:00,completed,customer_success
+onboard_00000053,account_00000023,complete_first_work_order,5,2024-08-07,,open,customer_success
+onboard_00000054,account_00000023,connect_integration,6,2024-08-12,2024-07-21 00:00:00,completed,customer_success
+onboard_00000055,account_00000024,company_profile,1,2025-07-07,2025-07-05 00:00:00,completed,customer_success
+onboard_00000056,account_00000024,invite_team,2,2025-07-12,,open,customer_success
+onboard_00000057,account_00000024,create_workspace,3,2025-07-17,2025-07-15 00:00:00,completed,customer_success
+onboard_00000058,account_00000024,create_first_work_order,4,2025-07-22,2025-07-18 00:00:00,completed,customer_success
+onboard_00000059,account_00000024,complete_first_work_order,5,2025-07-27,,open,customer_success
+onboard_00000060,account_00000024,connect_integration,6,2025-08-01,2025-07-11 00:00:00,completed,customer_success
+onboard_00000061,account_00000035,company_profile,1,2025-01-01,2025-01-03 00:00:00,completed,customer
+onboard_00000062,account_00000035,invite_team,2,2025-01-06,2025-01-08 00:00:00,completed,customer
+onboard_00000063,account_00000035,create_workspace,3,2025-01-11,2025-01-06 00:00:00,completed,customer
+onboard_00000064,account_00000035,create_first_work_order,4,2025-01-16,2024-12-31 00:00:00,completed,customer
+onboard_00000065,account_00000035,complete_first_work_order,5,2025-01-21,2025-01-04 00:00:00,completed,customer
+onboard_00000066,account_00000035,connect_integration,6,2025-01-26,2025-02-06 00:00:00,completed,customer
+onboard_00000067,account_00000039,company_profile,1,2026-07-01,2026-06-27 00:00:00,completed,customer_success
+onboard_00000068,account_00000039,invite_team,2,2026-07-06,,open,customer_success
+onboard_00000069,account_00000039,create_workspace,3,2026-07-11,2026-07-08 00:00:00,completed,customer_success
+onboard_00000070,account_00000039,create_first_work_order,4,2026-07-16,2026-07-04 00:00:00,completed,customer_success
+onboard_00000071,account_00000039,complete_first_work_order,5,2026-07-21,,open,customer_success
+onboard_00000072,account_00000039,connect_integration,6,2026-07-26,2026-08-02 00:00:00,completed,customer_success
+onboard_00000073,account_00000040,company_profile,1,2025-11-20,2025-11-19 00:00:00,completed,customer_success
+onboard_00000074,account_00000040,invite_team,2,2025-11-25,2025-11-17 00:00:00,completed,customer_success
+onboard_00000075,account_00000040,create_workspace,3,2025-11-30,2025-12-03 00:00:00,completed,customer_success
+onboard_00000076,account_00000040,create_first_work_order,4,2025-12-05,,open,customer_success
+onboard_00000077,account_00000040,complete_first_work_order,5,2025-12-10,2025-12-10 00:00:00,completed,customer_success
+onboard_00000078,account_00000040,connect_integration,6,2025-12-15,,open,customer_success
+onboard_00000079,account_00000043,company_profile,1,2026-03-16,2026-03-17 00:00:00,completed,customer_success
+onboard_00000080,account_00000043,invite_team,2,2026-03-21,2026-03-14 00:00:00,completed,customer_success
+onboard_00000081,account_00000043,create_workspace,3,2026-03-26,2026-03-15 00:00:00,completed,customer_success
+onboard_00000082,account_00000043,create_first_work_order,4,2026-03-31,2026-04-06 00:00:00,completed,customer_success
+onboard_00000083,account_00000043,complete_first_work_order,5,2026-04-05,,open,customer_success
+onboard_00000084,account_00000043,connect_integration,6,2026-04-10,2026-03-31 00:00:00,completed,customer_success
+onboard_00000085,account_00000044,company_profile,1,2024-04-29,2024-04-28 00:00:00,completed,customer_success
+onboard_00000086,account_00000044,invite_team,2,2024-05-04,2024-05-07 00:00:00,completed,customer_success
+onboard_00000087,account_00000044,create_workspace,3,2024-05-09,,open,customer_success
+onboard_00000088,account_00000044,create_first_work_order,4,2024-05-14,2024-05-10 00:00:00,completed,customer_success
+onboard_00000089,account_00000044,complete_first_work_order,5,2024-05-19,,open,customer_success
+onboard_00000090,account_00000044,connect_integration,6,2024-05-24,,open,customer_success
+onboard_00000091,account_00000047,company_profile,1,2025-05-27,2025-05-24 00:00:00,completed,customer_success
+onboard_00000092,account_00000047,invite_team,2,2025-06-01,,open,customer_success
+onboard_00000093,account_00000047,create_workspace,3,2025-06-06,2025-06-12 00:00:00,completed,customer_success
+onboard_00000094,account_00000047,create_first_work_order,4,2025-06-11,2025-06-06 00:00:00,completed,customer_success
+onboard_00000095,account_00000047,complete_first_work_order,5,2025-06-16,2025-05-31 00:00:00,completed,customer_success
+onboard_00000096,account_00000047,connect_integration,6,2025-06-21,,open,customer_success
+onboard_00000097,account_00000051,company_profile,1,2025-05-25,2025-05-22 00:00:00,completed,customer
+onboard_00000098,account_00000051,invite_team,2,2025-05-30,2025-05-30 00:00:00,completed,customer
+onboard_00000099,account_00000051,create_workspace,3,2025-06-04,,open,customer
+onboard_00000100,account_00000051,create_first_work_order,4,2025-06-09,,open,customer
+onboard_00000101,account_00000051,complete_first_work_order,5,2025-06-14,,open,customer
+onboard_00000102,account_00000051,connect_integration,6,2025-06-19,2025-06-27 00:00:00,completed,customer
+onboard_00000103,account_00000056,company_profile,1,2025-04-24,2025-04-21 00:00:00,completed,customer_success
+onboard_00000104,account_00000056,invite_team,2,2025-04-29,2025-05-01 00:00:00,completed,customer_success
+onboard_00000105,account_00000056,create_workspace,3,2025-05-04,2025-05-08 00:00:00,completed,customer_success
+onboard_00000106,account_00000056,create_first_work_order,4,2025-05-09,2025-05-02 00:00:00,completed,customer_success
+onboard_00000107,account_00000056,complete_first_work_order,5,2025-05-14,2025-05-07 00:00:00,completed,customer_success
+onboard_00000108,account_00000056,connect_integration,6,2025-05-19,2025-05-06 00:00:00,completed,customer_success
+onboard_00000109,account_00000069,company_profile,1,2024-05-03,2024-05-05 00:00:00,completed,customer
+onboard_00000110,account_00000069,invite_team,2,2024-05-08,2024-05-09 00:00:00,completed,customer
+onboard_00000111,account_00000069,create_workspace,3,2024-05-13,2024-05-09 00:00:00,completed,customer
+onboard_00000112,account_00000069,create_first_work_order,4,2024-05-18,2024-05-12 00:00:00,completed,customer
+onboard_00000113,account_00000069,complete_first_work_order,5,2024-05-23,2024-05-21 00:00:00,completed,customer
+onboard_00000114,account_00000069,connect_integration,6,2024-05-28,,open,customer
+onboard_00000115,account_00000079,company_profile,1,2025-11-02,2025-10-29 00:00:00,completed,customer_success
+onboard_00000116,account_00000079,invite_team,2,2025-11-07,2025-11-08 00:00:00,completed,customer_success
+onboard_00000117,account_00000079,create_workspace,3,2025-11-12,2025-11-13 00:00:00,completed,customer_success
+onboard_00000118,account_00000079,create_first_work_order,4,2025-11-17,,open,customer_success
+onboard_00000119,account_00000079,complete_first_work_order,5,2025-11-22,2025-11-07 00:00:00,completed,customer_success
+onboard_00000120,account_00000079,connect_integration,6,2025-11-27,,open,customer_success
+onboard_00000121,account_00000080,company_profile,1,2025-09-30,2025-10-02 00:00:00,completed,customer_success
+onboard_00000122,account_00000080,invite_team,2,2025-10-05,2025-10-08 00:00:00,completed,customer_success
+onboard_00000123,account_00000080,create_workspace,3,2025-10-10,2025-10-15 00:00:00,completed,customer_success
+onboard_00000124,account_00000080,create_first_work_order,4,2025-10-15,2025-10-10 00:00:00,completed,customer_success
+onboard_00000125,account_00000080,complete_first_work_order,5,2025-10-20,,open,customer_success
+onboard_00000126,account_00000080,connect_integration,6,2025-10-25,2025-11-05 00:00:00,completed,customer_success
+onboard_00000127,account_00000083,company_profile,1,2024-09-05,2024-09-02 00:00:00,completed,customer
+onboard_00000128,account_00000083,invite_team,2,2024-09-10,,open,customer
+onboard_00000129,account_00000083,create_workspace,3,2024-09-15,,open,customer
+onboard_00000130,account_00000083,create_first_work_order,4,2024-09-20,,open,customer
+onboard_00000131,account_00000083,complete_first_work_order,5,2024-09-25,,open,customer
+onboard_00000132,account_00000083,connect_integration,6,2024-09-30,,open,customer
+onboard_00000133,account_00000085,company_profile,1,2024-03-12,2024-03-10 00:00:00,completed,customer
+onboard_00000134,account_00000085,invite_team,2,2024-03-17,,open,customer
+onboard_00000135,account_00000085,create_workspace,3,2024-03-22,,open,customer
+onboard_00000136,account_00000085,create_first_work_order,4,2024-03-27,2024-03-29 00:00:00,completed,customer
+onboard_00000137,account_00000085,complete_first_work_order,5,2024-04-01,2024-04-02 00:00:00,completed,customer
+onboard_00000138,account_00000085,connect_integration,6,2024-04-06,,open,customer
+onboard_00000139,account_00000086,company_profile,1,2026-01-03,2026-01-02 00:00:00,completed,customer
+onboard_00000140,account_00000086,invite_team,2,2026-01-08,2026-01-04 00:00:00,completed,customer
+onboard_00000141,account_00000086,create_workspace,3,2026-01-13,2026-01-02 00:00:00,completed,customer
+onboard_00000142,account_00000086,create_first_work_order,4,2026-01-18,2026-01-18 00:00:00,completed,customer
+onboard_00000143,account_00000086,complete_first_work_order,5,2026-01-23,2026-01-10 00:00:00,completed,customer
+onboard_00000144,account_00000086,connect_integration,6,2026-01-28,,open,customer
+onboard_00000145,account_00000087,company_profile,1,2025-02-24,2025-02-21 00:00:00,completed,customer_success
+onboard_00000146,account_00000087,invite_team,2,2025-03-01,2025-02-23 00:00:00,completed,customer_success
+onboard_00000147,account_00000087,create_workspace,3,2025-03-06,2025-02-27 00:00:00,completed,customer_success
+onboard_00000148,account_00000087,create_first_work_order,4,2025-03-11,2025-03-19 00:00:00,completed,customer_success
+onboard_00000149,account_00000087,complete_first_work_order,5,2025-03-16,,open,customer_success
+onboard_00000150,account_00000087,connect_integration,6,2025-03-21,,open,customer_success
+onboard_00000151,account_00000089,company_profile,1,2024-12-15,2024-12-13 00:00:00,completed,customer
+onboard_00000152,account_00000089,invite_team,2,2024-12-20,2024-12-18 00:00:00,completed,customer
+onboard_00000153,account_00000089,create_workspace,3,2024-12-25,,open,customer
+onboard_00000154,account_00000089,create_first_work_order,4,2024-12-30,2025-01-04 00:00:00,completed,customer
+onboard_00000155,account_00000089,complete_first_work_order,5,2025-01-04,,open,customer
+onboard_00000156,account_00000089,connect_integration,6,2025-01-09,,open,customer
+onboard_00000157,account_00000092,company_profile,1,2026-02-24,2026-02-22 00:00:00,completed,customer_success
+onboard_00000158,account_00000092,invite_team,2,2026-03-01,,open,customer_success
+onboard_00000159,account_00000092,create_workspace,3,2026-03-06,2026-02-25 00:00:00,completed,customer_success
+onboard_00000160,account_00000092,create_first_work_order,4,2026-03-11,,open,customer_success
+onboard_00000161,account_00000092,complete_first_work_order,5,2026-03-16,,open,customer_success
+onboard_00000162,account_00000092,connect_integration,6,2026-03-21,2026-03-08 00:00:00,completed,customer_success
+onboard_00000163,account_00000093,company_profile,1,2024-11-23,,open,customer_success
+onboard_00000164,account_00000093,invite_team,2,2024-11-28,2024-11-22 00:00:00,completed,customer_success
+onboard_00000165,account_00000093,create_workspace,3,2024-12-03,2024-11-27 00:00:00,completed,customer_success
+onboard_00000166,account_00000093,create_first_work_order,4,2024-12-08,2024-12-08 00:00:00,completed,customer_success
+onboard_00000167,account_00000093,complete_first_work_order,5,2024-12-13,2024-12-05 00:00:00,completed,customer_success
+onboard_00000168,account_00000093,connect_integration,6,2024-12-18,,open,customer_success
+onboard_00000169,account_00000094,company_profile,1,2026-02-15,2026-02-13 00:00:00,completed,customer
+onboard_00000170,account_00000094,invite_team,2,2026-02-20,2026-02-24 00:00:00,completed,customer
+onboard_00000171,account_00000094,create_workspace,3,2026-02-25,2026-03-03 00:00:00,completed,customer
+onboard_00000172,account_00000094,create_first_work_order,4,2026-03-02,2026-02-24 00:00:00,completed,customer
+onboard_00000173,account_00000094,complete_first_work_order,5,2026-03-07,,open,customer
+onboard_00000174,account_00000094,connect_integration,6,2026-03-12,,open,customer
+onboard_00000175,account_00000095,company_profile,1,2025-06-04,2025-06-01 00:00:00,completed,customer_success
+onboard_00000176,account_00000095,invite_team,2,2025-06-09,2025-06-02 00:00:00,completed,customer_success
+onboard_00000177,account_00000095,create_workspace,3,2025-06-14,2025-06-03 00:00:00,completed,customer_success
+onboard_00000178,account_00000095,create_first_work_order,4,2025-06-19,2025-06-11 00:00:00,completed,customer_success
+onboard_00000179,account_00000095,complete_first_work_order,5,2025-06-24,2025-06-21 00:00:00,completed,customer_success
+onboard_00000180,account_00000095,connect_integration,6,2025-06-29,2025-06-29 00:00:00,completed,customer_success
+onboard_00000181,account_00000100,company_profile,1,2026-05-16,2026-05-13 00:00:00,completed,customer
+onboard_00000182,account_00000100,invite_team,2,2026-05-21,2026-05-25 00:00:00,completed,customer
+onboard_00000183,account_00000100,create_workspace,3,2026-05-26,,open,customer
+onboard_00000184,account_00000100,create_first_work_order,4,2026-05-31,2026-06-07 00:00:00,completed,customer
+onboard_00000185,account_00000100,complete_first_work_order,5,2026-06-05,2026-06-05 00:00:00,completed,customer
+onboard_00000186,account_00000100,connect_integration,6,2026-06-10,2026-05-29 00:00:00,completed,customer
+onboard_00000187,account_00000101,company_profile,1,2026-05-30,2026-05-26 00:00:00,completed,customer
+onboard_00000188,account_00000101,invite_team,2,2026-06-04,2026-06-07 00:00:00,completed,customer
+onboard_00000189,account_00000101,create_workspace,3,2026-06-09,2026-06-11 00:00:00,completed,customer
+onboard_00000190,account_00000101,create_first_work_order,4,2026-06-14,2026-06-11 00:00:00,completed,customer
+onboard_00000191,account_00000101,complete_first_work_order,5,2026-06-19,2026-06-20 00:00:00,completed,customer
+onboard_00000192,account_00000101,connect_integration,6,2026-06-24,2026-06-06 00:00:00,completed,customer
+onboard_00000193,account_00000104,company_profile,1,2024-08-13,,open,customer_success
+onboard_00000194,account_00000104,invite_team,2,2024-08-18,2024-08-10 00:00:00,completed,customer_success
+onboard_00000195,account_00000104,create_workspace,3,2024-08-23,2024-08-19 00:00:00,completed,customer_success
+onboard_00000196,account_00000104,create_first_work_order,4,2024-08-28,2024-09-03 00:00:00,completed,customer_success
+onboard_00000197,account_00000104,complete_first_work_order,5,2024-09-02,,open,customer_success
+onboard_00000198,account_00000104,connect_integration,6,2024-09-07,,open,customer_success
+onboard_00000199,account_00000105,company_profile,1,2026-06-04,2026-06-05 00:00:00,completed,customer
+onboard_00000200,account_00000105,invite_team,2,2026-06-09,2026-06-09 00:00:00,completed,customer
+onboard_00000201,account_00000105,create_workspace,3,2026-06-14,2026-06-19 00:00:00,completed,customer
+onboard_00000202,account_00000105,create_first_work_order,4,2026-06-19,2026-06-18 00:00:00,completed,customer
+onboard_00000203,account_00000105,complete_first_work_order,5,2026-06-24,2026-07-01 00:00:00,completed,customer
+onboard_00000204,account_00000105,connect_integration,6,2026-06-29,,open,customer
+onboard_00000205,account_00000106,company_profile,1,2024-05-18,2024-05-17 00:00:00,completed,customer_success
+onboard_00000206,account_00000106,invite_team,2,2024-05-23,,open,customer_success
+onboard_00000207,account_00000106,create_workspace,3,2024-05-28,,open,customer_success
+onboard_00000208,account_00000106,create_first_work_order,4,2024-06-02,2024-06-05 00:00:00,completed,customer_success
+onboard_00000209,account_00000106,complete_first_work_order,5,2024-06-07,2024-06-10 00:00:00,completed,customer_success
+onboard_00000210,account_00000106,connect_integration,6,2024-06-12,2024-06-17 00:00:00,completed,customer_success
+onboard_00000211,account_00000108,company_profile,1,2025-05-09,2025-05-07 00:00:00,completed,customer_success
+onboard_00000212,account_00000108,invite_team,2,2025-05-14,2025-05-11 00:00:00,completed,customer_success
+onboard_00000213,account_00000108,create_workspace,3,2025-05-19,2025-05-11 00:00:00,completed,customer_success
+onboard_00000214,account_00000108,create_first_work_order,4,2025-05-24,2025-05-09 00:00:00,completed,customer_success
+onboard_00000215,account_00000108,complete_first_work_order,5,2025-05-29,2025-06-07 00:00:00,completed,customer_success
+onboard_00000216,account_00000108,connect_integration,6,2025-06-03,,open,customer_success
+onboard_00000217,account_00000110,company_profile,1,2024-08-01,2024-07-29 00:00:00,completed,customer_success
+onboard_00000218,account_00000110,invite_team,2,2024-08-06,2024-07-31 00:00:00,completed,customer_success
+onboard_00000219,account_00000110,create_workspace,3,2024-08-11,2024-08-07 00:00:00,completed,customer_success
+onboard_00000220,account_00000110,create_first_work_order,4,2024-08-16,2024-08-22 00:00:00,completed,customer_success
+onboard_00000221,account_00000110,complete_first_work_order,5,2024-08-21,,open,customer_success
+onboard_00000222,account_00000110,connect_integration,6,2024-08-26,2024-08-27 00:00:00,completed,customer_success
+onboard_00000223,account_00000111,company_profile,1,2025-01-20,2025-01-19 00:00:00,completed,customer_success
+onboard_00000224,account_00000111,invite_team,2,2025-01-25,2025-01-27 00:00:00,completed,customer_success
+onboard_00000225,account_00000111,create_workspace,3,2025-01-30,2025-01-19 00:00:00,completed,customer_success
+onboard_00000226,account_00000111,create_first_work_order,4,2025-02-04,2025-01-24 00:00:00,completed,customer_success
+onboard_00000227,account_00000111,complete_first_work_order,5,2025-02-09,2025-01-27 00:00:00,completed,customer_success
+onboard_00000228,account_00000111,connect_integration,6,2025-02-14,,open,customer_success
+onboard_00000229,account_00000113,company_profile,1,2024-08-23,2024-08-22 00:00:00,completed,customer
+onboard_00000230,account_00000113,invite_team,2,2024-08-28,2024-08-22 00:00:00,completed,customer
+onboard_00000231,account_00000113,create_workspace,3,2024-09-02,2024-09-05 00:00:00,completed,customer
+onboard_00000232,account_00000113,create_first_work_order,4,2024-09-07,2024-08-24 00:00:00,completed,customer
+onboard_00000233,account_00000113,complete_first_work_order,5,2024-09-12,2024-09-18 00:00:00,completed,customer
+onboard_00000234,account_00000113,connect_integration,6,2024-09-17,2024-08-29 00:00:00,completed,customer
+onboard_00000235,account_00000116,company_profile,1,2025-08-14,2025-08-14 00:00:00,completed,customer_success
+onboard_00000236,account_00000116,invite_team,2,2025-08-19,2025-08-20 00:00:00,completed,customer_success
+onboard_00000237,account_00000116,create_workspace,3,2025-08-24,2025-08-13 00:00:00,completed,customer_success
+onboard_00000238,account_00000116,create_first_work_order,4,2025-08-29,,open,customer_success
+onboard_00000239,account_00000116,complete_first_work_order,5,2025-09-03,2025-08-26 00:00:00,completed,customer_success
+onboard_00000240,account_00000116,connect_integration,6,2025-09-08,2025-09-04 00:00:00,completed,customer_success
+onboard_00000241,account_00000122,company_profile,1,2025-10-08,2025-10-06 00:00:00,completed,customer_success
+onboard_00000242,account_00000122,invite_team,2,2025-10-13,2025-10-10 00:00:00,completed,customer_success
+onboard_00000243,account_00000122,create_workspace,3,2025-10-18,2025-10-20 00:00:00,completed,customer_success
+onboard_00000244,account_00000122,create_first_work_order,4,2025-10-23,2025-10-11 00:00:00,completed,customer_success
+onboard_00000245,account_00000122,complete_first_work_order,5,2025-10-28,2025-10-20 00:00:00,completed,customer_success
+onboard_00000246,account_00000122,connect_integration,6,2025-11-02,2025-10-20 00:00:00,completed,customer_success
+onboard_00000247,account_00000123,company_profile,1,2024-10-18,2024-10-17 00:00:00,completed,customer_success
+onboard_00000248,account_00000123,invite_team,2,2024-10-23,2024-10-25 00:00:00,completed,customer_success
+onboard_00000249,account_00000123,create_workspace,3,2024-10-28,2024-10-29 00:00:00,completed,customer_success
+onboard_00000250,account_00000123,create_first_work_order,4,2024-11-02,2024-10-22 00:00:00,completed,customer_success
+onboard_00000251,account_00000123,complete_first_work_order,5,2024-11-07,2024-10-20 00:00:00,completed,customer_success
+onboard_00000252,account_00000123,connect_integration,6,2024-11-12,2024-11-17 00:00:00,completed,customer_success
+onboard_00000253,account_00000124,company_profile,1,2024-08-06,2024-08-05 00:00:00,completed,customer
+onboard_00000254,account_00000124,invite_team,2,2024-08-11,,open,customer
+onboard_00000255,account_00000124,create_workspace,3,2024-08-16,,open,customer
+onboard_00000256,account_00000124,create_first_work_order,4,2024-08-21,,open,customer
+onboard_00000257,account_00000124,complete_first_work_order,5,2024-08-26,,open,customer
+onboard_00000258,account_00000124,connect_integration,6,2024-08-31,2024-09-01 00:00:00,completed,customer
+onboard_00000259,account_00000126,company_profile,1,2026-03-15,,open,customer
+onboard_00000260,account_00000126,invite_team,2,2026-03-20,2026-03-12 00:00:00,completed,customer
+onboard_00000261,account_00000126,create_workspace,3,2026-03-25,2026-03-24 00:00:00,completed,customer
+onboard_00000262,account_00000126,create_first_work_order,4,2026-03-30,2026-04-06 00:00:00,completed,customer
+onboard_00000263,account_00000126,complete_first_work_order,5,2026-04-04,2026-04-01 00:00:00,completed,customer
+onboard_00000264,account_00000126,connect_integration,6,2026-04-09,,open,customer
+onboard_00000265,account_00000127,company_profile,1,2025-02-10,2025-02-11 00:00:00,completed,customer
+onboard_00000266,account_00000127,invite_team,2,2025-02-15,2025-02-13 00:00:00,completed,customer
+onboard_00000267,account_00000127,create_workspace,3,2025-02-20,,open,customer
+onboard_00000268,account_00000127,create_first_work_order,4,2025-02-25,2025-02-19 00:00:00,completed,customer
+onboard_00000269,account_00000127,complete_first_work_order,5,2025-03-02,2025-03-11 00:00:00,completed,customer
+onboard_00000270,account_00000127,connect_integration,6,2025-03-07,2025-02-28 00:00:00,completed,customer
+onboard_00000271,account_00000128,company_profile,1,2024-08-28,2024-08-30 00:00:00,completed,customer_success
+onboard_00000272,account_00000128,invite_team,2,2024-09-02,2024-09-05 00:00:00,completed,customer_success
+onboard_00000273,account_00000128,create_workspace,3,2024-09-07,2024-09-06 00:00:00,completed,customer_success
+onboard_00000274,account_00000128,create_first_work_order,4,2024-09-12,2024-09-03 00:00:00,completed,customer_success
+onboard_00000275,account_00000128,complete_first_work_order,5,2024-09-17,2024-08-31 00:00:00,completed,customer_success
+onboard_00000276,account_00000128,connect_integration,6,2024-09-22,,open,customer_success
+onboard_00000277,account_00000129,company_profile,1,2025-06-17,2025-06-19 00:00:00,completed,customer_success
+onboard_00000278,account_00000129,invite_team,2,2025-06-22,2025-06-23 00:00:00,completed,customer_success
+onboard_00000279,account_00000129,create_workspace,3,2025-06-27,2025-06-27 00:00:00,completed,customer_success
+onboard_00000280,account_00000129,create_first_work_order,4,2025-07-02,2025-07-10 00:00:00,completed,customer_success
+onboard_00000281,account_00000129,complete_first_work_order,5,2025-07-07,2025-06-24 00:00:00,completed,customer_success
+onboard_00000282,account_00000129,connect_integration,6,2025-07-12,,open,customer_success
+onboard_00000283,account_00000130,company_profile,1,2025-10-25,2025-10-24 00:00:00,completed,customer
+onboard_00000284,account_00000130,invite_team,2,2025-10-30,2025-10-29 00:00:00,completed,customer
+onboard_00000285,account_00000130,create_workspace,3,2025-11-04,2025-10-31 00:00:00,completed,customer
+onboard_00000286,account_00000130,create_first_work_order,4,2025-11-09,2025-11-05 00:00:00,completed,customer
+onboard_00000287,account_00000130,complete_first_work_order,5,2025-11-14,2025-10-25 00:00:00,completed,customer
+onboard_00000288,account_00000130,connect_integration,6,2025-11-19,2025-11-02 00:00:00,completed,customer
+onboard_00000289,account_00000131,company_profile,1,2025-05-21,2025-05-21 00:00:00,completed,customer_success
+onboard_00000290,account_00000131,invite_team,2,2025-05-26,2025-05-24 00:00:00,completed,customer_success
+onboard_00000291,account_00000131,create_workspace,3,2025-05-31,2025-05-31 00:00:00,completed,customer_success
+onboard_00000292,account_00000131,create_first_work_order,4,2025-06-05,2025-06-09 00:00:00,completed,customer_success
+onboard_00000293,account_00000131,complete_first_work_order,5,2025-06-10,2025-06-19 00:00:00,completed,customer_success
+onboard_00000294,account_00000131,connect_integration,6,2025-06-15,,open,customer_success
+onboard_00000295,account_00000134,company_profile,1,2024-07-04,2024-07-02 00:00:00,completed,customer_success
+onboard_00000296,account_00000134,invite_team,2,2024-07-09,2024-07-03 00:00:00,completed,customer_success
+onboard_00000297,account_00000134,create_workspace,3,2024-07-14,2024-07-14 00:00:00,completed,customer_success
+onboard_00000298,account_00000134,create_first_work_order,4,2024-07-19,2024-07-12 00:00:00,completed,customer_success
+onboard_00000299,account_00000134,complete_first_work_order,5,2024-07-24,,open,customer_success
+onboard_00000300,account_00000134,connect_integration,6,2024-07-29,2024-08-01 00:00:00,completed,customer_success
+onboard_00000301,account_00000135,company_profile,1,2025-08-30,2025-08-28 00:00:00,completed,customer_success
+onboard_00000302,account_00000135,invite_team,2,2025-09-04,2025-08-30 00:00:00,completed,customer_success
+onboard_00000303,account_00000135,create_workspace,3,2025-09-09,2025-09-12 00:00:00,completed,customer_success
+onboard_00000304,account_00000135,create_first_work_order,4,2025-09-14,2025-09-16 00:00:00,completed,customer_success
+onboard_00000305,account_00000135,complete_first_work_order,5,2025-09-19,2025-09-08 00:00:00,completed,customer_success
+onboard_00000306,account_00000135,connect_integration,6,2025-09-24,,open,customer_success
+onboard_00000307,account_00000136,company_profile,1,2024-09-29,2024-10-01 00:00:00,completed,customer_success
+onboard_00000308,account_00000136,invite_team,2,2024-10-04,2024-10-02 00:00:00,completed,customer_success
+onboard_00000309,account_00000136,create_workspace,3,2024-10-09,2024-10-04 00:00:00,completed,customer_success
+onboard_00000310,account_00000136,create_first_work_order,4,2024-10-14,2024-10-01 00:00:00,completed,customer_success
+onboard_00000311,account_00000136,complete_first_work_order,5,2024-10-19,2024-10-26 00:00:00,completed,customer_success
+onboard_00000312,account_00000136,connect_integration,6,2024-10-24,2024-10-27 00:00:00,completed,customer_success
+onboard_00000313,account_00000137,company_profile,1,2025-11-23,2025-11-24 00:00:00,completed,customer
+onboard_00000314,account_00000137,invite_team,2,2025-11-28,2025-11-27 00:00:00,completed,customer
+onboard_00000315,account_00000137,create_workspace,3,2025-12-03,2025-11-21 00:00:00,completed,customer
+onboard_00000316,account_00000137,create_first_work_order,4,2025-12-08,,open,customer
+onboard_00000317,account_00000137,complete_first_work_order,5,2025-12-13,2025-12-22 00:00:00,completed,customer
+onboard_00000318,account_00000137,connect_integration,6,2025-12-18,2025-12-19 00:00:00,completed,customer
+onboard_00000319,account_00000138,company_profile,1,2024-11-16,2024-11-18 00:00:00,completed,customer
+onboard_00000320,account_00000138,invite_team,2,2024-11-21,2024-11-14 00:00:00,completed,customer
+onboard_00000321,account_00000138,create_workspace,3,2024-11-26,2024-11-20 00:00:00,completed,customer
+onboard_00000322,account_00000138,create_first_work_order,4,2024-12-01,2024-11-30 00:00:00,completed,customer
+onboard_00000323,account_00000138,complete_first_work_order,5,2024-12-06,2024-12-10 00:00:00,completed,customer
+onboard_00000324,account_00000138,connect_integration,6,2024-12-11,2024-12-06 00:00:00,completed,customer
+onboard_00000325,account_00000141,company_profile,1,2025-04-25,2025-04-24 00:00:00,completed,customer_success
+onboard_00000326,account_00000141,invite_team,2,2025-04-30,2025-05-02 00:00:00,completed,customer_success
+onboard_00000327,account_00000141,create_workspace,3,2025-05-05,,open,customer_success
+onboard_00000328,account_00000141,create_first_work_order,4,2025-05-10,,open,customer_success
+onboard_00000329,account_00000141,complete_first_work_order,5,2025-05-15,2025-05-17 00:00:00,completed,customer_success
+onboard_00000330,account_00000141,connect_integration,6,2025-05-20,,open,customer_success
+onboard_00000331,account_00000152,company_profile,1,2024-07-17,2024-07-17 00:00:00,completed,customer_success
+onboard_00000332,account_00000152,invite_team,2,2024-07-22,,open,customer_success
+onboard_00000333,account_00000152,create_workspace,3,2024-07-27,2024-07-23 00:00:00,completed,customer_success
+onboard_00000334,account_00000152,create_first_work_order,4,2024-08-01,,open,customer_success
+onboard_00000335,account_00000152,complete_first_work_order,5,2024-08-06,,open,customer_success
+onboard_00000336,account_00000152,connect_integration,6,2024-08-11,,open,customer_success
+onboard_00000337,account_00000155,company_profile,1,2024-12-29,2024-12-29 00:00:00,completed,customer
+onboard_00000338,account_00000155,invite_team,2,2025-01-03,2024-12-27 00:00:00,completed,customer
+onboard_00000339,account_00000155,create_workspace,3,2025-01-08,,open,customer
+onboard_00000340,account_00000155,create_first_work_order,4,2025-01-13,2025-01-09 00:00:00,completed,customer
+onboard_00000341,account_00000155,complete_first_work_order,5,2025-01-18,2025-01-02 00:00:00,completed,customer
+onboard_00000342,account_00000155,connect_integration,6,2025-01-23,,open,customer
+onboard_00000343,account_00000157,company_profile,1,2024-05-13,2024-05-13 00:00:00,completed,customer_success
+onboard_00000344,account_00000157,invite_team,2,2024-05-18,,open,customer_success
+onboard_00000345,account_00000157,create_workspace,3,2024-05-23,,open,customer_success
+onboard_00000346,account_00000157,create_first_work_order,4,2024-05-28,2024-05-30 00:00:00,completed,customer_success
+onboard_00000347,account_00000157,complete_first_work_order,5,2024-06-02,2024-05-17 00:00:00,completed,customer_success
+onboard_00000348,account_00000157,connect_integration,6,2024-06-07,,open,customer_success
+onboard_00000349,account_00000159,company_profile,1,2026-05-05,2026-05-07 00:00:00,completed,customer_success
+onboard_00000350,account_00000159,invite_team,2,2026-05-10,,open,customer_success
+onboard_00000351,account_00000159,create_workspace,3,2026-05-15,2026-05-06 00:00:00,completed,customer_success
+onboard_00000352,account_00000159,create_first_work_order,4,2026-05-20,,open,customer_success
+onboard_00000353,account_00000159,complete_first_work_order,5,2026-05-25,2026-05-20 00:00:00,completed,customer_success
+onboard_00000354,account_00000159,connect_integration,6,2026-05-30,,open,customer_success
+onboard_00000355,account_00000161,company_profile,1,2025-04-27,2025-04-29 00:00:00,completed,customer_success
+onboard_00000356,account_00000161,invite_team,2,2025-05-02,2025-04-27 00:00:00,completed,customer_success
+onboard_00000357,account_00000161,create_workspace,3,2025-05-07,2025-05-11 00:00:00,completed,customer_success
+onboard_00000358,account_00000161,create_first_work_order,4,2025-05-12,,open,customer_success
+onboard_00000359,account_00000161,complete_first_work_order,5,2025-05-17,2025-05-05 00:00:00,completed,customer_success
+onboard_00000360,account_00000161,connect_integration,6,2025-05-22,,open,customer_success
+onboard_00000361,account_00000166,company_profile,1,2025-01-28,2025-01-26 00:00:00,completed,customer
+onboard_00000362,account_00000166,invite_team,2,2025-02-02,2025-02-02 00:00:00,completed,customer
+onboard_00000363,account_00000166,create_workspace,3,2025-02-07,2025-02-04 00:00:00,completed,customer
+onboard_00000364,account_00000166,create_first_work_order,4,2025-02-12,2025-01-30 00:00:00,completed,customer
+onboard_00000365,account_00000166,complete_first_work_order,5,2025-02-17,2025-02-25 00:00:00,completed,customer
+onboard_00000366,account_00000166,connect_integration,6,2025-02-22,2025-02-26 00:00:00,completed,customer
+onboard_00000367,account_00000169,company_profile,1,2026-07-02,2026-07-03 00:00:00,completed,customer
+onboard_00000368,account_00000169,invite_team,2,2026-07-07,2026-07-02 00:00:00,completed,customer
+onboard_00000369,account_00000169,create_workspace,3,2026-07-12,2026-07-02 00:00:00,completed,customer
+onboard_00000370,account_00000169,create_first_work_order,4,2026-07-17,,open,customer
+onboard_00000371,account_00000169,complete_first_work_order,5,2026-07-22,2026-07-19 00:00:00,completed,customer
+onboard_00000372,account_00000169,connect_integration,6,2026-07-27,2026-07-09 00:00:00,completed,customer
+onboard_00000373,account_00000173,company_profile,1,2024-05-02,2024-04-28 00:00:00,completed,customer
+onboard_00000374,account_00000173,invite_team,2,2024-05-07,,open,customer
+onboard_00000375,account_00000173,create_workspace,3,2024-05-12,2024-05-09 00:00:00,completed,customer
+onboard_00000376,account_00000173,create_first_work_order,4,2024-05-17,2024-05-10 00:00:00,completed,customer
+onboard_00000377,account_00000173,complete_first_work_order,5,2024-05-22,2024-05-16 00:00:00,completed,customer
+onboard_00000378,account_00000173,connect_integration,6,2024-05-27,2024-05-13 00:00:00,completed,customer
+onboard_00000379,account_00000177,company_profile,1,2025-08-27,2025-08-25 00:00:00,completed,customer
+onboard_00000380,account_00000177,invite_team,2,2025-09-01,,open,customer
+onboard_00000381,account_00000177,create_workspace,3,2025-09-06,,open,customer
+onboard_00000382,account_00000177,create_first_work_order,4,2025-09-11,,open,customer
+onboard_00000383,account_00000177,complete_first_work_order,5,2025-09-16,2025-09-26 00:00:00,completed,customer
+onboard_00000384,account_00000177,connect_integration,6,2025-09-21,,open,customer
+onboard_00000385,account_00000183,company_profile,1,2024-03-09,2024-03-06 00:00:00,completed,customer
+onboard_00000386,account_00000183,invite_team,2,2024-03-14,2024-03-16 00:00:00,completed,customer
+onboard_00000387,account_00000183,create_workspace,3,2024-03-19,2024-03-17 00:00:00,completed,customer
+onboard_00000388,account_00000183,create_first_work_order,4,2024-03-24,2024-03-28 00:00:00,completed,customer
+onboard_00000389,account_00000183,complete_first_work_order,5,2024-03-29,2024-04-05 00:00:00,completed,customer
+onboard_00000390,account_00000183,connect_integration,6,2024-04-03,,open,customer
+onboard_00000391,account_00000184,company_profile,1,2025-07-24,2025-07-25 00:00:00,completed,customer_success
+onboard_00000392,account_00000184,invite_team,2,2025-07-29,2025-07-23 00:00:00,completed,customer_success
+onboard_00000393,account_00000184,create_workspace,3,2025-08-03,2025-07-26 00:00:00,completed,customer_success
+onboard_00000394,account_00000184,create_first_work_order,4,2025-08-08,2025-08-09 00:00:00,completed,customer_success
+onboard_00000395,account_00000184,complete_first_work_order,5,2025-08-13,2025-08-11 00:00:00,completed,customer_success
+onboard_00000396,account_00000184,connect_integration,6,2025-08-18,2025-08-04 00:00:00,completed,customer_success
+onboard_00000397,account_00000192,company_profile,1,2025-02-07,,open,customer
+onboard_00000398,account_00000192,invite_team,2,2025-02-12,2025-02-14 00:00:00,completed,customer
+onboard_00000399,account_00000192,create_workspace,3,2025-02-17,,open,customer
+onboard_00000400,account_00000192,create_first_work_order,4,2025-02-22,2025-02-06 00:00:00,completed,customer
+onboard_00000401,account_00000192,complete_first_work_order,5,2025-02-27,2025-02-26 00:00:00,completed,customer
+onboard_00000402,account_00000192,connect_integration,6,2025-03-04,2025-03-16 00:00:00,completed,customer
+onboard_00000403,account_00000197,company_profile,1,2026-06-21,2026-06-22 00:00:00,completed,customer
+onboard_00000404,account_00000197,invite_team,2,2026-06-26,2026-06-19 00:00:00,completed,customer
+onboard_00000405,account_00000197,create_workspace,3,2026-07-01,,open,customer
+onboard_00000406,account_00000197,create_first_work_order,4,2026-07-06,2026-07-09 00:00:00,completed,customer
+onboard_00000407,account_00000197,complete_first_work_order,5,2026-07-11,2026-06-21 00:00:00,completed,customer
+onboard_00000408,account_00000197,connect_integration,6,2026-07-16,2026-06-30 00:00:00,completed,customer
+onboard_00000409,account_00000204,company_profile,1,2025-10-21,2025-10-18 00:00:00,completed,customer_success
+onboard_00000410,account_00000204,invite_team,2,2025-10-26,2025-10-19 00:00:00,completed,customer_success
+onboard_00000411,account_00000204,create_workspace,3,2025-10-31,,open,customer_success
+onboard_00000412,account_00000204,create_first_work_order,4,2025-11-05,2025-11-12 00:00:00,completed,customer_success
+onboard_00000413,account_00000204,complete_first_work_order,5,2025-11-10,2025-10-31 00:00:00,completed,customer_success
+onboard_00000414,account_00000204,connect_integration,6,2025-11-15,2025-11-03 00:00:00,completed,customer_success
+onboard_00000415,account_00000205,company_profile,1,2026-05-10,2026-05-11 00:00:00,completed,customer_success
+onboard_00000416,account_00000205,invite_team,2,2026-05-15,2026-05-16 00:00:00,completed,customer_success
+onboard_00000417,account_00000205,create_workspace,3,2026-05-20,2026-05-17 00:00:00,completed,customer_success
+onboard_00000418,account_00000205,create_first_work_order,4,2026-05-25,2026-05-17 00:00:00,completed,customer_success
+onboard_00000419,account_00000205,complete_first_work_order,5,2026-05-30,2026-05-30 00:00:00,completed,customer_success
+onboard_00000420,account_00000205,connect_integration,6,2026-06-04,,open,customer_success
+onboard_00000421,account_00000206,company_profile,1,2026-02-09,2026-02-05 00:00:00,completed,customer
+onboard_00000422,account_00000206,invite_team,2,2026-02-14,2026-02-06 00:00:00,completed,customer
+onboard_00000423,account_00000206,create_workspace,3,2026-02-19,2026-02-25 00:00:00,completed,customer
+onboard_00000424,account_00000206,create_first_work_order,4,2026-02-24,2026-03-03 00:00:00,completed,customer
+onboard_00000425,account_00000206,complete_first_work_order,5,2026-03-01,2026-03-08 00:00:00,completed,customer
+onboard_00000426,account_00000206,connect_integration,6,2026-03-06,,open,customer
+onboard_00000427,account_00000207,company_profile,1,2025-05-27,2025-05-28 00:00:00,completed,customer_success
+onboard_00000428,account_00000207,invite_team,2,2025-06-01,2025-06-04 00:00:00,completed,customer_success
+onboard_00000429,account_00000207,create_workspace,3,2025-06-06,2025-05-25 00:00:00,completed,customer_success
+onboard_00000430,account_00000207,create_first_work_order,4,2025-06-11,2025-06-19 00:00:00,completed,customer_success
+onboard_00000431,account_00000207,complete_first_work_order,5,2025-06-16,2025-05-31 00:00:00,completed,customer_success
+onboard_00000432,account_00000207,connect_integration,6,2025-06-21,,open,customer_success
+onboard_00000433,account_00000208,company_profile,1,2025-04-12,2025-04-13 00:00:00,completed,customer_success
+onboard_00000434,account_00000208,invite_team,2,2025-04-17,2025-04-16 00:00:00,completed,customer_success
+onboard_00000435,account_00000208,create_workspace,3,2025-04-22,,open,customer_success
+onboard_00000436,account_00000208,create_first_work_order,4,2025-04-27,,open,customer_success
+onboard_00000437,account_00000208,complete_first_work_order,5,2025-05-02,,open,customer_success
+onboard_00000438,account_00000208,connect_integration,6,2025-05-07,2025-04-22 00:00:00,completed,customer_success
+onboard_00000439,account_00000213,company_profile,1,2026-07-04,2026-07-02 00:00:00,completed,customer_success
+onboard_00000440,account_00000213,invite_team,2,2026-07-09,2026-07-03 00:00:00,completed,customer_success
+onboard_00000441,account_00000213,create_workspace,3,2026-07-14,2026-07-13 00:00:00,completed,customer_success
+onboard_00000442,account_00000213,create_first_work_order,4,2026-07-19,2026-07-14 00:00:00,completed,customer_success
+onboard_00000443,account_00000213,complete_first_work_order,5,2026-07-24,,open,customer_success
+onboard_00000444,account_00000213,connect_integration,6,2026-07-29,2026-07-27 00:00:00,completed,customer_success
+onboard_00000445,account_00000221,company_profile,1,2025-10-25,2025-10-27 00:00:00,completed,customer
+onboard_00000446,account_00000221,invite_team,2,2025-10-30,2025-10-27 00:00:00,completed,customer
+onboard_00000447,account_00000221,create_workspace,3,2025-11-04,2025-11-02 00:00:00,completed,customer
+onboard_00000448,account_00000221,create_first_work_order,4,2025-11-09,2025-11-04 00:00:00,completed,customer
+onboard_00000449,account_00000221,complete_first_work_order,5,2025-11-14,2025-11-16 00:00:00,completed,customer
+onboard_00000450,account_00000221,connect_integration,6,2025-11-19,2025-11-11 00:00:00,completed,customer
+onboard_00000451,account_00000222,company_profile,1,2025-02-25,,open,customer_success
+onboard_00000452,account_00000222,invite_team,2,2025-03-02,2025-02-23 00:00:00,completed,customer_success
+onboard_00000453,account_00000222,create_workspace,3,2025-03-07,2025-03-10 00:00:00,completed,customer_success
+onboard_00000454,account_00000222,create_first_work_order,4,2025-03-12,,open,customer_success
+onboard_00000455,account_00000222,complete_first_work_order,5,2025-03-17,,open,customer_success
+onboard_00000456,account_00000222,connect_integration,6,2025-03-22,,open,customer_success
+onboard_00000457,account_00000228,company_profile,1,2025-05-05,2025-05-06 00:00:00,completed,customer
+onboard_00000458,account_00000228,invite_team,2,2025-05-10,2025-05-14 00:00:00,completed,customer
+onboard_00000459,account_00000228,create_workspace,3,2025-05-15,2025-05-14 00:00:00,completed,customer
+onboard_00000460,account_00000228,create_first_work_order,4,2025-05-20,,open,customer
+onboard_00000461,account_00000228,complete_first_work_order,5,2025-05-25,2025-05-25 00:00:00,completed,customer
+onboard_00000462,account_00000228,connect_integration,6,2025-05-30,2025-06-01 00:00:00,completed,customer
+onboard_00000463,account_00000229,company_profile,1,2024-05-27,2024-05-25 00:00:00,completed,customer_success
+onboard_00000464,account_00000229,invite_team,2,2024-06-01,2024-06-02 00:00:00,completed,customer_success
+onboard_00000465,account_00000229,create_workspace,3,2024-06-06,2024-06-08 00:00:00,completed,customer_success
+onboard_00000466,account_00000229,create_first_work_order,4,2024-06-11,,open,customer_success
+onboard_00000467,account_00000229,complete_first_work_order,5,2024-06-16,2024-06-11 00:00:00,completed,customer_success
+onboard_00000468,account_00000229,connect_integration,6,2024-06-21,,open,customer_success
+onboard_00000469,account_00000230,company_profile,1,2026-04-17,2026-04-14 00:00:00,completed,customer_success
+onboard_00000470,account_00000230,invite_team,2,2026-04-22,2026-04-19 00:00:00,completed,customer_success
+onboard_00000471,account_00000230,create_workspace,3,2026-04-27,2026-04-15 00:00:00,completed,customer_success
+onboard_00000472,account_00000230,create_first_work_order,4,2026-05-02,2026-05-01 00:00:00,completed,customer_success
+onboard_00000473,account_00000230,complete_first_work_order,5,2026-05-07,,open,customer_success
+onboard_00000474,account_00000230,connect_integration,6,2026-05-12,,open,customer_success
+onboard_00000475,account_00000234,company_profile,1,2024-10-03,2024-10-05 00:00:00,completed,customer_success
+onboard_00000476,account_00000234,invite_team,2,2024-10-08,,open,customer_success
+onboard_00000477,account_00000234,create_workspace,3,2024-10-13,,open,customer_success
+onboard_00000478,account_00000234,create_first_work_order,4,2024-10-18,,open,customer_success
+onboard_00000479,account_00000234,complete_first_work_order,5,2024-10-23,,open,customer_success
+onboard_00000480,account_00000234,connect_integration,6,2024-10-28,,open,customer_success
+onboard_00000481,account_00000244,company_profile,1,2024-09-13,,open,customer_success
+onboard_00000482,account_00000244,invite_team,2,2024-09-18,2024-09-17 00:00:00,completed,customer_success
+onboard_00000483,account_00000244,create_workspace,3,2024-09-23,2024-09-17 00:00:00,completed,customer_success
+onboard_00000484,account_00000244,create_first_work_order,4,2024-09-28,2024-09-24 00:00:00,completed,customer_success
+onboard_00000485,account_00000244,complete_first_work_order,5,2024-10-03,,open,customer_success
+onboard_00000486,account_00000244,connect_integration,6,2024-10-08,,open,customer_success
+onboard_00000487,account_00000245,company_profile,1,2026-05-31,,open,customer_success
+onboard_00000488,account_00000245,invite_team,2,2026-06-05,,open,customer_success
+onboard_00000489,account_00000245,create_workspace,3,2026-06-10,,open,customer_success
+onboard_00000490,account_00000245,create_first_work_order,4,2026-06-15,,open,customer_success
+onboard_00000491,account_00000245,complete_first_work_order,5,2026-06-20,,open,customer_success
+onboard_00000492,account_00000245,connect_integration,6,2026-06-25,,open,customer_success
+onboard_00000493,account_00000247,company_profile,1,2026-04-27,,open,customer
+onboard_00000494,account_00000247,invite_team,2,2026-05-02,2026-04-27 00:00:00,completed,customer
+onboard_00000495,account_00000247,create_workspace,3,2026-05-07,,open,customer
+onboard_00000496,account_00000247,create_first_work_order,4,2026-05-12,,open,customer
+onboard_00000497,account_00000247,complete_first_work_order,5,2026-05-17,2026-05-23 00:00:00,completed,customer
+onboard_00000498,account_00000247,connect_integration,6,2026-05-22,,open,customer

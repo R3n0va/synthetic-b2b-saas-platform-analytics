@@ -1,0 +1,24 @@
+table: experiment_exposures
+grain: One row per exposure_id
+primary_key:
+- exposure_id
+foreign_keys:
+- columns:
+  - assignment_id
+  references: experiment_assignments(assignment_id)
+columns:
+- name: exposure_id
+  type: string
+  nullable: false
+- name: assignment_id
+  type: string
+  nullable: true
+- name: exposed_at
+  type: timestamp
+  nullable: true
+- name: exposure_surface
+  type: string
+  nullable: true
+- name: exposure_count
+  type: integer
+  nullable: true

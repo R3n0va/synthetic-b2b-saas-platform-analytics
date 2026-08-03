@@ -1,0 +1,27 @@
+table: experiment_outcomes
+grain: One row per outcome_id
+primary_key:
+- outcome_id
+foreign_keys:
+- columns:
+  - assignment_id
+  references: experiment_assignments(assignment_id)
+columns:
+- name: outcome_id
+  type: string
+  nullable: false
+- name: assignment_id
+  type: string
+  nullable: true
+- name: observation_end
+  type: date
+  nullable: true
+- name: primary_outcome
+  type: decimal
+  nullable: true
+- name: guardrail_outcome
+  type: decimal
+  nullable: true
+- name: revenue_outcome_eur
+  type: decimal
+  nullable: true

@@ -1,0 +1,33 @@
+table: renewals
+grain: One row per renewal_id
+primary_key:
+- renewal_id
+foreign_keys:
+- columns:
+  - subscription_id
+  references: subscriptions(subscription_id)
+columns:
+- name: renewal_id
+  type: string
+  nullable: false
+- name: subscription_id
+  type: string
+  nullable: true
+- name: renewal_due_date
+  type: date
+  nullable: true
+- name: decision_date
+  type: date
+  nullable: true
+- name: renewal_status
+  type: string
+  nullable: true
+- name: renewal_arr_eur
+  type: decimal
+  nullable: true
+- name: renewal_probability
+  type: decimal
+  nullable: true
+- name: risk_reason
+  type: string
+  nullable: true

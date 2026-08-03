@@ -1,0 +1,33 @@
+table: marketing_campaigns
+grain: One row per campaign_id
+primary_key:
+- campaign_id
+foreign_keys: []
+columns:
+- name: campaign_id
+  type: string
+  nullable: false
+- name: campaign_name
+  type: string
+  nullable: true
+- name: channel
+  type: string
+  nullable: true
+- name: country_code
+  type: string
+  nullable: true
+- name: start_date
+  type: date
+  nullable: true
+- name: end_date
+  type: date
+  nullable: true
+- name: spend_local
+  type: decimal
+  nullable: true
+- name: currency_code
+  type: string
+  nullable: true
+- name: spend_eur
+  type: decimal
+  nullable: true

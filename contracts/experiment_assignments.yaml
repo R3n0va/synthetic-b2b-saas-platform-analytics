@@ -1,0 +1,33 @@
+table: experiment_assignments
+grain: One row per assignment_id
+primary_key:
+- assignment_id
+foreign_keys:
+- columns:
+  - experiment_id
+  references: experiments(experiment_id)
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: assignment_id
+  type: string
+  nullable: false
+- name: experiment_id
+  type: string
+  nullable: true
+- name: account_id
+  type: string
+  nullable: true
+- name: variant
+  type: string
+  nullable: true
+- name: assigned_at
+  type: timestamp
+  nullable: true
+- name: eligible_flag
+  type: boolean
+  nullable: true
+- name: stratum
+  type: string
+  nullable: true

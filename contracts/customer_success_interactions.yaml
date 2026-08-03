@@ -1,0 +1,36 @@
+table: customer_success_interactions
+grain: One row per cs_interaction_id
+primary_key:
+- cs_interaction_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: cs_interaction_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: interaction_at
+  type: timestamp
+  nullable: true
+- name: interaction_type
+  type: string
+  nullable: true
+- name: reason
+  type: string
+  nullable: true
+- name: outcome
+  type: string
+  nullable: true
+- name: health_score_before
+  type: decimal
+  nullable: true
+- name: health_score_after
+  type: decimal
+  nullable: true
+- name: owner_team
+  type: string
+  nullable: true

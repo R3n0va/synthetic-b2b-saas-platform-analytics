@@ -1,0 +1,5 @@
+experiment_id,experiment_name,start_date,end_date,unit_of_randomisation,primary_metric,guardrail_metric,minimum_detectable_effect,status
+exp_onboarding,Guided onboarding checklist,2025-02-01,2025-06-01,account,30_day_activation,support_tickets_30d,0.05,completed
+exp_annual_discount,Annual plan discount framing,2025-05-01,2025-08-29,account,annual_plan_selection,discounted_arpa,0.04,completed
+exp_automation_prompt,Automation feature adoption prompt,2025-07-01,2025-10-29,account,automation_adoption,seven_day_retention,0.06,completed
+exp_cs_intervention,Customer success renewal intervention,2025-10-01,2026-01-29,account,renewal_rate,contraction_rate,0.05,completed

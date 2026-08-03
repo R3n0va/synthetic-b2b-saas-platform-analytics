@@ -1,0 +1,42 @@
+table: plan_prices
+grain: One row per plan_price_id
+primary_key:
+- plan_price_id
+foreign_keys:
+- columns:
+  - plan_id
+  references: plans(plan_id)
+- columns:
+  - currency_code
+  references: currencies(currency_code)
+columns:
+- name: plan_price_id
+  type: string
+  nullable: false
+- name: plan_id
+  type: string
+  nullable: true
+- name: country_code
+  type: string
+  nullable: true
+- name: currency_code
+  type: string
+  nullable: true
+- name: billing_frequency
+  type: string
+  nullable: true
+- name: effective_start
+  type: date
+  nullable: true
+- name: effective_end
+  type: date
+  nullable: true
+- name: base_price
+  type: decimal
+  nullable: true
+- name: seat_price
+  type: decimal
+  nullable: true
+- name: annual_discount_pct
+  type: decimal
+  nullable: true

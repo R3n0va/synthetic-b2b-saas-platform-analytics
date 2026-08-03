@@ -1,0 +1,13 @@
+experiment_id: EXP-03
+name: Automation adoption prompt
+unit: account
+hypothesis: Contextual prompts after repeated manual workflows increase automation
+  adoption and improve sustained usage.
+primary_metric: automation_adopted_within_14_days
+guardrails:
+- seven_day_active_account_rate
+- prompt_dismissal_rate
+segments:
+- plan_id
+- feature_breadth_band
+decision_rule: Launch when adoption improves with no meaningful active-account deterioration.

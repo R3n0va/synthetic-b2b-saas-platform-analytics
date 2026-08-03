@@ -1,0 +1,39 @@
+table: payments
+grain: One row per payment_id
+primary_key:
+- payment_id
+foreign_keys:
+- columns:
+  - invoice_id
+  references: invoices(invoice_id)
+- columns:
+  - payment_attempt_id
+  references: payment_attempts(payment_attempt_id)
+columns:
+- name: payment_id
+  type: string
+  nullable: false
+- name: invoice_id
+  type: string
+  nullable: true
+- name: payment_attempt_id
+  type: string
+  nullable: true
+- name: captured_at
+  type: timestamp
+  nullable: true
+- name: amount_local
+  type: decimal
+  nullable: true
+- name: currency_code
+  type: string
+  nullable: true
+- name: amount_eur
+  type: decimal
+  nullable: true
+- name: payment_status
+  type: string
+  nullable: true
+- name: settlement_date
+  type: date
+  nullable: true

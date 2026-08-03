@@ -1,0 +1,5 @@
+scenario:
+  name: dunning_improvement
+  description: Improved payment recovery after a redesigned dunning sequence.
+  adjustments:
+    payment_recovery_lift: 0.15

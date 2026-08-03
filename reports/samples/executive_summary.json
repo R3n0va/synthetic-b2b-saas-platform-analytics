@@ -1,0 +1,11 @@
+{
+  "reporting_month": "2026-06-01",
+  "active_accounts": 79,
+  "closing_mrr_eur": 179486.15,
+  "arr_eur": 2153833.8,
+  "net_revenue_retention": 0.9779,
+  "failed_payment_attempts": 66,
+  "accounts_at_risk": 4,
+  "quality_checks": 531,
+  "quality_failures": 0
+}

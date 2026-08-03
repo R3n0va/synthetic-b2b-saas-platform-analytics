@@ -1,0 +1,30 @@
+table: integrations
+grain: One row per integration_id
+primary_key:
+- integration_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: integration_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: integration_type
+  type: string
+  nullable: true
+- name: connected_at
+  type: timestamp
+  nullable: true
+- name: disconnected_at
+  type: timestamp
+  nullable: true
+- name: integration_status
+  type: string
+  nullable: true
+- name: monthly_sync_volume
+  type: integer
+  nullable: true

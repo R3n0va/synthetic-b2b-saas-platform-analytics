@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220">
+  <rect width="1200" height="220" fill="#ffffff"/>
+  <style>.b{fill:#f6f8fa;stroke:#24292f;stroke-width:2}.t{font:600 16px Arial;fill:#24292f}.s{font:13px Arial;fill:#57606a}.a{stroke:#57606a;stroke-width:2;marker-end:url(#m)}</style>
+  <defs><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#57606a"/></marker></defs>
+  <g transform="translate(20,55)"><rect class="b" width="150" height="100" rx="8"/><text class="t" x="75" y="35" text-anchor="middle">Acquisition</text><text class="s" x="75" y="62" text-anchor="middle">Self-service</text><text class="s" x="75" y="82" text-anchor="middle">Sales · Partner</text></g>
+  <line class="a" x1="170" y1="105" x2="205" y2="105"/>
+  <g transform="translate(205,55)"><rect class="b" width="150" height="100" rx="8"/><text class="t" x="75" y="35" text-anchor="middle">Conversion</text><text class="s" x="75" y="62" text-anchor="middle">Trial · Opportunity</text><text class="s" x="75" y="82" text-anchor="middle">Contract</text></g>
+  <line class="a" x1="355" y1="105" x2="390" y2="105"/>
+  <g transform="translate(390,55)"><rect class="b" width="150" height="100" rx="8"/><text class="t" x="75" y="35" text-anchor="middle">Subscription</text><text class="s" x="75" y="62" text-anchor="middle">Seats · Add-ons</text><text class="s" x="75" y="82" text-anchor="middle">Monthly · Annual</text></g>
+  <line class="a" x1="540" y1="105" x2="575" y2="105"/>
+  <g transform="translate(575,55)"><rect class="b" width="150" height="100" rx="8"/><text class="t" x="75" y="35" text-anchor="middle">Adoption</text><text class="s" x="75" y="62" text-anchor="middle">Users · Work orders</text><text class="s" x="75" y="82" text-anchor="middle">Integrations</text></g>
+  <line class="a" x1="725" y1="105" x2="760" y2="105"/>
+  <g transform="translate(760,55)"><rect class="b" width="150" height="100" rx="8"/><text class="t" x="75" y="35" text-anchor="middle">Customer value</text><text class="s" x="75" y="62" text-anchor="middle">Health · Support</text><text class="s" x="75" y="82" text-anchor="middle">Success</text></g>
+  <line class="a" x1="910" y1="105" x2="945" y2="105"/>
+  <g transform="translate(945,55)"><rect class="b" width="235" height="100" rx="8"/><text class="t" x="118" y="35" text-anchor="middle">Commercial outcome</text><text class="s" x="118" y="62" text-anchor="middle">Expansion · Renewal</text><text class="s" x="118" y="82" text-anchor="middle">Contraction · Churn</text></g>
+</svg>

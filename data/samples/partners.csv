@@ -1,0 +1,13 @@
+partner_id,partner_name,partner_type,country_code,active_from,active_flag
+partner_00000001,Belgium Solutions Partner 001,industry_consultant,BE,2025-12-14,True
+partner_00000002,Germany Solutions Partner 002,systems_integrator,DE,2024-08-06,True
+partner_00000003,Poland Solutions Partner 003,industry_consultant,PL,2024-12-13,True
+partner_00000004,Belgium Solutions Partner 004,systems_integrator,BE,2025-08-04,True
+partner_00000005,Germany Solutions Partner 005,reseller,DE,2025-12-26,True
+partner_00000006,Norway Solutions Partner 006,reseller,NO,2025-03-13,True
+partner_00000007,Austria Solutions Partner 007,reseller,AT,2025-08-05,True
+partner_00000008,Ireland Solutions Partner 008,systems_integrator,IE,2025-06-08,True
+partner_00000009,United Kingdom Solutions Partner 009,reseller,GB,2025-11-17,True
+partner_00000010,Netherlands Solutions Partner 010,industry_consultant,NL,2025-08-23,True
+partner_00000011,Austria Solutions Partner 011,reseller,AT,2025-12-19,True
+partner_00000012,Netherlands Solutions Partner 012,reseller,NL,2024-09-30,True

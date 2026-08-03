@@ -1,0 +1,33 @@
+table: experiments
+grain: One row per experiment_id
+primary_key:
+- experiment_id
+foreign_keys: []
+columns:
+- name: experiment_id
+  type: string
+  nullable: false
+- name: experiment_name
+  type: string
+  nullable: true
+- name: start_date
+  type: date
+  nullable: true
+- name: end_date
+  type: date
+  nullable: true
+- name: unit_of_randomisation
+  type: string
+  nullable: true
+- name: primary_metric
+  type: string
+  nullable: true
+- name: guardrail_metric
+  type: string
+  nullable: true
+- name: minimum_detectable_effect
+  type: decimal
+  nullable: true
+- name: status
+  type: string
+  nullable: true

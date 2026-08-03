@@ -1,0 +1,207 @@
+version: 1
+business_cases:
+- case_id: BC001
+  domain: revenue
+  question: How did opening MRR move to closing MRR?
+  sql_view: analytics.monthly_mrr_bridge
+  decision: revenue planning
+- case_id: BC002
+  domain: revenue
+  question: Which countries and regions produce recurring revenue?
+  sql_view: analytics.mrr_by_geography
+  decision: revenue planning
+- case_id: BC003
+  domain: revenue
+  question: Which plans and customer segments drive MRR and seat economics?
+  sql_view: analytics.mrr_by_segment
+  decision: revenue planning
+- case_id: BC004
+  domain: revenue
+  question: Are expansion and retention sufficient to protect the recurring base?
+  sql_view: analytics.revenue_retention
+  decision: revenue planning
+- case_id: BC005
+  domain: revenue
+  question: How many paying companies are lost each month?
+  sql_view: analytics.logo_churn
+  decision: revenue planning
+- case_id: BC006
+  domain: revenue
+  question: Where can add-on penetration be increased?
+  sql_view: analytics.add_on_attachment
+  decision: revenue planning
+- case_id: BC007
+  domain: revenue
+  question: How dependent is the business on its largest accounts?
+  sql_view: analytics.revenue_concentration
+  decision: revenue planning
+- case_id: BC008
+  domain: acquisition
+  question: Where does conversion differ by market, channel and sales motion?
+  sql_view: analytics.sales_funnel
+  decision: commercial allocation
+- case_id: BC009
+  domain: acquisition
+  question: Which commercial segments win most consistently?
+  sql_view: analytics.opportunity_win_rate
+  decision: commercial allocation
+- case_id: BC010
+  domain: acquisition
+  question: Where are sales cycles longest?
+  sql_view: analytics.sales_cycle
+  decision: commercial allocation
+- case_id: BC011
+  domain: acquisition
+  question: Which partners generate durable recurring revenue?
+  sql_view: analytics.partner_performance
+  decision: commercial allocation
+- case_id: BC012
+  domain: acquisition
+  question: How quickly do self-service trials become paid?
+  sql_view: analytics.trial_conversion
+  decision: commercial allocation
+- case_id: BC013
+  domain: acquisition
+  question: How is the contract base split by billing frequency and term?
+  sql_view: analytics.contract_mix
+  decision: commercial allocation
+- case_id: BC014
+  domain: acquisition
+  question: Which market-channel combinations acquire customers efficiently?
+  sql_view: analytics.marketing_efficiency
+  decision: commercial allocation
+- case_id: BC015
+  domain: product
+  question: Which customer groups use the product actively?
+  sql_view: analytics.product_adoption
+  decision: product prioritisation
+- case_id: BC016
+  domain: product
+  question: Where are customers paying for unused capacity?
+  sql_view: analytics.seat_utilisation
+  decision: product prioritisation
+- case_id: BC017
+  domain: product
+  question: Does the product support completion of the core operational workflow?
+  sql_view: analytics.workflow_completion
+  decision: product prioritisation
+- case_id: BC018
+  domain: product
+  question: Which onboarding tasks delay adoption?
+  sql_view: analytics.onboarding_completion
+  decision: product prioritisation
+- case_id: BC019
+  domain: product
+  question: How long does it take a customer to complete its first real workflow?
+  sql_view: analytics.time_to_first_value
+  decision: product prioritisation
+- case_id: BC020
+  domain: product
+  question: Which integrations are connected and actively used?
+  sql_view: analytics.integration_adoption
+  decision: product prioritisation
+- case_id: BC021
+  domain: product
+  question: Which usage patterns precede churn?
+  sql_view: analytics.usage_before_churn
+  decision: product prioritisation
+- case_id: BC022
+  domain: customer_success
+  question: How is the customer base distributed across health segments?
+  sql_view: analytics.account_health_distribution
+  decision: renewal and service action
+- case_id: BC023
+  domain: customer_success
+  question: How much recurring revenue is exposed to renewal risk?
+  sql_view: analytics.renewal_risk
+  decision: renewal and service action
+- case_id: BC024
+  domain: customer_success
+  question: What ARR is due for renewal and how much is probability-weighted?
+  sql_view: analytics.renewal_pipeline
+  decision: renewal and service action
+- case_id: BC025
+  domain: customer_success
+  question: Do customer-success interventions improve account health?
+  sql_view: analytics.customer_success_intervention
+  decision: renewal and service action
+- case_id: BC026
+  domain: customer_success
+  question: Where are support response and resolution standards missed?
+  sql_view: analytics.support_service_levels
+  decision: renewal and service action
+- case_id: BC027
+  domain: customer_success
+  question: How does customer advocacy vary by market and segment?
+  sql_view: analytics.nps
+  decision: renewal and service action
+- case_id: BC028
+  domain: customer_success
+  question: Which reasons and churn types remove the most MRR?
+  sql_view: analytics.churn_reasons
+  decision: renewal and service action
+- case_id: BC029
+  domain: billing
+  question: Which payment methods and markets have the strongest success rates?
+  sql_view: analytics.payment_success
+  decision: collections and payment operations
+- case_id: BC030
+  domain: billing
+  question: How much failed revenue is recovered through retries?
+  sql_view: analytics.payment_recovery
+  decision: collections and payment operations
+- case_id: BC031
+  domain: billing
+  question: Which dunning step and channel recover invoices?
+  sql_view: analytics.dunning_effectiveness
+  decision: collections and payment operations
+- case_id: BC032
+  domain: billing
+  question: Where is cash collection risk concentrated?
+  sql_view: analytics.overdue_receivables
+  decision: collections and payment operations
+- case_id: BC033
+  domain: billing
+  question: Which segments generate the highest commercial adjustments?
+  sql_view: analytics.refunds_and_credits
+  decision: collections and payment operations
+- case_id: BC034
+  domain: billing
+  question: Do invoice headers reconcile to invoice lines?
+  sql_view: analytics.invoice_reconciliation
+  decision: collections and payment operations
+- case_id: BC035
+  domain: experimentation
+  question: Are variants balanced without duplicate assignments?
+  sql_view: analytics.experiment_assignment_integrity
+  decision: launch decision
+- case_id: BC036
+  domain: experimentation
+  question: Did assigned accounts receive the treatment?
+  sql_view: analytics.experiment_exposure
+  decision: launch decision
+- case_id: BC037
+  domain: experimentation
+  question: What is the primary, guardrail and revenue effect by variant?
+  sql_view: analytics.experiment_outcomes
+  decision: launch decision
+- case_id: BC038
+  domain: experimentation
+  question: Do experiment effects differ across countries and segments?
+  sql_view: analytics.experiment_segment_effects
+  decision: launch decision
+- case_id: BC039
+  domain: executive
+  question: What changed in recurring revenue, retention, adoption and risk?
+  sql_view: analytics.executive_monthly_scorecard
+  decision: management review
+- case_id: BC040
+  domain: executive
+  question: What is the latest executive state of the business?
+  sql_view: analytics.latest_executive_scorecard
+  decision: management review
+- case_id: BC041
+  domain: executive
+  question: Which regions require management action?
+  sql_view: analytics.regional_operating_review
+  decision: management review

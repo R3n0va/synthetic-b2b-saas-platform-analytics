@@ -1,0 +1,15 @@
+experiment_id: EXP-02
+name: Annual-plan discount framing
+unit: eligible_account
+hypothesis: Showing annual savings in absolute EUR increases annual-plan selection
+  without materially reducing expected first-year revenue.
+primary_metric: annual_plan_selected
+guardrails:
+- discounted_arpa_eur
+- checkout_abandonment
+segments:
+- country_code
+- plan_id
+- sales_motion
+decision_rule: Launch only when conversion improves and expected first-year revenue
+  remains non-inferior.

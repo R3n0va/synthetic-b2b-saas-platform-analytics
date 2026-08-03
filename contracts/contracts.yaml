@@ -1,0 +1,48 @@
+table: contracts
+grain: One row per contract_id
+primary_key:
+- contract_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: contract_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: contract_number
+  type: string
+  nullable: true
+- name: signed_date
+  type: date
+  nullable: true
+- name: start_date
+  type: date
+  nullable: true
+- name: end_date
+  type: date
+  nullable: true
+- name: auto_renew_flag
+  type: boolean
+  nullable: true
+- name: contract_term_months
+  type: integer
+  nullable: true
+- name: billing_frequency
+  type: string
+  nullable: true
+- name: currency_code
+  type: string
+  nullable: true
+- name: discount_pct
+  type: decimal
+  nullable: true
+- name: contract_status
+  type: string
+  nullable: true
+- name: sales_motion
+  type: string
+  nullable: true

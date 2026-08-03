@@ -1,0 +1,15 @@
+experiment_id: EXP-01
+name: Guided onboarding checklist
+unit: account
+hypothesis: A role-specific onboarding checklist increases 30-day activation without
+  increasing onboarding support demand.
+primary_metric: activated_within_30_days
+guardrails:
+- onboarding_support_tickets
+- cancellation_within_45_days
+segments:
+- sales_motion
+- account_segment
+- country_code
+decision_rule: Launch only when the lower confidence bound is positive and no material
+  support guardrail deteriorates.

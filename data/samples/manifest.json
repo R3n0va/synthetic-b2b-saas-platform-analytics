@@ -1,0 +1,642 @@
+{
+  "tables": {
+    "regions": {
+      "file": "regions.csv",
+      "rows": 6,
+      "columns": [
+        "region_id",
+        "region_name",
+        "commercial_owner"
+      ],
+      "sha256": "3d71f06531578a97badede96866100c6a0e9bc897d373279db6162479ce9da16"
+    },
+    "countries": {
+      "file": "countries.csv",
+      "rows": 15,
+      "columns": [
+        "country_code",
+        "country_name",
+        "region_id",
+        "currency_code",
+        "vat_rate",
+        "language_code"
+      ],
+      "sha256": "5a3e7167c5191b53eb59bd8cc4db3f5732c3e7f2904cfc17469c1600561852e5"
+    },
+    "currencies": {
+      "file": "currencies.csv",
+      "rows": 8,
+      "columns": [
+        "currency_code",
+        "currency_name",
+        "minor_units"
+      ],
+      "sha256": "d65f961dbb685ea7711245f5b08ceb69097f24aa73b7102c0cfbe88052beb1f2"
+    },
+    "fx_rates": {
+      "file": "fx_rates.csv",
+      "rows": 240,
+      "columns": [
+        "rate_date",
+        "currency_code",
+        "eur_rate"
+      ],
+      "sha256": "ad96a38ef2bd6d8fce4bdf9bf1954965b49dca787fd537de24177c31bd421869"
+    },
+    "plans": {
+      "file": "plans.csv",
+      "rows": 4,
+      "columns": [
+        "plan_id",
+        "plan_name",
+        "plan_rank",
+        "included_seats",
+        "active_flag"
+      ],
+      "sha256": "9a847219665c63cec25b02717f2c4df9dff51f5dbb013b145f26ebfa6ee1c52e"
+    },
+    "plan_prices": {
+      "file": "plan_prices.csv",
+      "rows": 240,
+      "columns": [
+        "plan_price_id",
+        "plan_id",
+        "country_code",
+        "currency_code",
+        "billing_frequency",
+        "effective_start",
+        "effective_end",
+        "base_price",
+        "seat_price",
+        "annual_discount_pct"
+      ],
+      "sha256": "f5e286ede0fc268da84fd01e6988ca661e155737e0abb37e4f523d567cb7aec3"
+    },
+    "add_ons": {
+      "file": "add_ons.csv",
+      "rows": 8,
+      "columns": [
+        "add_on_id",
+        "add_on_name",
+        "monthly_price_eur",
+        "category",
+        "active_flag"
+      ],
+      "sha256": "3f4c28207203400cad5f38ca740c0e93e9b23ca956fd9d0f06dead690bcb04d3"
+    },
+    "accounts": {
+      "file": "accounts.csv",
+      "rows": 250,
+      "columns": [
+        "account_id",
+        "account_name",
+        "created_at",
+        "country_code",
+        "region_id",
+        "industry",
+        "segment",
+        "employee_band",
+        "acquisition_channel",
+        "sales_motion",
+        "partner_id",
+        "account_status",
+        "legal_currency",
+        "tax_id_present"
+      ],
+      "sha256": "0a580db559324842433fa0ed69e4d6731c1a136ec616580b71a173b98280c402"
+    },
+    "partners": {
+      "file": "partners.csv",
+      "rows": 12,
+      "columns": [
+        "partner_id",
+        "partner_name",
+        "partner_type",
+        "country_code",
+        "active_from",
+        "active_flag"
+      ],
+      "sha256": "a4671cf64a1b3e255cf8e43c4dad53ae7e5f2aa28aadb3b53ff1ae966aa53dda"
+    },
+    "leads": {
+      "file": "leads.csv",
+      "rows": 250,
+      "columns": [
+        "lead_id",
+        "account_id",
+        "created_at",
+        "source_channel",
+        "lead_status",
+        "mql_at",
+        "sql_at",
+        "lead_score",
+        "campaign_id"
+      ],
+      "sha256": "82e5d8e96de5d8785fadaa3a95a2569ee7041fb5dfdb3e152dffbbd011ffacbe"
+    },
+    "marketing_campaigns": {
+      "file": "marketing_campaigns.csv",
+      "rows": 421,
+      "columns": [
+        "campaign_id",
+        "campaign_name",
+        "channel",
+        "country_code",
+        "start_date",
+        "end_date",
+        "spend_local",
+        "currency_code",
+        "spend_eur"
+      ],
+      "sha256": "2372fecdaa21bf50ed39d28b36eff8fe66dc1df2740f4d8c6abb426431713f7f"
+    },
+    "opportunities": {
+      "file": "opportunities.csv",
+      "rows": 91,
+      "columns": [
+        "opportunity_id",
+        "account_id",
+        "created_at",
+        "close_date",
+        "stage",
+        "status",
+        "owner_team",
+        "expected_arr_eur",
+        "probability",
+        "loss_reason"
+      ],
+      "sha256": "f3341b28c1671dcfbde9c4542ae2febd1c5219b389a52c12944f1547d19fa50e"
+    },
+    "opportunity_stage_history": {
+      "file": "opportunity_stage_history.csv",
+      "rows": 355,
+      "columns": [
+        "stage_event_id",
+        "opportunity_id",
+        "stage_name",
+        "entered_at",
+        "exited_at",
+        "stage_sequence"
+      ],
+      "sha256": "2671bb5a9b1540f11c5f3789c957bb932315b083b66fa6d4d21c177f203ced86"
+    },
+    "workspaces": {
+      "file": "workspaces.csv",
+      "rows": 119,
+      "columns": [
+        "workspace_id",
+        "account_id",
+        "workspace_name",
+        "created_at",
+        "country_code",
+        "active_flag"
+      ],
+      "sha256": "224816e21f5b29d387e8a0e001eec2f5ab478f8d3ef9dc0b0446ee1d428e72bb"
+    },
+    "users": {
+      "file": "users.csv",
+      "rows": 1271,
+      "columns": [
+        "user_id",
+        "account_id",
+        "workspace_id",
+        "created_at",
+        "role_name",
+        "user_status",
+        "invited_at",
+        "activated_at",
+        "deactivated_at",
+        "mobile_user_flag"
+      ],
+      "sha256": "2965f87ffe95d7396dadb64c22e6c069ce0465f7a0adbcc2664eadac6a91beac"
+    },
+    "contracts": {
+      "file": "contracts.csv",
+      "rows": 83,
+      "columns": [
+        "contract_id",
+        "account_id",
+        "contract_number",
+        "signed_date",
+        "start_date",
+        "end_date",
+        "auto_renew_flag",
+        "contract_term_months",
+        "billing_frequency",
+        "currency_code",
+        "discount_pct",
+        "contract_status",
+        "sales_motion"
+      ],
+      "sha256": "815f5281fe29249add83908c3198541dbe340800dcae9fc2498486422f365efc"
+    },
+    "subscriptions": {
+      "file": "subscriptions.csv",
+      "rows": 83,
+      "columns": [
+        "subscription_id",
+        "account_id",
+        "contract_id",
+        "plan_id",
+        "trial_start_date",
+        "trial_end_date",
+        "subscription_start_date",
+        "current_status",
+        "cancel_requested_date",
+        "ended_date",
+        "churn_type",
+        "billing_frequency",
+        "currency_code"
+      ],
+      "sha256": "d55de0ea0439e56e433892aa9ca6eda5065a1dae093e82de9eb0d4a8ab23e1e4"
+    },
+    "subscription_items": {
+      "file": "subscription_items.csv",
+      "rows": 208,
+      "columns": [
+        "subscription_item_id",
+        "subscription_id",
+        "item_type",
+        "plan_id",
+        "add_on_id",
+        "quantity",
+        "unit_price_local",
+        "discount_pct",
+        "effective_start",
+        "effective_end",
+        "mrr_local",
+        "mrr_eur"
+      ],
+      "sha256": "f5cd03bccb3df8d77bcde1dc24f7ddd5437ab74a8eec471a88f2cad990d72df5"
+    },
+    "subscription_events": {
+      "file": "subscription_events.csv",
+      "rows": 250,
+      "columns": [
+        "subscription_event_id",
+        "subscription_id",
+        "event_at",
+        "event_type",
+        "previous_plan_id",
+        "new_plan_id",
+        "previous_quantity",
+        "new_quantity",
+        "mrr_change_eur",
+        "event_reason",
+        "initiated_by"
+      ],
+      "sha256": "61c4e1c34dabdfe2013380b7d2c9045cdee3652eb3e915a92971791fd4bf02a3"
+    },
+    "renewals": {
+      "file": "renewals.csv",
+      "rows": 34,
+      "columns": [
+        "renewal_id",
+        "subscription_id",
+        "renewal_due_date",
+        "decision_date",
+        "renewal_status",
+        "renewal_arr_eur",
+        "renewal_probability",
+        "risk_reason"
+      ],
+      "sha256": "7f37338eba36838bf07748c34954ad2e7561af2877a2566f6c4ddae828ce9866"
+    },
+    "invoices": {
+      "file": "invoices.csv",
+      "rows": 573,
+      "columns": [
+        "invoice_id",
+        "account_id",
+        "subscription_id",
+        "invoice_number",
+        "invoice_date",
+        "due_date",
+        "service_period_start",
+        "service_period_end",
+        "currency_code",
+        "subtotal_local",
+        "tax_local",
+        "total_local",
+        "total_eur",
+        "invoice_status",
+        "paid_date"
+      ],
+      "sha256": "d1a5dc29a2f65565ea91326f0c62c46c06f20565c0e16daa7f83f4c8f42005e7"
+    },
+    "invoice_lines": {
+      "file": "invoice_lines.csv",
+      "rows": 573,
+      "columns": [
+        "invoice_line_id",
+        "invoice_id",
+        "line_type",
+        "description",
+        "quantity",
+        "unit_price_local",
+        "discount_local",
+        "line_total_local",
+        "service_period_start",
+        "service_period_end",
+        "subscription_item_id"
+      ],
+      "sha256": "d60b569461d34ac0e26f4b75a04147e18d61f8ea2de3fcdeb073f9070190fafc"
+    },
+    "payment_methods": {
+      "file": "payment_methods.csv",
+      "rows": 83,
+      "columns": [
+        "payment_method_id",
+        "account_id",
+        "method_type",
+        "provider",
+        "created_at",
+        "expiry_month",
+        "expiry_year",
+        "active_flag"
+      ],
+      "sha256": "afd895c83d39a25bc6b61a4b3cd800ddf3f97a3ce1b8e82930102c742b0a678e"
+    },
+    "payment_attempts": {
+      "file": "payment_attempts.csv",
+      "rows": 628,
+      "columns": [
+        "payment_attempt_id",
+        "invoice_id",
+        "payment_method_id",
+        "attempt_at",
+        "attempt_number",
+        "amount_local",
+        "currency_code",
+        "attempt_status",
+        "failure_reason",
+        "provider_response_code"
+      ],
+      "sha256": "8a792ea48b6b9239968b4d5ae623ed2ff79e3a242c24fde2f318a2a9a5e7a7d8"
+    },
+    "payments": {
+      "file": "payments.csv",
+      "rows": 562,
+      "columns": [
+        "payment_id",
+        "invoice_id",
+        "payment_attempt_id",
+        "captured_at",
+        "amount_local",
+        "currency_code",
+        "amount_eur",
+        "payment_status",
+        "settlement_date"
+      ],
+      "sha256": "7a689d556323f21f101268ac729b4bb7964e4f5974d46fb874878272a806677a"
+    },
+    "credit_notes": {
+      "file": "credit_notes.csv",
+      "rows": 5,
+      "columns": [
+        "credit_note_id",
+        "invoice_id",
+        "issued_date",
+        "reason",
+        "amount_local",
+        "amount_eur",
+        "credit_note_status"
+      ],
+      "sha256": "216780bbd09a167ea3af82325c3b88ed63bf6611786ae7b2c8bd9597164f7736"
+    },
+    "refunds": {
+      "file": "refunds.csv",
+      "rows": 4,
+      "columns": [
+        "refund_id",
+        "payment_id",
+        "requested_at",
+        "processed_at",
+        "amount_local",
+        "amount_eur",
+        "reason",
+        "refund_status"
+      ],
+      "sha256": "71dc4cc3c8e731da25b82c99cd2761760444549009f434a4ccc0bb2354c2b8d8"
+    },
+    "dunning_events": {
+      "file": "dunning_events.csv",
+      "rows": 66,
+      "columns": [
+        "dunning_event_id",
+        "invoice_id",
+        "event_at",
+        "dunning_step",
+        "channel",
+        "event_status",
+        "recovered_after_event_flag"
+      ],
+      "sha256": "db8af95245ad654b2e114293b07e94dd72f57c74417b831ee2efe26e3e10b784"
+    },
+    "product_events": {
+      "file": "product_events.csv",
+      "rows": 13110,
+      "columns": [
+        "product_event_id",
+        "account_id",
+        "user_id",
+        "event_at",
+        "event_name",
+        "feature_area",
+        "platform",
+        "session_id",
+        "workspace_id",
+        "numeric_value"
+      ],
+      "sha256": "fa996a7115ae0ca387db8390159424bcf18ce0e493bdf468715e9742e34273a8"
+    },
+    "account_usage_daily": {
+      "file": "account_usage_daily.csv",
+      "rows": 4640,
+      "columns": [
+        "account_id",
+        "activity_date",
+        "active_users",
+        "active_mobile_users",
+        "sessions",
+        "work_orders_created",
+        "work_orders_completed",
+        "automation_runs",
+        "api_calls",
+        "documents_uploaded",
+        "feature_breadth"
+      ],
+      "sha256": "3c2f1a143d68f0a627abbcdb519607a703e8c276ba18f8c9ac2216340aa690cb"
+    },
+    "integrations": {
+      "file": "integrations.csv",
+      "rows": 71,
+      "columns": [
+        "integration_id",
+        "account_id",
+        "integration_type",
+        "connected_at",
+        "disconnected_at",
+        "integration_status",
+        "monthly_sync_volume"
+      ],
+      "sha256": "3165be1a618c526ba0b4d0d326e195175f510ce9c42ac5973bcb23e552d1f7dd"
+    },
+    "work_orders": {
+      "file": "work_orders.csv",
+      "rows": 29768,
+      "columns": [
+        "work_order_id",
+        "account_id",
+        "workspace_id",
+        "created_at",
+        "scheduled_at",
+        "completed_at",
+        "status",
+        "priority",
+        "service_category",
+        "assigned_users",
+        "customer_signature_flag",
+        "completion_minutes"
+      ],
+      "sha256": "5c67ee62f60fcca65c4f46ac188d1bce1dc27f4a126011bdc033b602d2c80d96"
+    },
+    "onboarding_tasks": {
+      "file": "onboarding_tasks.csv",
+      "rows": 498,
+      "columns": [
+        "onboarding_task_id",
+        "account_id",
+        "task_name",
+        "task_sequence",
+        "due_date",
+        "completed_at",
+        "task_status",
+        "owner_type"
+      ],
+      "sha256": "adadf19e3978574318fab0450f92c1e357d3aaedac57dd890cca03293bc0cdc9"
+    },
+    "customer_success_interactions": {
+      "file": "customer_success_interactions.csv",
+      "rows": 25,
+      "columns": [
+        "cs_interaction_id",
+        "account_id",
+        "interaction_at",
+        "interaction_type",
+        "reason",
+        "outcome",
+        "health_score_before",
+        "health_score_after",
+        "owner_team"
+      ],
+      "sha256": "ee9126ace848a5fd8ea77230436677218f029cb5d209e477089eccc06eac582e"
+    },
+    "support_tickets": {
+      "file": "support_tickets.csv",
+      "rows": 229,
+      "columns": [
+        "ticket_id",
+        "account_id",
+        "created_at",
+        "first_response_at",
+        "resolved_at",
+        "closed_at",
+        "priority",
+        "category",
+        "ticket_status",
+        "channel",
+        "escalated_flag",
+        "reopened_count",
+        "csat_score"
+      ],
+      "sha256": "4bbca9116f120d5ceac570ade9e158c1278dc242201bfc5dfa3f194c2a9ff575"
+    },
+    "nps_responses": {
+      "file": "nps_responses.csv",
+      "rows": 17,
+      "columns": [
+        "nps_response_id",
+        "account_id",
+        "response_date",
+        "nps_score",
+        "nps_group",
+        "response_channel",
+        "comment_theme"
+      ],
+      "sha256": "0e8d7d3ffcc34f4fd4e5acaf04a9f2f02c0c7f7c9c9ac41551a1bb7bf61b1045"
+    },
+    "account_health_history": {
+      "file": "account_health_history.csv",
+      "rows": 1160,
+      "columns": [
+        "account_id",
+        "health_month",
+        "health_score",
+        "health_segment",
+        "usage_score",
+        "support_score",
+        "payment_score",
+        "relationship_score",
+        "renewal_risk_flag"
+      ],
+      "sha256": "467beeda62e10d6371e7d7d9c05211d75512b942e27bbb853173a58862f9b9bb"
+    },
+    "experiments": {
+      "file": "experiments.csv",
+      "rows": 4,
+      "columns": [
+        "experiment_id",
+        "experiment_name",
+        "start_date",
+        "end_date",
+        "unit_of_randomisation",
+        "primary_metric",
+        "guardrail_metric",
+        "minimum_detectable_effect",
+        "status"
+      ],
+      "sha256": "6d4112c69ff2ba7979ba8e10b125178243f35f042e4481a2942980aed6adabd3"
+    },
+    "experiment_assignments": {
+      "file": "experiment_assignments.csv",
+      "rows": 287,
+      "columns": [
+        "assignment_id",
+        "experiment_id",
+        "account_id",
+        "variant",
+        "assigned_at",
+        "eligible_flag",
+        "stratum"
+      ],
+      "sha256": "d54783f5260abbfd6f682e7e0de3089628c2ef1db351e3156d4eb5facb8fb815"
+    },
+    "experiment_exposures": {
+      "file": "experiment_exposures.csv",
+      "rows": 253,
+      "columns": [
+        "exposure_id",
+        "assignment_id",
+        "exposed_at",
+        "exposure_surface",
+        "exposure_count"
+      ],
+      "sha256": "e22c428b1de3671e36e8e5e047c23d078adbb310bb280853401ff3232b89dd63"
+    },
+    "experiment_outcomes": {
+      "file": "experiment_outcomes.csv",
+      "rows": 287,
+      "columns": [
+        "outcome_id",
+        "assignment_id",
+        "observation_end",
+        "primary_outcome",
+        "guardrail_outcome",
+        "revenue_outcome_eur"
+      ],
+      "sha256": "7c5cebfa674cda7a49dee79de8768abc2a31f1908f7d0d1654888fe36bc934f9"
+    }
+  },
+  "total_rows": 56791
+}

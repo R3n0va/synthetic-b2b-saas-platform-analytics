@@ -1,0 +1,15 @@
+experiment_id: EXP-04
+name: Customer-success renewal intervention
+unit: renewal_account
+hypothesis: A structured intervention for medium-risk accounts improves renewal and
+  protects recurring revenue.
+primary_metric: renewed
+guardrails:
+- contraction_mrr_eur
+- discount_cost_eur
+segments:
+- account_segment
+- health_band
+- region_id
+decision_rule: Launch when renewal improves and incremental protected ARR exceeds
+  intervention and discount cost.

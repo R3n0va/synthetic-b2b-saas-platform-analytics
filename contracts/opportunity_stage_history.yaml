@@ -1,0 +1,27 @@
+table: opportunity_stage_history
+grain: One row per stage_event_id
+primary_key:
+- stage_event_id
+foreign_keys:
+- columns:
+  - opportunity_id
+  references: opportunities(opportunity_id)
+columns:
+- name: stage_event_id
+  type: string
+  nullable: false
+- name: opportunity_id
+  type: string
+  nullable: true
+- name: stage_name
+  type: string
+  nullable: true
+- name: entered_at
+  type: timestamp
+  nullable: true
+- name: exited_at
+  type: timestamp
+  nullable: true
+- name: stage_sequence
+  type: integer
+  nullable: true

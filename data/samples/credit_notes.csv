@@ -1,0 +1,6 @@
+credit_note_id,invoice_id,issued_date,reason,amount_local,amount_eur,credit_note_status
+credit_00000001,invoice_00000119,2024-09-18,billing_correction,33.34,39.16,issued
+credit_00000002,invoice_00000127,2025-04-15,service_credit,30.97,36.51,issued
+credit_00000003,invoice_00000311,2025-08-08,billing_correction,84.34,7.35,issued
+credit_00000004,invoice_00000359,2025-05-03,service_credit,165.28,165.28,issued
+credit_00000005,invoice_00000479,2025-01-19,billing_correction,282.5,24.67,issued

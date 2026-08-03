@@ -1,0 +1,37 @@
+table: account_health_history
+grain: One row per account_id and health_month
+primary_key:
+- account_id
+- health_month
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: account_id
+  type: string
+  nullable: false
+- name: health_month
+  type: date
+  nullable: false
+- name: health_score
+  type: decimal
+  nullable: true
+- name: health_segment
+  type: string
+  nullable: true
+- name: usage_score
+  type: decimal
+  nullable: true
+- name: support_score
+  type: decimal
+  nullable: true
+- name: payment_score
+  type: decimal
+  nullable: true
+- name: relationship_score
+  type: decimal
+  nullable: true
+- name: renewal_risk_flag
+  type: boolean
+  nullable: true

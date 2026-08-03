@@ -1,0 +1,43 @@
+{
+  "name": "B2B SaaS Analytics Platform",
+  "dataColors": [
+    "#17324D",
+    "#3E6B89",
+    "#6F8FA6",
+    "#9EB6C5",
+    "#C9D6DE",
+    "#7C6F64",
+    "#A28F7A",
+    "#D2C0A7"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#1F2933",
+  "tableAccent": "#17324D",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "fontFamily": "Segoe UI",
+            "fontSize": 12,
+            "color": {
+              "solid": {
+                "color": "#1F2933"
+              }
+            }
+          }
+        ],
+        "labels": [
+          {
+            "fontFamily": "Segoe UI",
+            "color": {
+              "solid": {
+                "color": "#1F2933"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

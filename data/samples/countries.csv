@@ -1,0 +1,16 @@
+country_code,country_name,region_id,currency_code,vat_rate,language_code
+DE,Germany,dach,EUR,0.19,de
+AT,Austria,dach,EUR,0.2,de
+CH,Switzerland,dach,CHF,0.081,de
+NL,Netherlands,benelux,EUR,0.21,nl
+BE,Belgium,benelux,EUR,0.21,fr
+FR,France,western_europe,EUR,0.2,fr
+GB,United Kingdom,western_europe,GBP,0.2,en
+IE,Ireland,western_europe,EUR,0.23,en
+ES,Spain,southern_europe,EUR,0.21,es
+IT,Italy,southern_europe,EUR,0.22,it
+SE,Sweden,nordics,SEK,0.25,sv
+DK,Denmark,nordics,DKK,0.25,da
+NO,Norway,nordics,NOK,0.25,no
+PL,Poland,central_europe,PLN,0.23,pl
+CZ,Czechia,central_europe,CZK,0.21,cs

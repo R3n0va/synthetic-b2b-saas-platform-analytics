@@ -1,0 +1,269 @@
+{
+  "project": {
+    "name": "synthetic-b2b-saas-platform-analytics",
+    "seed": 20260803,
+    "history_start": "2024-01-01",
+    "history_end": "2026-06-30",
+    "reporting_currency": "EUR"
+  },
+  "volumes": {
+    "accounts": 250,
+    "max_users_per_account": 35,
+    "usage_sampling_days_per_month": 4
+  },
+  "geography": {
+    "countries": {
+      "DE": {
+        "region": "DACH",
+        "currency": "EUR",
+        "weight": 0.3,
+        "vat_rate": 0.19
+      },
+      "AT": {
+        "region": "DACH",
+        "currency": "EUR",
+        "weight": 0.06,
+        "vat_rate": 0.2
+      },
+      "CH": {
+        "region": "DACH",
+        "currency": "CHF",
+        "weight": 0.05,
+        "vat_rate": 0.081
+      },
+      "NL": {
+        "region": "Benelux",
+        "currency": "EUR",
+        "weight": 0.08,
+        "vat_rate": 0.21
+      },
+      "BE": {
+        "region": "Benelux",
+        "currency": "EUR",
+        "weight": 0.04,
+        "vat_rate": 0.21
+      },
+      "FR": {
+        "region": "Western Europe",
+        "currency": "EUR",
+        "weight": 0.09,
+        "vat_rate": 0.2
+      },
+      "GB": {
+        "region": "Western Europe",
+        "currency": "GBP",
+        "weight": 0.08,
+        "vat_rate": 0.2
+      },
+      "IE": {
+        "region": "Western Europe",
+        "currency": "EUR",
+        "weight": 0.03,
+        "vat_rate": 0.23
+      },
+      "ES": {
+        "region": "Southern Europe",
+        "currency": "EUR",
+        "weight": 0.06,
+        "vat_rate": 0.21
+      },
+      "IT": {
+        "region": "Southern Europe",
+        "currency": "EUR",
+        "weight": 0.05,
+        "vat_rate": 0.22
+      },
+      "SE": {
+        "region": "Nordics",
+        "currency": "SEK",
+        "weight": 0.04,
+        "vat_rate": 0.25
+      },
+      "DK": {
+        "region": "Nordics",
+        "currency": "DKK",
+        "weight": 0.03,
+        "vat_rate": 0.25
+      },
+      "NO": {
+        "region": "Nordics",
+        "currency": "NOK",
+        "weight": 0.03,
+        "vat_rate": 0.25
+      },
+      "PL": {
+        "region": "Central Europe",
+        "currency": "PLN",
+        "weight": 0.04,
+        "vat_rate": 0.23
+      },
+      "CZ": {
+        "region": "Central Europe",
+        "currency": "CZK",
+        "weight": 0.02,
+        "vat_rate": 0.21
+      }
+    }
+  },
+  "business": {
+    "industries": [
+      "technical_services",
+      "facility_management",
+      "equipment_maintenance",
+      "installation",
+      "cleaning_services",
+      "inspections",
+      "property_services"
+    ],
+    "segments": {
+      "micro": {
+        "weight": 0.36,
+        "min_seats": 1,
+        "max_seats": 5
+      },
+      "small": {
+        "weight": 0.32,
+        "min_seats": 6,
+        "max_seats": 20
+      },
+      "medium": {
+        "weight": 0.2,
+        "min_seats": 21,
+        "max_seats": 100
+      },
+      "mid_market": {
+        "weight": 0.09,
+        "min_seats": 101,
+        "max_seats": 500
+      },
+      "enterprise": {
+        "weight": 0.03,
+        "min_seats": 501,
+        "max_seats": 1200
+      }
+    },
+    "acquisition_channels": {
+      "organic_search": 0.22,
+      "paid_search": 0.18,
+      "paid_social": 0.08,
+      "partner": 0.15,
+      "outbound_sales": 0.18,
+      "referral": 0.1,
+      "events": 0.05,
+      "direct": 0.04
+    },
+    "sales_motion_by_segment": {
+      "micro": {
+        "self_service": 0.9,
+        "sales_assisted": 0.08,
+        "partner_led": 0.02
+      },
+      "small": {
+        "self_service": 0.58,
+        "sales_assisted": 0.3,
+        "partner_led": 0.12
+      },
+      "medium": {
+        "self_service": 0.2,
+        "sales_assisted": 0.58,
+        "partner_led": 0.22
+      },
+      "mid_market": {
+        "self_service": 0.04,
+        "sales_assisted": 0.7,
+        "partner_led": 0.26
+      },
+      "enterprise": {
+        "self_service": 0.0,
+        "sales_assisted": 0.72,
+        "partner_led": 0.28
+      }
+    }
+  },
+  "pricing": {
+    "plans": {
+      "Starter": {
+        "base_monthly_eur": 39,
+        "included_seats": 3,
+        "seat_monthly_eur": 12,
+        "annual_discount": 0.15,
+        "eligible_segments": [
+          "micro",
+          "small"
+        ]
+      },
+      "Professional": {
+        "base_monthly_eur": 99,
+        "included_seats": 5,
+        "seat_monthly_eur": 19,
+        "annual_discount": 0.18,
+        "eligible_segments": [
+          "small",
+          "medium",
+          "mid_market"
+        ]
+      },
+      "Business": {
+        "base_monthly_eur": 349,
+        "included_seats": 15,
+        "seat_monthly_eur": 27,
+        "annual_discount": 0.2,
+        "eligible_segments": [
+          "medium",
+          "mid_market",
+          "enterprise"
+        ]
+      },
+      "Enterprise": {
+        "base_monthly_eur": 1500,
+        "included_seats": 50,
+        "seat_monthly_eur": 34,
+        "annual_discount": 0.24,
+        "eligible_segments": [
+          "mid_market",
+          "enterprise"
+        ]
+      }
+    },
+    "add_ons": {
+      "Advanced Analytics": 129,
+      "Route Optimisation": 179,
+      "API Package": 249,
+      "ERP Integration": 299,
+      "Customer Portal": 89,
+      "Document Management": 69,
+      "Premium Support": 399,
+      "Additional Storage": 49
+    }
+  },
+  "behaviour": {
+    "trial_days": 14,
+    "lead_to_opportunity_base": 0.42,
+    "opportunity_win_base": 0.37,
+    "self_service_trial_to_paid_base": 0.31,
+    "annual_share": 0.58,
+    "onboarding_completion_base": 0.78,
+    "monthly_logo_churn_base": 0.01,
+    "monthly_expansion_base": 0.035,
+    "monthly_contraction_base": 0.018,
+    "payment_failure_base": 0.055,
+    "payment_recovery_base": 0.72,
+    "support_ticket_rate_per_account_month": 0.22,
+    "nps_response_rate": 0.16
+  },
+  "scenarios": {
+    "price_increase_date": "2025-04-01",
+    "price_increase_pct": 0.08,
+    "improved_dunning_date": "2025-09-01",
+    "improved_dunning_recovery_lift": 0.12,
+    "onboarding_experiment_start": "2025-02-01",
+    "annual_discount_experiment_start": "2025-05-01",
+    "automation_prompt_experiment_start": "2025-07-01",
+    "customer_success_experiment_start": "2025-10-01"
+  },
+  "scenario": {
+    "name": "baseline",
+    "description": "Baseline European B2B SaaS operating model.",
+    "adjustments": {}
+  }
+}

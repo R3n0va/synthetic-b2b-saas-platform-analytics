@@ -1,0 +1,30 @@
+table: nps_responses
+grain: One row per nps_response_id
+primary_key:
+- nps_response_id
+foreign_keys:
+- columns:
+  - account_id
+  references: accounts(account_id)
+columns:
+- name: nps_response_id
+  type: string
+  nullable: false
+- name: account_id
+  type: string
+  nullable: true
+- name: response_date
+  type: date
+  nullable: true
+- name: nps_score
+  type: integer
+  nullable: true
+- name: nps_group
+  type: string
+  nullable: true
+- name: response_channel
+  type: string
+  nullable: true
+- name: comment_theme
+  type: string
+  nullable: true

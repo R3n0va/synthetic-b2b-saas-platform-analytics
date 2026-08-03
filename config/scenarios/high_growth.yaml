@@ -1,0 +1,7 @@
+scenario:
+  name: high_growth
+  description: Higher acquisition and conversion with increased support pressure.
+  adjustments:
+    lead_volume_multiplier: 1.30
+    conversion_multiplier: 1.12
+    support_ticket_multiplier: 1.20
