@@ -250,7 +250,7 @@ The complete local runbook is in `LOCAL_RUN.md`.
 
 ![Pipeline](docs/images/pipeline.svg)
 
-## Verified Python run
+## Verified local execution
 
 The committed smoke profile was regenerated and analysed with fixed seed `20260803`.
 
@@ -270,7 +270,7 @@ The committed smoke profile was regenerated and analysed with fixed seed `202608
 | Experiment assignments | 287 |
 | **All source tables** | **56,791** |
 
-The run produced:
+The Python run produced:
 
 - 41 source tables;
 - 531 Python validation checks with zero failures;
@@ -278,11 +278,11 @@ The run produced:
 - a reconciled MRR bridge;
 - four experiment decisions;
 - four latest-month renewal-risk accounts;
-- 253 passing automated tests.
+- 255 passing automated tests.
 
-The PostgreSQL build is intentionally verified separately on the local PostgreSQL installation. The loader and SQL assets are included, but this archive does not claim a database run that was not executed in the current environment.
+The generated sample dataset was then loaded into a local PostgreSQL installation. The database build completed successfully, including target-database creation, source loading, typed core structures, relationship constraints and indexes, analytical marts, business-facing views and SQL quality controls.
 
-Detailed evidence is in `docs/12_VERIFICATION_EVIDENCE.md`.
+Detailed execution evidence is maintained in `docs/12_VERIFICATION_EVIDENCE.md`.
 
 ## Technical summary
 
@@ -294,7 +294,7 @@ Detailed evidence is in `docs/12_VERIFICATION_EVIDENCE.md`.
 | Analytics | 41 catalogued business cases and matching SQL views |
 | Metrics | 40 governed metric definitions |
 | Quality | 531 Python checks in the verified sample and 50 SQL controls |
-| Testing | 253 automated tests including negative, reproducibility, repository-governance and local-artifact isolation cases |
+| Testing | 255 automated tests including negative, reproducibility, repository-governance and local-artifact isolation cases |
 | Reporting | 13 generated analytical reports and executive narrative |
 | Experiments | four exposure-linked account-level experiments |
 | BI | semantic model, governed DAX, theme, validation and eight page specifications |
@@ -327,7 +327,7 @@ See `dashboards/power_bi/README.md`.
 | `docs/09_POSTGRESQL_RUNBOOK.md` | local setup, build and troubleshooting |
 | `docs/10_TEST_STRATEGY.md` | automated, negative and pipeline testing |
 | `docs/11_LIMITATIONS.md` | modelling boundaries and interpretation |
-| `docs/12_VERIFICATION_EVIDENCE.md` | completed local Python execution results |
+| `docs/12_VERIFICATION_EVIDENCE.md` | completed local Python and PostgreSQL execution results |
 | `docs/13_POWER_BI_IMPLEMENTATION.md` | semantic model and dashboard build sequence |
 
 ## Scope
