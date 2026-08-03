@@ -332,8 +332,6 @@ See `dashboards/power_bi/README.md`.
 
 ## Scope
 
-Included:
-
 - European B2B SaaS subscription economics;
 - CRM, self-service, sales-assisted and partner-led acquisition;
 - recurring seat and add-on billing;
@@ -344,15 +342,7 @@ Included:
 - payment retries, dunning, credits and refunds;
 - controlled experiments;
 - local PostgreSQL analytical modelling;
-- Power BI implementation specification.
 
-Not included:
-
-- production orchestration infrastructure;
-- predictive-model deployment;
-- front-end SaaS application code;
-- statutory revenue-recognition accounting;
-- real customer or employee data.
 
 ## License
 
